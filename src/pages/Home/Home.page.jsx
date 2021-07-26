@@ -25,11 +25,10 @@ function HomePage() {
     <section className="homepage">
       <h1>Challenge 1</h1>
       <div className="videoGrid">
-
         {data.items.map((item) => {
           return (
-            <Link to='!#' key={item.etag} >
-              <div className="videoCard"  >
+            <Link to="!#" key={item.etag}>
+              <div className="videoCard">
                 <img src={item.snippet.thumbnails.medium.url} alt="" />
                 <div className="text">
                   <h3>{item.snippet.title}</h3>
@@ -37,9 +36,8 @@ function HomePage() {
                 </div>
               </div>
             </Link>
-          )
+          );
         })}
-
       </div>
     </section>
   );
