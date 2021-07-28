@@ -20,7 +20,7 @@ export const NavLeft = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 25px;
+  margin-left: 20px;
   @media screen and (max-width: 600px) {
     margin-left: 15px;
     flex: 100%;
@@ -128,16 +128,14 @@ const UserBackground = styled.span`
   padding: 5px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.5);
-  margin-left: 20px;
   display: flex;
   align-items: center;
-  cursor: pointer;
 `;
 
 export const UserAvatar = () => {
   return (
     <UserBackground>
-      <PersonIcon style={{ color: 'white', fontSize: 30 }} />
+      <PersonIcon style={{ fontSize: 27 }} />
     </UserBackground>
   );
 };

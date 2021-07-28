@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-
+import { IconButton, FormControlLabel } from '@material-ui/core';
 import Switch from '@material-ui/core/Switch';
 import { NavLink as Link } from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
@@ -20,6 +20,7 @@ import './Navbar.styles.css';
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
   const [query, setQuery] = useState('wizeline');
+  // const [themeMode, setThemeMode] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -33,7 +34,10 @@ function Navbar() {
     <>
       <Nav>
         <NavLeft>
-          <MenuIcon style={{ color: 'white', cursor: 'pointer' }} onClick={showSidebar} />
+          {/* <MenuIcon style={{ color: 'white', cursor: 'pointer' }}  /> */}
+          <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar} >
+            <MenuIcon />
+          </IconButton>
           <SideBar className={sidebar ? 'sidebar active' : null} onClick={showSidebar}>
             <ul className="nav-menu-items">
               <li className="nav-text">
@@ -50,15 +54,13 @@ function Navbar() {
           </SearchContainer>
         </NavLeft>
         <NavRight>
-          <Switch
-            // checked={state.checkedB}
-            onChange={handleChange}
-            color="primary"
-            name="toggleTheme"
-            inputProps={{ 'aria-label': 'Toggle Theme' }}
+          <FormControlLabel
+            control={ <Switch checked={false} name="toggleTheme" color="primary" onChange={handleChange} /> }
+            label="Dark mode"
           />
-          Dark Mode&nbsp;
-          <UserAvatar />
+          <IconButton color="inherit" >
+            <UserAvatar />
+          </IconButton>
         </NavRight>
       </Nav>
     </>
