@@ -1,11 +1,9 @@
 import React from 'react';
-
-import { Link } from 'react-router-dom';
 // import { Link, useHistory } from 'react-router-dom';
-
 // import { useAuth } from '../../providers/Auth';
-import data from '../../mock/youtube-videos-mock.json';
+import VideoList from './VideoList';
 import './Home.styles.css';
+import videos from '../../mock/youtube-videos-mock.json';
 
 function HomePage() {
   // const history = useHistory();
@@ -23,22 +21,8 @@ function HomePage() {
 
   return (
     <section className="homepage">
-      <h1>Challenge 1</h1>
-      <div className="videoGrid">
-        {data.items.map((item) => {
-          return (
-            <Link to="!#" key={item.etag}>
-              <div className="videoCard">
-                <img src={item.snippet.thumbnails.medium.url} alt="" />
-                <div className="text">
-                  <h3>{item.snippet.title}</h3>
-                  <span>{item.snippet.description}</span>
-                </div>
-              </div>
-            </Link>
-          );
-        })}
-      </div>
+      <h1>Welcome to the Challenge!</h1>
+      <VideoList videos={videos} />
     </section>
   );
 }
