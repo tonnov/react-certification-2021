@@ -44,7 +44,7 @@ const VideoItem = ({item}) => {
   const { thumbnails, title, description } = item.snippet;
 
   return (
-    <Link to='#'>
+    <Link to='#!'>
       <VideoContainer>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>
