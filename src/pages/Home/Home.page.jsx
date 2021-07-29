@@ -1,7 +1,7 @@
 import React from 'react';
 // import { Link, useHistory } from 'react-router-dom';
 // import { useAuth } from '../../providers/Auth';
-import VideoList from './VideoList';
+import VideoList from './VideoList.component'
 import './Home.styles.css';
 import videos from '../../mock/youtube-videos-mock.json';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import VideoItem from './VideoItem';
+import VideoItem from './VideoItem.component';
 
 const VideoListContainer = styled.div`
     width: 100%;
@@ -15,13 +15,15 @@ const VideoListContainer = styled.div`
     }
 `;
 
-const VideoList = ({videos}) => {
+const VideoList = ({videos = {}}) => {
 
-    if (videos.length < 0 ) return null;
+    const {items = []} = videos;
+
+    if (items.length <= 0 ) return null;
 
     return (
         <VideoListContainer>
-            {videos.items.map( (item) => (
+            {items.map( (item) => (
                 <VideoItem item={item} key={item.etag} />
             ))}
         </VideoListContainer>

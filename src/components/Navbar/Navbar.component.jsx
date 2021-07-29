@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { IconButton, FormControlLabel } from '@material-ui/core';
 import Switch from '@material-ui/core/Switch';
-import { NavLink as Link } from 'react-router-dom';
+// import { NavLink as Link } from 'react-router-dom';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import {
@@ -41,7 +41,7 @@ function Navbar() {
           <SideBar className={sidebar ? 'sidebar active' : null} onClick={showSidebar}>
             <ul className="nav-menu-items">
               <li className="nav-text">
-                <Link to="/">Home</Link>
+                <a href="/">Home</a>
               </li>
             </ul>
           </SideBar>
@@ -50,7 +50,7 @@ function Navbar() {
             <IconContainer>
               <SearchIcon />
             </IconContainer>
-            <SearchInput placeholder="Search..." value={query} onChange={changeQuery} />
+            <SearchInput placeholder="Search..." value={query} onChange={changeQuery} aria-label="search" />
           </SearchContainer>
         </NavLeft>
         <NavRight>
