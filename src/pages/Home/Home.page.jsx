@@ -1,24 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 // import { Link, useHistory } from 'react-router-dom';
 // import { useAuth } from '../../providers/Auth';
 import VideoList from './VideoList.component'
+import { useSearch } from '../../providers/Search';
 import './Home.styles.css';
-import videos from '../../mock/youtube-videos-mock.json';
+
+// import listaVideos from '../../mock/react-response.json';
+import YoutubeSearch from '../../components/Api/Youtube.api'
+
 
 function HomePage() {
-  // const history = useHistory();
-  // const sectionRef = useRef(null);
-  // const { authenticated, logout } = useAuth();
 
-  // function deAuthenticate(event) {
-  //   event.preventDefault();
-  //   logout();
-  //   history.push('/');
-  // }
+  const { query } = useSearch();
+  
+  const [videos, SetVideos] = useState({});
 
-  // const items = data.items;
-  // console.log(items);
+  useEffect(() => {
+    
+    YoutubeSearch(query).then( res => {
+      if (res.data.length < 0 ) return null;
+      SetVideos(res.data);
+    })
+    // SetVideos(listaVideos);
 
+  }, [query])
+  
   return (
     <section className="homepage">
       <h1>Welcome to the Challenge!</h1>

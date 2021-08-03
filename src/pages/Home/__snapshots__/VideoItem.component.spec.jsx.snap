@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Video Item Component should match snapshot 1`] = `
+<a
+  href="/etag/_PVKwNJf_qw9nukFeRFOtQ837o0"
+>
+  <div
+    className="sc-bdnxRM ezpyKv"
+  >
+    <div
+      className="sc-gtsrHT FkKVT"
+      role="img"
+    />
+    <div
+      className="sc-dlnjwi kgZjlP"
+    >
+      <h3
+        className="sc-hKFxyN ggnpgc"
+      >
+        Wizeline
+      </h3>
+      <p
+        className="sc-eCApnc hSQOHJ"
+        role="note"
+      >
+        Wizeline transforms how teams build technology. Its customers accelerate the delivery of innovative products with proven solutions, which combine Wizeline's ...
+      </p>
+    </div>
+  </div>
+</a>
+`;

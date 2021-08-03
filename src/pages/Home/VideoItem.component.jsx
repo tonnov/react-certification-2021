@@ -5,7 +5,7 @@ import styled from 'styled-components';
 const VideoContainer = styled.div`
   width: 350px;
   height: 340px;
-  margin: 11px 8px;
+  /* margin: 11px 8px; */
   display: flex;
   flex-direction: column;
   border: 1px solid rgb(233, 233, 233);
@@ -16,13 +16,14 @@ const VideoContainer = styled.div`
 `;
 
 const VideoThumbnail = styled.div`
+  min-height: 150px;
   background-image: url(${(props) => props.url });
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
   border-radius: 4px 4px 0 0;
   display: block;
-  height: 140px;
+  
 `;
 
 const VideoText = styled.div`
@@ -43,8 +44,10 @@ const VideoDescription = styled.p`
 const VideoItem = ({item}) => {
   const { thumbnails, title, description } = item.snippet;
 
+  const videoId = item.id.videoId || item.id.channelId;
+
   return (
-    <a href={'/etag/' + item.etag}>
+    <a href={'/video?id=' + videoId}>
       <VideoContainer>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>

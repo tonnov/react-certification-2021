@@ -10,6 +10,8 @@ import Private from '../Private';
 import Fortune from '../Fortune';
 import Layout from '../Layout';
 import Navbar from '../Navbar';
+import SearchProvider from '../../providers/Search';
+import VideoDetail from '../../pages/VideoDetail';
 // import { random } from '../../utils/fns';
 
 function App() {
@@ -34,24 +36,29 @@ function App() {
   return (
     <BrowserRouter>
       <AuthProvider>
-      <Navbar />
-        <Layout>
-          <Switch>
-            <Route exact path="/">
-              <HomePage />
-            </Route>
-            <Route exact path="/login">
-              <LoginPage />
-            </Route>
-            <Private exact path="/secret">
-              <SecretPage />
-            </Private>
-            <Route path="*">
-              <NotFound />
-            </Route>
-          </Switch>
-          <Fortune />
-        </Layout>
+        <SearchProvider>
+          <Navbar />
+            <Layout>
+              <Switch>
+                <Route exact path="/">
+                  <HomePage />
+                </Route>
+                <Route exact path="/login">
+                  <LoginPage />
+                </Route>
+                <Route exact path="/video">
+                  <VideoDetail />
+                </Route>
+                <Private exact path="/secret">
+                  <SecretPage />
+                </Private>
+                <Route path="*">
+                  <NotFound />
+                </Route>
+              </Switch>
+              <Fortune />
+            </Layout>
+        </SearchProvider>
       </AuthProvider>
     </BrowserRouter>
   );
