@@ -3,43 +3,38 @@ import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import Navbar from './Navbar.component';
 
-
 describe('Navbar Component', () => {
-    
-    beforeEach(() => {
-        render(<Navbar />);
+  beforeEach(() => {
+    render(<Navbar />);
+  });
+
+  it('should match snapshot', () => {
+    const snap = renderer.create(<Navbar />);
+
+    expect(snap.toJSON()).toMatchSnapshot();
+  });
+
+  it('Should render a menu bar', () => {
+    const menuBars = screen.getByRole('button', {
+      name: 'open drawer',
     });
 
-    it('should match snapshot', () => {
-        const snap = renderer.create(<Navbar />);
-    
-        expect(snap.toJSON()).toMatchSnapshot();
-      });
+    expect(menuBars).toBeInTheDocument();
+  });
 
-
-    it('Should render a menu bar', () => {
-        const menuBars = screen.getByRole('button', {
-            name: 'open drawer',
-          });
-
-        expect(menuBars).toBeInTheDocument();
+  it('should render a search input', () => {
+    const searchBox = screen.getByRole('textbox', {
+      name: 'search',
     });
 
-    it('should render a search input', () => {
-        const searchBox = screen.getByRole('textbox', {
-            name: 'search',
-        });
+    expect(searchBox).toBeInTheDocument();
+  });
 
-        expect(searchBox).toBeInTheDocument();
-    })
-
-    it('should render a checkbox for theme switch', () => {
-        const component = screen.getByRole('checkbox', {
-          name: 'Dark mode',
-        });
-
-        expect(component).toBeInTheDocument();
+  it('should render a checkbox for theme switch', () => {
+    const component = screen.getByRole('checkbox', {
+      name: 'Dark mode',
     });
 
-
-})
+    expect(component).toBeInTheDocument();
+  });
+});

@@ -16,12 +16,10 @@ import {
 
 import './Navbar.styles.css';
 
-import { useSearch } from '../../providers/Search/';
+import { useSearch } from '../../providers/Search';
 import { useDebounce } from '../../utils/hooks/useDebounce';
 
-
 function Navbar() {
-  
   const [sidebar, setSidebar] = useState(false);
   const { query, setQuery } = useSearch();
   const [localQuery, setLocalQuery] = useState(query);
@@ -29,11 +27,11 @@ function Navbar() {
   const debounceValue = useDebounce(localQuery, 500);
 
   useEffect(() => {
-    if(!debounceValue) return;
-    
+    if (!debounceValue) return;
+
     setQuery(debounceValue);
-  }, [debounceValue, setQuery])
-  
+  }, [debounceValue, setQuery]);
+
   // const [themeMode, setThemeMode] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -42,7 +40,6 @@ function Navbar() {
     setLocalQuery(e.target.value);
   };
 
-
   const handleChangeTheme = () => {};
 
   return (
@@ -50,7 +47,7 @@ function Navbar() {
       <Nav>
         <NavLeft>
           {/* <MenuIcon style={{ color: 'white', cursor: 'pointer' }}  /> */}
-          <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar} >
+          <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
           </IconButton>
           <SideBar className={sidebar ? 'sidebar active' : null} onClick={showSidebar}>
@@ -64,15 +61,27 @@ function Navbar() {
             <IconContainer>
               <SearchIcon />
             </IconContainer>
-            <SearchInput placeholder="Search..." value={localQuery} onChange={changeLocalQuery} aria-label="search" />
+            <SearchInput
+              placeholder="Search..."
+              value={localQuery}
+              onChange={changeLocalQuery}
+              aria-label="search"
+            />
           </SearchContainer>
         </NavLeft>
         <NavRight>
           <FormControlLabel
-            control={ <Switch checked={false} name="toggleTheme" color="primary" onChange={handleChangeTheme} /> }
+            control={
+              <Switch
+                checked={false}
+                name="toggleTheme"
+                color="primary"
+                onChange={handleChangeTheme}
+              />
+            }
             label="Dark mode"
           />
-          <IconButton color="inherit" >
+          <IconButton color="inherit">
             <UserAvatar />
           </IconButton>
         </NavRight>

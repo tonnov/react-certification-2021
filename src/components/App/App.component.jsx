@@ -38,26 +38,26 @@ function App() {
       <AuthProvider>
         <SearchProvider>
           <Navbar />
-            <Layout>
-              <Switch>
-                <Route exact path="/">
-                  <HomePage />
-                </Route>
-                <Route exact path="/login">
-                  <LoginPage />
-                </Route>
-                <Route exact path="/video">
-                  <VideoDetail />
-                </Route>
-                <Private exact path="/secret">
-                  <SecretPage />
-                </Private>
-                <Route path="*">
-                  <NotFound />
-                </Route>
-              </Switch>
-              <Fortune />
-            </Layout>
+          <Layout>
+            <Switch>
+              <Route exact path="/">
+                <HomePage />
+              </Route>
+              <Route exact path="/login">
+                <LoginPage />
+              </Route>
+              <Route exact path="/video">
+                <VideoDetail />
+              </Route>
+              <Private exact path="/secret">
+                <SecretPage />
+              </Private>
+              <Route path="*">
+                <NotFound />
+              </Route>
+            </Switch>
+            <Fortune />
+          </Layout>
         </SearchProvider>
       </AuthProvider>
     </BrowserRouter>

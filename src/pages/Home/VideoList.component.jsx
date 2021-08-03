@@ -3,33 +3,29 @@ import styled from 'styled-components';
 import VideoItem from './VideoItem.component';
 
 const VideoListContainer = styled.div`
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 15px;
 
-    & a {
-        text-decoration: none;
-    }
+  & a {
+    text-decoration: none;
+  }
 `;
 
-const VideoList = ({videos = {}}) => {
+const VideoList = ({ videos = {} }) => {
+  const { items = [] } = videos;
 
-    const {items = []} = videos;
+  if (items.length <= 0) return null;
 
-    if (items.length <= 0 ) return null;
-
-    return (
-        <VideoListContainer>
-            {items.map( (item) => (
-                <VideoItem item={item} key={item.etag} />
-            ))}
-        </VideoListContainer>
-    );
-
+  return (
+    <VideoListContainer>
+      {items.map((item) => (
+        <VideoItem item={item} key={item.etag} />
+      ))}
+    </VideoListContainer>
+  );
 };
 
- export default VideoList;
-
- 
+export default VideoList;

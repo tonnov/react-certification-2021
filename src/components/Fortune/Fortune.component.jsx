@@ -6,9 +6,7 @@ import './Fortune.styles.css';
 function Fortune() {
   // const { fortune } = useFortune();
 
-  return <span className="fortune">
-    {/* {fortune} */}
-    </span>;
+  return <span className="fortune">{/* {fortune} */}</span>;
 }
 
 export default Fortune;

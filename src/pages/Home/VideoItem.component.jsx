@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const VideoContainer = styled.div`
   width: 350px;
@@ -17,21 +17,20 @@ const VideoContainer = styled.div`
 
 const VideoThumbnail = styled.div`
   min-height: 150px;
-  background-image: url(${(props) => props.url });
+  background-image: url(${(props) => props.url});
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
   border-radius: 4px 4px 0 0;
   display: block;
-  
 `;
 
 const VideoText = styled.div`
-    padding: 10px;
+  padding: 10px;
 `;
 
 const VideoTitle = styled.h3`
-    color: #454545;
+  color: #454545;
 `;
 
 const VideoDescription = styled.p`
@@ -41,23 +40,22 @@ const VideoDescription = styled.p`
   overflow: hidden;
 `;
 
-const VideoItem = ({item}) => {
+const VideoItem = ({ item }) => {
   const { thumbnails, title, description } = item.snippet;
 
   const videoId = item.id.videoId || item.id.channelId;
 
   return (
-    <a href={'/video?id=' + videoId}>
+    <Link to={`/video?id=${videoId}`}>
       <VideoContainer>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>
-          <VideoTitle>{ title }</VideoTitle>
-          <VideoDescription role="note">{ description }</VideoDescription>
+          <VideoTitle>{title}</VideoTitle>
+          <VideoDescription role="note">{description}</VideoDescription>
         </VideoText>
       </VideoContainer>
-    </a>
-
-  )
-}
+    </Link>
+  );
+};
 
 export default VideoItem;
