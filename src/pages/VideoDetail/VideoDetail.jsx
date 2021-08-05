@@ -1,14 +1,11 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import YoutubeEmbed from './YoutubeEmbed';
+import VideoMain from './VideoMain';
 
 const VideoDetail = () => {
-
   const { id } = useParams();
 
-  return (
-    <YoutubeEmbed embedId={id} />
-  );
+  return <VideoMain embedId={id} />;
 };
 
 export default VideoDetail;

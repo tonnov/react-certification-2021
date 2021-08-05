@@ -46,7 +46,6 @@ function Navbar() {
     <>
       <Nav>
         <NavLeft>
-          {/* <MenuIcon style={{ color: 'white', cursor: 'pointer' }}  /> */}
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
           </IconButton>

@@ -8,6 +8,7 @@ export const Nav = styled.nav`
   background-color: #1c5476;
   color: #fafafa;
   height: 64px;
+  width: 100%;
   display: flex;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
   @media screen and (max-width: 600px) {
@@ -22,7 +23,8 @@ export const NavLeft = styled.div`
   align-items: center;
   margin-left: 20px;
   @media screen and (max-width: 600px) {
-    margin-left: 15px;
+    /* margin-left: 15px; */
+    margin-right: 15px;
     flex: 100%;
   }
 `;
@@ -67,7 +69,7 @@ export const SearchContainer = styled.div`
   position: relative;
   width: 240px;
   height: 60%;
-  margin-left: 35px;
+  margin-left: 10px;
   background-color: rgba(255, 255, 255, 0.15);
   border-radius: 4px;
   display: flex;
@@ -80,7 +82,7 @@ export const SearchContainer = styled.div`
     background-color: rgba(255, 255, 255, 0.3);
   }
   @media screen and (max-width: 600px) {
-    margin-left: 30px;
+    /* margin-left: 30px; */
     height: 65%;
     width: 78%;
   }

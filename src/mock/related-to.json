@@ -1,0 +1,636 @@
+{
+  "kind": "youtube#searchListResponse",
+  "etag": "UMnfTYWbat1ctiBe0C0Qb5MGGbg",
+  "nextPageToken": "CA8QAA",
+  "regionCode": "MX",
+  "pageInfo": {
+    "totalResults": 112,
+    "resultsPerPage": 15
+  },
+  "items": [
+    {
+      "kind": "youtube#searchResult",
+      "etag": "oLPcjzk1uc7ABT_V1qZJ74xFTbU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "QBLbXgeXMU8"
+      },
+      "snippet": {
+        "publishedAt": "2020-04-17T12:15:53Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "Crea una app con React usando create-react-app",
+        "description": "Ahora que ya sabemos qué es React ⚛️, vamos a crear una pequeña aplicación desde cero para poner en práctica lo que sabemos, hacer un fetching de datos, tener un entorno de desarrollo y añadirle rutas.\n\nRepositorio con el código:\nhttps://github.com/midudev/react-live-coding\n\nMi curso gratuito de React en Udemy:\nhttps://www.udemy.com/course/aprendiendo-react/\n\nNo está actualizado, pero hablo de muchos conceptos que siguen vigentes. Y bueno, ¡es gratis! 😜\n\n¡Si te gusta dale LIKE 👍 y SUSCRÍBETE! 👇\nhttps://www.youtube.com/c/midudev?sub_confirmation=1\n\nSEGMENTOS 📹\n\n00:00 - Bienvenida y presentación\n01:42 - Qué es create-react-app\n05:45 - npx create-react-app giffy\n09:30 - Repasando la estructura de directorios y dependencias\n14:20 - Ventajas de create-react-app\n15:09 - Giphy API\n18:48 - Utilizando useState\n28:17 - Utilizando useEffect\n36:35 - Llamada a API en React con fetch\n39:33 - Mostrando un montón de gifs de pandas 🐼\n42:08 - Extrayendo lógica a un servicio\n49:37 - Creando nuestros primeros componentes\n51:33 - Usando key para lista de elementos\n54:43 - Creando componente ListOfGifs\n59:05 - Las dependencias del useEffect\n01:04:05 - Añadiendo algo de estilos\n01:07:40 - Añadiendo rutas con wouter\n01:18:35 - Conseguir que sea una SPA sin recargas\n01:22:48 - Usando state de loading\n01:25:11 - Guardando un objeto en el state del componente\n01:30:09 - Scripts de nuestro proyecto: build\n01:34:23 - Despedida y cierre 👋\n\n#aprenderReactJS #reactjs #frontend #midudev\n\n-~-~~-~~~-~~-~-\n¡No te pierdas mi último vídeo! \"Variables de entorno con archivos ENV y actualizaciones en tiempo real con Firestore\" \nhttps://www.youtube.com/watch?v=8ZA2p1SBssk\n-~-~~-~~~-~~-~-",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/QBLbXgeXMU8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/QBLbXgeXMU8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/QBLbXgeXMU8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/QBLbXgeXMU8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/QBLbXgeXMU8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-04-17T12:15:53Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "2FR5yziw_b28mdSLDYj_0DQgSMs",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "sKsNO-quEAw"
+      },
+      "snippet": {
+        "publishedAt": "2021-04-14T09:57:47Z",
+        "channelId": "UCJgGc8pQO1lv04VXrBxA_Hg",
+        "title": "ESTE ES EL JAVASCRIPT QUE NECESITAS PARA APRENDER REACT",
+        "description": "Aprender React puede ser complicado, sobre todo si no tienes una base sólida de JavaScript. Pero no tienes porque saber todo lo que existe sobre JavaScript para empezar con React.\n\nEn éste vídeo te resumo los puntos o características más utilizadas para que comenzar con React no sea dificil.\n\n⏱ CONTENIDO DEL VIDEO\n00:00 | Introducción\n01:07 | Template Literals\n03:29 | Shorthand property names\n05:28 | Arrow Functions\n09:10 | Destructuring\n12:13 | Default Parameters\n14:00 | Spread Operator / Rest Parameters\n19:14 | ESModules\n23:07 | Ternary Operator\n26:01 | Array Methods\n26:35 | Promises, Async/Await\n27:00 | Novedades de ES2020\n\nYa sabes lo fundamental! Ahora es el turno de React!\nAPRENDE REACT EN 30 MINUTOS! \n► https://www.youtube.com/watch?v=EMk6nom1aS4\n\nPuedes continuar tu aprendizaje de los conceptos de JavaScript con los siguientes videos:\n¿Cómo funcionan las PROMISES y el ASYNC/AWAIT en JavaScript?\n► https://www.youtube.com/watch?v=rKK1q7nFt7M\n\n7 Métodos de ARRAYS en JAVASCRIPT que debes conocer\n► https://www.youtube.com/watch?v=5yPf74sCu2k\n\n¿Cómo funciona THIS en JavaScript?\n► https://www.youtube.com/watch?v=5lXwdTJScK8\n\n¿Qué son y como funcionan las CLOSURES en JavaScript?\n► https://www.youtube.com/watch?v=xa8lhVwQBw4\n\nPoniendo en práctica tus conocimientos RESOLVIENDO UNA PRUEBA TECNICA para puesto de DESARROLLADOR JAVASCRIPT\n►  https://www.youtube.com/watch?v=I27ZJU2_-Og\n\nTambién te puede interesar\nComo construir un BLOG desde cero con NEXT.js REACT y MARKDOWNX\n► https://www.youtube.com/watch?v=g0D6VCh_fvA\n\nProbamos GITHUB COPILOT, la IA que ¿Te ayuda? a programar\n► https://www.youtube.com/watch?v=vvvxUJDrv0c\n\n🔔 No olvides suscribirte y activar la campanita para no perderte ningún vídeo \n► https://youtube.com/carlosazaustre?sub_confirmation=1\n\n🏆 Si te gusta el contenido que comparto, puedes apoyarme de una manera más directa uniéndote al programa de MIEMBROS del canal\n► https://www.youtube.com/channel/UCJgGc8pQO1lv04VXrBxA_Hg/join",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/sKsNO-quEAw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/sKsNO-quEAw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/sKsNO-quEAw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/sKsNO-quEAw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/sKsNO-quEAw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Carlos Azaustre - Aprende JavaScript",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-14T09:57:47Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "FZOUl7XYhbZFm5zn4c9mGjFG2bQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "zIY87vU33aA"
+      },
+      "snippet": {
+        "publishedAt": "2019-06-24T20:22:19Z",
+        "channelId": "UCX9NJ471o7Wie1DQe94RVIg",
+        "title": "Reactjs, Curso Práctico para Principiantes (React 16)",
+        "description": "EXPO, SDK De React para desarrollo de Apps\nLink ➞ https://bit.ly/3jdjnST\n\nAprende a crear aplicaciones web Frontend usando una de las bibliotecas de Javascript más populares para la creación de Interfaces: Reactjs. En este curso de React 16, estaremos aprendiendo lo siguiente:\n\n🛍 Descuentos:\nNordVPN ➞ 68% de descuento en plan de 2 años  ➞ Código: fazt\nHostinger ➞ 7% de descuento en cualquier compra ➞Código: FAZT\nDigital Ocean ➞ Obtén 100$ gratis ➞ https://m.do.co/c/8ef261d77de5\n\n👨\u200d💻 ¿Qué servicios utilizo? \nKite ➞ https://bit.ly/3dPzXHe\nNordVPN ➞ https://bit.ly/2Te7p0J\nHostinger ➞ https://www.hostg.xyz/SH4YB\nCloudinary ➞ https://bit.ly/3ohNlJ7\nSiteGround ➞ https://bit.ly/31u9ZEk\nNamecheap ➞ https://bit.ly/3kne9W8\n\n🖥️ Cursos:\nCurso de Python Para Principiantes ➞ https://youtu.be/chPhlsHoEPo\nCurso de Raspberry PI ➞ https://youtu.be/ra6kNSIB1uA\nSetup Visual Studio Code ➞ https://youtu.be/zbycB-Yetb0\nCurso del Stack MERN ➞ https://youtu.be/_RZ-T6TxP7w\nCurso de Typescript ➞ https://youtu.be/Xxqh0RoWxNc\n\n🌐 Redes:\nFazt Web ➞ https://www.faztweb.com/\nFacebook ➞ https://facebook.com/fazttech\nInstagram ➞ https://www.instagram.com/fazttech\nTwitter ➞ https://twitter.com/fazttech\nTelegram ➞ https://t.me/fazttech\nTwitch ➞ https://www.twitch.tv/fazttech\nSlack ➞ https://bit.ly/3dPqCPT\nDiscord ➞ https://discord.gg/mFUY4sT\nBlog ➞  http://blog.faztweb.com\n\n📩 Contacto:\n➞ fazt@faztweb.com\n\n#react #reactjs #javascript",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zIY87vU33aA/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zIY87vU33aA/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zIY87vU33aA/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zIY87vU33aA/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zIY87vU33aA/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Fazt",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-06-24T20:22:19Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "uyLMMMH8ZzDT6sZXckV5te70cr8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "0riHps91AzE"
+      },
+      "snippet": {
+        "publishedAt": "2021-04-03T01:00:33Z",
+        "channelId": "UChPxqdfDbulLE9PyUqhijWw",
+        "title": "Learn React JS with Project in 2 Hours  | React Tutorial for Beginners | React Project Crash Course",
+        "description": "This video is a complete React Crash Course for beginners. The video covers different React Topics and implementation in one single project. The video showcase the React concepts and their use in practical project.\n\nWe will be building a contact manager application from scratch and by end of this crash course you will have good understanding of building projects with React.\n\n🔥 Video contents... ENJOY 👇\n------- React Fundamentals --------\n0:00:00 - Intro & Topics to learn in this video\n0:01:54 - Setup\n0:02:42 - Create React App\n0:04:05 - Start React Development Environment \n0:04:23 - Understand React App Folder Structure\n0:07:15 - Contact App Folder Structure/ Components\n0:08:55 - React \"Hello World\" Component\n0:09:18 - Adding Sematic UI to Project\n0:10:03 - Understand React Components\n0:11:53 - React JSX\n0:13:00 - Function Component\n0:15:18 - Class Component\n0:19:13 - Rendering List in React\n0:20:08 - Props - Pass data from parent to child\n0:20:36 - Access Props\n0:22:55 - Reference variable in JSX\n0:24:34 - Adding In-line Style\n0:27:19 - Add images in React\n0:28:46 - useState React Hook\n0:33:02 - Pass Function as Prop\n0:34:09 - Update the State using setState()\n0:36:06 - useEffect React Hook\n\n------- React Router--------\n0:46:13 - React Router Intro \n0:47:29 - Install React Router DOM package\n0:48:25 - Verify installed package\n0:49:16 - Create React Route for application\n0:52:27 - Switch and exact \n0:57:18 - Passing props in route component\n1:00:02 - Passing props with route render\n1:02:37 - Programmatic navigation with history \n1:05:02 - Use Link for route\n1:11:18 - Pass data in route state\n1:12:51 - Access route state \n\n------- React CRUD Axios--------\n1:17:30 - Setting up JSON-SERVER\n1:18:53 - Understand Rest API convention\n1:19:32 - Create Contacts Resource\n1:21:18 - Start JSON-SERVER \n1:22:17 - Install AXIOS package\n1:23:45 - Fetch All Contacts (READ)\n1:27:23 - Add new Contact (CREATE) \n1:30:37 - Delete a Contact (DELETE)\n1:32:00 - Create an Edit component\n1:37:35 - Edit Contact (UPDATE) \n\n------- React Search--------\n1:41:57 - Adding Search bar JSX\n1:43:24 - Adding useState Hook\n1:45:49 - Add State to Input Element\n1:46:31 - Adding useRef Hook\n1:49:24 - Search Filter with Array Filter Method \n1:55:30 - Testing & Outro\n\n***GITHUB***\nhttps://github.com/dmalvia/React_Tutorial_Contact_Manager_App\n\n***Checkout my crash courses for get started with web development***\nHTML5 Crash Course in 1 Hour - https://youtu.be/Aj3QFsmsagc\nCSS Crash Course in 1 Hour - https://youtu.be/nYsk_U_A_lc\nJavaScript Tutorial in 2 Hours - https://youtu.be/sptS-bgg8Ro\n\n\n🔗 Social Medias 🔗 \nTwitter: https://twitter.com/IMDmalvia\nFacebook: https://www.facebook.com/programmingwithdipesh\nInstagram: https://www.instagram.com/dipeshmalvia\nLinkedIn:  https://www.linkedin.com/in/dmalvia/\n\n⭐️ Hashtags ⭐️\n#react #beginners #tutorial\n\nDisclaimer:\nIt doesn't feel good to have a disclaimer in every video but this is how the world is right now. \nAll videos are for educational purpose and use them wisely. Any video may have a slight mistake, please take decisions based on your research. This video is not forcing anything on you.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/0riHps91AzE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/0riHps91AzE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/0riHps91AzE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/0riHps91AzE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/0riHps91AzE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Dipesh Malvia",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-03T01:00:33Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "-XRFsdUU6J7quUPg_eWmB7k6JFM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "gRGTFsC4fwk"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "pvKfA4lPCwHWl17FUo9nTIac9D8",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "dpw9EHDh2bM"
+      },
+      "snippet": {
+        "publishedAt": "2018-10-26T15:16:25Z",
+        "channelId": "UCz5vTaEhvh7dOHEyd1efcaQ",
+        "title": "React Today and Tomorrow and  90% Cleaner React With Hooks",
+        "description": "The first three talks from React Conf 2018 by Sophie Alpert, Dan Abramov, and Ryan Florence.\n\nLearn more about Hooks at https://reactjs.org/hooks.",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/dpw9EHDh2bM/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/dpw9EHDh2bM/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/dpw9EHDh2bM/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/dpw9EHDh2bM/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/dpw9EHDh2bM/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "React Conf",
+        "liveBroadcastContent": "none",
+        "publishTime": "2018-10-26T15:16:25Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "LSTuayXskCqEUp1PvgFR0l382hY",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "KYjjtRgg_H0"
+      },
+      "snippet": {
+        "publishedAt": "2021-04-10T20:26:15Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "TESTING en REACT 🧪 ¡Aprende DESDE CERO! Con react-testing-library y Jest (FullStack Bootcamp JS)",
+        "description": "Hacer tests en el frontend es cada vez más IMPORTANTE. En esta clase VAS A APRENDER cómo hacer testing en React con react-testing-library y Jest.\n\nSuscríbete al canal 🔔\n ► https://www.youtube.com/c/midudev?sub_confirmation=1\n\nSEGMENTOS DEL VÍDEO 🎬\n00:00 - Introducción\n01:15 - Instalando react-testing-library\n02:24 - ¿Por qué hay que hacer tests en el frontend?\n03:25 - Creando nuestros primeros tests\n06:20 - Todo lo que nos ofrece react-testing-library\n10:27 - Usando expect en nuestros tests\n13:13 - Usando prettyDOM para ver el DOM que renderizamos\n14:30 - Tests con clicks en React\n15:54 - Usando mocks para saber cuando se ejecuta una función\n21:53 - Me asusto pero al final entiendo por qué no pasa el test :D\n24:12 - Estrategia a la hora de hacer tests\n26:40 - Malas y buenas prácticas a la hora de seleccionar elementos. ¿Data Test Id?\n30:00 - Pero cómo me voy a fiar de las traducciones con un string???\n34:43 - Conseguir el coverage de los tests con react-testing-library",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/KYjjtRgg_H0/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/KYjjtRgg_H0/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/KYjjtRgg_H0/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/KYjjtRgg_H0/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/KYjjtRgg_H0/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-04-10T20:26:15Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "8DsPUZyeS6xi_uJ60InQorXq7cA",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "mOz5eNcEHu4"
+      },
+      "snippet": {
+        "publishedAt": "2020-01-29T19:27:24Z",
+        "channelId": "UCH7IANkyEcsVW_y1IlpkamQ",
+        "title": "React Hooks - Curso para Principiantes [ Fundamentos Reactjs ]",
+        "description": "Curso completo ⭐ REACT + FIREBASE ⭐ Aquí: http://curso-react-js-udemy.bluuweb.cl/\n\nEn este tutorial veremos una introducción a nuestro curso de React JS Hooks y como trabajar con este Framework de Javascript, si tu eres nuevo en Reactjs este curso es para ti :), principiantes paso a paso y desde cero.\n\nEnlaces utilizados:\n💩 https://bluuweb.github.io/react-udemy/\n💩 https://github.com/facebook/create-react-app\n💩 https://es.reactjs.org/\n💩 React curso [Lista de reproducción]: http://bit.ly/37VBU1i\n🐱\u200d👤 Todos los cursos aquí: https://www.youtube.com/bluuweb\n\n#react #hooks #javascript",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/mOz5eNcEHu4/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/mOz5eNcEHu4/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/mOz5eNcEHu4/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/mOz5eNcEHu4/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/mOz5eNcEHu4/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Bluuweb !",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-01-29T19:27:24Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "USPH9T1QPXDR2U5uUYEJ1n1PxAQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "zBk-Hyv6ykw"
+      },
+      "snippet": {
+        "publishedAt": "2021-06-18T21:40:02Z",
+        "channelId": "UC55-mxUj5Nj3niXFReG44OQ",
+        "title": "Curso de Javascript en 40 minutos",
+        "description": "💛 JavaScript es uno de los lenguajes de programación más usados, mejor pagados y más fáciles de aprender. En este video: Freddy Vega, CEO y cofundador de Platzi, te enseñará en este video cómo programar tus primeras líneas de código en JavaScript.\n\n👩\u200d💻 En Platzi lanzamos la Escuela de JavaScript 👉 https://platzi.com/l/aprende-javascript/. Nuestro esfuerzo más grande para que tú puedas convertirte en un desarrollador o desarrolladora Fullstack con JavaScript.\n----------------------------------------------------------------------\n\n👇Te resumimos el video 👇\n\n0:00 - Qué es JavaScript\n0:23 - Aprende JavaScript en Platzi\n1:45 - ¿Por qué JavaScript es popular?\n4:15 - Tus primeras líneas de código en JavaScript\n8:59 - Funciones en JavaScript\n12:15 - Cambiar texto con funciones\n16:16 - Cómo usar una API en JavaScript\n24:14 - Manejo de errores en JavaScript\n26:22 - Crear un servidor web con Node.js\n39:01 - Enviar HTML en el servidor\n40:08 - Dónde continuar tu aprendizaje\n\n\n💚 Platzi es una plataforma de educación Online, con tu suscripción tienes acceso a  cursos en diferentes áreas de aprendizaje:\n\n- Desarrollo e ingeniería\n- Diseño y UX\n- Marketing\n- Negocios y emprendimiento\n- Producción audiovisual\n- Crecimiento profesional\n\nCada área está compuesta por Rutas de aprendizaje y Escuelas que harán de tu perfil uno de los más demandados de la industria. Además, cuentas con nuestros grupos de estudio, meetups digitales y tutoriales en nuestro sistema de discusiones.\n\n----------------------------------------------------------------------\nTodo esto y más, en https://platzi.com\n\nSíguenos\nFacebook: https://platzi.com/l/fHl6pows/\nTwitter: https://platzi.com/l/0DJ5PONB/\nInstagram: https://platzi.com/l/jt260ue0/\n\n@especial-platzi",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/zBk-Hyv6ykw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/zBk-Hyv6ykw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/zBk-Hyv6ykw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/zBk-Hyv6ykw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/zBk-Hyv6ykw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Platzi",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-06-18T21:40:02Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "7-JLSwWk6-Z6XiPFU1Zl3UuEPmI",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "2jxc8DMzt0I"
+      },
+      "snippet": {
+        "publishedAt": "2020-07-24T13:51:24Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "Aprendiendo NextJS, el framework de React con Server Side Rendering",
+        "description": "NextJS es el framework más famoso de React. Nos proporciona muchas facilidades para desarrollar apps con la biblioteca de Facebook como un sistema de rutas basado en archivos físicos, ServerSide Rendering, generación de archivos estáticos, React Fast Refresh y mucho más.\n\nCódigo en: https://github.com/midudev/curso-nextjs-twitter-clone\n\n📹 Segmentos del vídeo :\n00:00:00 - Presentación de la serie de vídeos\n00:03:15 - ¿Qué es NextJS?\n00:05:35 - ¿Por qué usar NextJS?\n00:12:29 - Preguntas y respuestas I\n00:22:25 - Creando nuestro proyecto de NextJS desde cero\n00:26:28 - Revisando carpetas del proyecto de NextJS\n00:28:56 - Modificando la página Home\n00:30:20 - Usando next/head para SEO\n00:31:10 - Estilos con styled jsx\n00:37:22 - Creando una página y su ruta en NextJS\n00:42:25 - Navegación SPA con NextJS con next/link\n00:48:15 - Preguntas y respuestas II\n00:54:30 - useRouter de next/router\n00:55:55 - ¿Por qué los estilos globales desaparecen?\n00:56:40 - Usando la página especial _app.js en NextJS\n00:59:50 - Usando la composición para reusar el Layout\n01:03:31 - Preguntas y respuestas III\n01:08:40 - La importancia del Server Side Rendering\n01:11:33 - getInitialProps para recuperar datos desde el servidor\n01:17:10 - Usando las serverless functions de NextJS\n01:21:50 - getInitialProps sólo se puede usar en páginas\n01:26:22 - Preguntas y respuestas IV\n01:35:24 - Create-React-App vs NextJS\n\n-~-~~-~~~-~~-~-\n¡No te pierdas mi último vídeo! \"Variables de entorno con archivos ENV y actualizaciones en tiempo real con Firestore\" \nhttps://www.youtube.com/watch?v=8ZA2p1SBssk\n-~-~~-~~~-~~-~-",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/2jxc8DMzt0I/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/2jxc8DMzt0I/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/2jxc8DMzt0I/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/2jxc8DMzt0I/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/2jxc8DMzt0I/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-24T13:51:24Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Xi76ECoMkmJ1qHwNxYKYlRWah0k",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "oCHdFiCgOSE"
+      },
+      "snippet": {
+        "publishedAt": "2020-05-15T13:22:43Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "CSS Grid, Infinite Scroll y Tests en nuestra app de React",
+        "description": "Hoy vamos a seguir con nuestra aplicación de Gifs en React para pasar a usar CSS Grid en nuestras búsquedas. Además, vamos a hacer que nuestra app tenga infinite scroll usando React y le añadiremos algunos tests para ver cómo funcionan.\n\n¡Si te gusta dale LIKE 👍 y SUSCRÍBETE! 👇\nhttps://www.youtube.com/c/midudev?sub_confirmation=1\n\nSEGMENTOS\n00:00 - Presentación\n03:22 - CSS Grid\n06:31 - grid-template\n08:20 - unidad fractions (fr)\n10:00 - utilidad repeat\n11:00 - grid-gap y gap\n18:45 - Usando auto-fit\n20:00 - minmax\n24:40 - Centrando elementos con align-items\n26:05 - Usando masonry experimental con Firefox\n34:30 - Infinite Scroll\n37:50 - Añadir externalRef a useNearScreen\n44:50 - Arreglando el loop infinito en el useEffect\n45:45 - Usando debounce\n51:00 - Añadiendo propiedad once a useNearScreen\n59:00 - ¡Infinite Scroll conseguido!\n01:01:47 - Explicando useCallback de React\n01:14:40 - Testing con react-testing-library.\n01:18:29 - Test básico: que tu app no pete!\n01:28:08 - ¿Por qué la lógica en Javascript puro?\n01:29:12 - ¿React Router vs. React lazy para code splitting?\n01:31:49 - Pruebas unitarias sobre rutas que se cargan async\n01:38:10 - waitForElement en testing-library\n01:40:00 - Testeando eventos y formulario\n01:52:37 - Despedida y agradecimientos\n\nRepositorio de código:\nhttps://github.com/midudev/react-live-coding\n\n#reactjs #frontend #css #cssGrid\n\n-~-~~-~~~-~~-~-\n¡No te pierdas mi último vídeo! \"Variables de entorno con archivos ENV y actualizaciones en tiempo real con Firestore\" \nhttps://www.youtube.com/watch?v=8ZA2p1SBssk\n-~-~~-~~~-~~-~-",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/oCHdFiCgOSE/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/oCHdFiCgOSE/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/oCHdFiCgOSE/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/oCHdFiCgOSE/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/oCHdFiCgOSE/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-05-15T13:22:43Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "h_W7BLe-pK7RJOT8GIeBRpIxzIQ",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "PIPC6kKR6Xw"
+      },
+      "snippet": {
+        "publishedAt": "2019-06-09T06:28:18Z",
+        "channelId": "UC4FHiPgS1KXkUMx3dxBUtPg",
+        "title": "React Hooks: useState fácil",
+        "description": "Mi sitio para más videos, mis cursos y tutoriales: www.nicolas-schurmann.com\nMi setup de desarrollo, video y libros de programación recomendados: https://kit.co/nschurmann\n\nMi música en Spotify: https://spoti.fi/2OdCxP5\nmi música en Apple Music: https://apple.co/3cgI3sm\n\nDiscord: https://discord.gg/SXAeHvrZ6Y\nTwitter: https://twitter.com/_nasch_\nInstagram: https://instagram.com/naschurmann\n\nAfiliados:\nKite es un asistente de autocompletado que te ayuda a programar más rápido.\nDescarga Kite: https://bit.ly/3o78VPK\n\nTe gusta mi teclado? 5% de dcto con cupón HOLAMUNDO al pagar:\nPartes y teclados ensamblados: https://www.littlekeyboards.com/\n\n7% de descuento en hosting Hostinger (cupón HOLAMUNDO)\nhttps://bit.ly/36XPNOp\n\nTodos mis cursos:\n\nCurso gratuito de vim!: https://bit.ly/37w6IVp\n\nPython sin fronteras: https://bit.ly/3iGceuX\nAprende Javascript ES9, HTML, CSS3 y NodeJS desde cero: https://bit.ly/2Xt93gS\nTesting con jest y enzyme https://bit.ly/2SRsiy4\nreact native sin fronteras https://bit.ly/2SwdYMM\nPatrones de diseño en javascript: https://bit.ly/2SuoRyk\nComo implementar SCRUM con XP en tu proyecto o empresa https://bit.ly/39J4OlP\nTDD en nodeJS, guia de test con jest https://bit.ly/2UT22pO\nServerless RESTFul API con NodeJS: guía fácil y definitiva https://bit.ly/37vyOQv\nReact, Redux, Typescript, Firebase: Fullstack Serverless https://bit.ly/38unxRS\nReactJS y redux: experto en frontend en español https://bit.ly/38A5pG0",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/PIPC6kKR6Xw/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/PIPC6kKR6Xw/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/PIPC6kKR6Xw/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/PIPC6kKR6Xw/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/PIPC6kKR6Xw/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "HolaMundo",
+        "liveBroadcastContent": "none",
+        "publishTime": "2019-06-09T06:28:18Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "4HPk8vzrjk-kJRs0V--lWZVF8MU",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "5KvlQDYDZwY"
+      },
+      "snippet": {
+        "publishedAt": "2021-02-11T13:06:54Z",
+        "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+        "title": "React ⚛️: Estado del componente, Renderizado Condicional y Eventos - Bootcamp FullStack Gratuito",
+        "description": "¡Seguimos aprendiendo React! Vemos cómo usar el hook useState para añadir estado a nuestro componente. Cómo hacer un conditional rendering, controlar eventos y algunas buenas prácticas cuando trabajamos con la biblioteca de Frontend.\n\nSuscríbete al canal 🔔\n ► https://www.youtube.com/c/midudev?sub_confirmation=1\n\n00:00 - Introducción de la clase de hoy\n01:56 - ¿Cómo volver a renderizar la app con nuevos datos?\n08:15 - Estado de los componentes. Conociendo useState.\n20:32 - Controlando eventos en React. onClick.\n28:40 - Extraer funciones para manejar eventos\n35:37 - Reglas de los hooks en React\n38:29 - Actualizar state con una función\n43:40 - Si actualizas un estado con el mismo valor, no renderiza de nuevo\n47:00 - Preguntas y respuestas en el chat\n52:27 - Manejando estados complejos con React y useState\n01:07:50 - Evitar tener estados que no necesitas\n01:14:55 - Debuggando aplicación de React\n01:22:45 - Preguntas y respuestas del chat\n01:27:27 - Cómo resetear el state correctamente\n01:35:22 - Últimas preguntas del chat\n\nCómo manejar matrices en el estado, buenas prácticas del State en React, reglas de los hooks, funciones que devuelven funciones y mucho más.\n\n¿Lo quieres ver en directo?\nTodos los domingos a las 8PM (hora Española) en Twitch: https://twitch.tv/midudev\u200b",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/5KvlQDYDZwY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/5KvlQDYDZwY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/5KvlQDYDZwY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/5KvlQDYDZwY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/5KvlQDYDZwY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "midudev",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-02-11T13:06:54Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "hxgoWp85RUdU0u05XIcpMm3ZRKM",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "vFgtwsZVybY"
+      },
+      "snippet": {
+        "publishedAt": "2020-07-07T06:59:59Z",
+        "channelId": "UClHgOGLKtS15VaOrYVA3GtQ",
+        "title": "Crea un Menú Horizontal Responsive con CSS Flexbox Muy Fácil.",
+        "description": "En este vídeo te voy a mostrar cómo poder hacer un Menú Horizontal Responsive con CSS Flexbox, usando un poco de Vanilla JS. Sucríbete para más vídeos como éste. :)\n\n-------------------------------------------------------------------------------------------\nACCESO AL CÓDIGO FUENTE EN MI PATREON: https://www.patreon.com/LexterXPS\nSígueme en Facebook: http://facebook.com/XPSTutoriales\nE - mail: xtremetuts@gmail.com\n\n\nNo olvides dejar tu  Like y compartir para seguir creciendo. :)",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/vFgtwsZVybY/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/vFgtwsZVybY/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/vFgtwsZVybY/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/vFgtwsZVybY/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/vFgtwsZVybY/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "LexterXPS",
+        "liveBroadcastContent": "none",
+        "publishTime": "2020-07-07T06:59:59Z"
+      }
+    },
+    {
+      "kind": "youtube#searchResult",
+      "etag": "Adzbizm4zbeOR1Ei8cgrvdce9Iw",
+      "id": {
+        "kind": "youtube#video",
+        "videoId": "w7ejDZ8SWv8"
+      },
+      "snippet": {
+        "publishedAt": "2021-01-18T18:08:44Z",
+        "channelId": "UC29ju8bIPH5as8OGnQzwJyA",
+        "title": "React JS Crash Course 2021",
+        "description": "Get started with React in this crash course. We will be building a task tracker app and look at components, props, state, hooks, working with an API and more.\n\nCode:\nhttps://github.com/bradtraversy/react-crash-2021\n\nReact & Other Course Links at - https://traversymedia.com\n\n💖  Support The Channel!\nhttp://www.patreon.com/traversymedia\n\nTimestamps:\n0:00 - Intro & Slides\n12:37 - Create a React app\n14:52 - Files & folders\n18:54 - App component & JSX\n22:39 - Expressions in JSX\n23:49 - Creating a component\n27:18 - Component Props\n28:50 - PropTypes\n30:42 - Styling\n34:17 - Button Component\n37:46 - Events\n40:18 - Tasks Component\n41:03 - Create a list with .map()\n43:07 - State & useState Hook\n44:55 - Global state\n46:52 - Task Component\n49:30 - Icons with react-icons\n51:41 - Delete task & prop drilling\n55:50 - Optional message if no tasks\n56:58 - Toggle reminder & conditional styling\n1:03:13 - Add Task Form\n1:06:16 - Form input state (controlled components)\n1:09:18 - Add task submit\n1:14:36 - showAddTask state\n1:15:58 - Button toggle\n1:19:33 - Build for production\n1:21:51 - JSON Server\n1:25:53 - useEffect Hook & Fetch tasks from server\n1:30:13 - Delete task from server\n1:31:51 - Add task to server\n1:35:15 - Toggle reminder on server\n1:39:15 - Routing, footer & about",
+        "thumbnails": {
+          "default": {
+            "url": "https://i.ytimg.com/vi/w7ejDZ8SWv8/default.jpg",
+            "width": 120,
+            "height": 90
+          },
+          "medium": {
+            "url": "https://i.ytimg.com/vi/w7ejDZ8SWv8/mqdefault.jpg",
+            "width": 320,
+            "height": 180
+          },
+          "high": {
+            "url": "https://i.ytimg.com/vi/w7ejDZ8SWv8/hqdefault.jpg",
+            "width": 480,
+            "height": 360
+          },
+          "standard": {
+            "url": "https://i.ytimg.com/vi/w7ejDZ8SWv8/sddefault.jpg",
+            "width": 640,
+            "height": 480
+          },
+          "maxres": {
+            "url": "https://i.ytimg.com/vi/w7ejDZ8SWv8/maxresdefault.jpg",
+            "width": 1280,
+            "height": 720
+          }
+        },
+        "channelTitle": "Traversy Media",
+        "liveBroadcastContent": "none",
+        "publishTime": "2021-01-18T18:08:44Z"
+      }
+    }
+  ]
+}

@@ -6,7 +6,7 @@ import { useSearch } from '../../providers/Search';
 import './Home.styles.css';
 import { useYoutubeApi } from '../../providers/Youtube';
 
-// import listaVideos from '../../mock/react-response.json';
+import listaVideos from '../../mock/react-response.json';
 // import YoutubeSearch from '../../components/Api/Youtube.api';
 
 function HomePage() {
@@ -16,21 +16,19 @@ function HomePage() {
   const [videos, SetVideos] = useState({});
 
   useEffect(() => {
+    // const runAsync = async () => {
+    //   const data = await searchVideos(query);
+    //   SetVideos(data || []);
+    // };
 
-    const runAsync = async () => {
-
-      const data = await searchVideos(query);
-      SetVideos(data || []);
-
-    }
-
-    runAsync();
+    // runAsync();
 
     // YoutubeSearch(query).then((res) => {
     //   if (res.data.items.length < 0) return null;
     //   SetVideos(res.data);
     // });
-    
+
+    SetVideos(listaVideos);
   }, [query, searchVideos]);
 
   return (
