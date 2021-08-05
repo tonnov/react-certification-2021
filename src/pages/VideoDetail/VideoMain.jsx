@@ -95,7 +95,7 @@ const VideoMain = ({ embedId }) => {
   );
 };
 
-YoutubeEmbed.propTypes = {
+VideoMain.propTypes = {
   embedId: PropTypes.string.isRequired,
 };
 
