@@ -100,9 +100,9 @@ const VideoFrame = styled.div`
 
 export const VideoMain = ({ embedId, video }) => {
 
-  const [item] = video.items;
+  if (!video) return null;
   
-  const { snippet, statistics} = item;
+  const { snippet, statistics} = video;
   const publicado = new Date(snippet.publishedAt).toLocaleDateString();
   const vistas = new Intl.NumberFormat('es-MX', {style: 'decimal'}).format(statistics.viewCount);
   var firstLine = snippet.description.split('\n')[0];
