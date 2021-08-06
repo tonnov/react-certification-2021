@@ -1,36 +1,83 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import relatedVideos from '../../mock/related-to.json';
-import infoVideo from '../../mock/single-video.json';
-import VideoRelated from './VideoRelated';
 
-const VideoLayout = styled.div`
+export const VideoLayout = styled.div`
   margin: 0 auto;
   width: 100%;
   height: auto;
-  /* background-color: #addccf; */
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
+  align-items: flex-start;
   padding: 5px;
+
+  @media screen and (max-width: 767px) {
+    flex-direction: column;
+  }
 `;
 
-const VideoContainer = styled.div`
+export const VideoContainer = styled.div`
   flex: 70%;
   padding: 5px;
 
   @media screen and (max-width: 767px) {
-    flex: 100%;
+    /* flex: 100%; */
+    flex: 1;
   }
 `;
 
-const ListVideoRelated = styled.div`
+const VideoTitle = styled.h3`
+  font-weight: 900;
+`;
+
+const VideoDetails = styled.div`
+  display: flex;
+  flex-direction: row;
+  color: #383838;
+  font-size: 10pt;
+  padding: 0 10px;
+  margin: 0;
+`;
+
+const VideoPub = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+`;
+
+const VideoViews = styled.div`
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+`;
+
+const VideoDescription = styled.p`
+  padding: 10px;
+  color: #757575;
+  display: inline-block;
+  word-wrap: break-word;
+  white-space: pre-line;
+  height: auto;
+  /* overflow: hidden;
+  text-overflow: ellipsis; */
+  /* background-color: cadetblue; */
+`;
+
+export const ListVideoRelated = styled.div`
   flex: 30%;
   padding: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px 0;
+  height: 800px;
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   @media screen and (max-width: 767px) {
-    display: none;
+    /* display: none; */
+    flex: 1;
   }
 `;
 
@@ -50,53 +97,39 @@ const VideoFrame = styled.div`
   }
 `;
 
-const VideoMain = ({ embedId }) => {
 
-  const [item] = infoVideo.items;
+export const VideoMain = ({ embedId, video }) => {
+
+  const [item] = video.items;
   
   const { snippet, statistics} = item;
   const publicado = new Date(snippet.publishedAt).toLocaleDateString();
   const vistas = new Intl.NumberFormat('es-MX', {style: 'decimal'}).format(statistics.viewCount);
-
-  const { items: videosRel } = relatedVideos;
+  var firstLine = snippet.description.split('\n')[0];
 
   return (
-    <VideoLayout>
-
-      <VideoContainer>
-      
-        <VideoFrame>
-          <iframe
-            width="640"
-            height="480"
-            src={`https://www.youtube.com/embed/${embedId}`}
-            frameborser="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="Embedded youtube"
-          />
-        </VideoFrame>
-        <h3>{snippet.title}</h3>
-        <div>
-          <span>{`Publicado: ${publicado}`}</span>{`${vistas} Visualizaciones`}<span></span>
-        </div>
-        <p>{snippet.description}</p>
-        
-      </VideoContainer>
-      <ListVideoRelated>
-
-        {videosRel.map((video) => (
-          <VideoRelated key={video.id.videoId} video={video} />
-        ))}
-
-      </ListVideoRelated>
-
-    </VideoLayout>
-  );
-};
+    <>
+      <VideoFrame>
+        <iframe
+          width="640"
+          height="480"
+          src={`https://www.youtube.com/embed/${embedId}`}
+          frameborser="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+          title="Embedded youtube"
+        />
+      </VideoFrame>
+      <VideoTitle>{snippet.title}</VideoTitle>
+      <VideoDetails>
+        <VideoPub>{`Publicado: ${publicado}`}</VideoPub>
+        <VideoViews>{`${vistas} Visualizaciones`}</VideoViews>
+      </VideoDetails>
+      <VideoDescription>{firstLine}</VideoDescription>
+    </>
+  )
+}
 
 VideoMain.propTypes = {
   embedId: PropTypes.string.isRequired,
 };
-
-export default VideoMain;
