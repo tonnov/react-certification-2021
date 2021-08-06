@@ -6,7 +6,7 @@ import { useSearch } from '../../providers/Search';
 import './Home.styles.css';
 import { useYoutubeApi } from '../../providers/Youtube';
 
-import listaVideos from '../../mock/react-response.json';
+// import listaVideos from '../../mock/react-response.json';
 
 function HomePage() {
   const { query } = useSearch();

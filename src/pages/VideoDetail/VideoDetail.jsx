@@ -2,8 +2,8 @@ import React from 'react';
 import { useParams } from 'react-router-dom';
 import { VideoLayout, VideoContainer, ListVideoRelated, VideoMain } from './VideoMain';
 import VideoRelated from './VideoRelated';
-import infoVideo from '../../mock/single-video.json';
-import relatedVideos from '../../mock/related-to.json';
+// import infoVideo from '../../mock/single-video.json';
+// import relatedVideos from '../../mock/related-to.json';
 import { useVideo, useRelatedVideos } from '../../providers/Youtube/Youtube.helper';
 
 const VideoDetail = () => {
