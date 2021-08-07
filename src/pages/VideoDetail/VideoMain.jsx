@@ -12,7 +12,7 @@ export const VideoLayout = styled.div`
   align-items: flex-start;
   padding: 5px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     flex-direction: column;
   }
 `;
@@ -21,9 +21,9 @@ export const VideoContainer = styled.div`
   flex: 70%;
   padding: 5px;
 
-  @media screen and (max-width: 767px) {
-    /* flex: 100%; */
-    flex: 1;
+  @media screen and (max-width: 768px) {
+    flex: 100%;
+    /* flex: 1; */
   }
 `;
 
@@ -75,7 +75,7 @@ export const ListVideoRelated = styled.div`
   overflow-y: scroll;
   overflow-x: hidden;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (max-width: 768px) {
     /* display: none; */
     flex: 1;
   }
@@ -111,7 +111,7 @@ export const VideoMain = ({ embedId, video }) => {
     <>
       <VideoFrame>
         <iframe
-          width="640"
+          width="854"
           height="480"
           src={`https://www.youtube.com/embed/${embedId}`}
           frameborser="0"
