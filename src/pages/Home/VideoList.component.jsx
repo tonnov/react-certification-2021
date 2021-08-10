@@ -8,10 +8,6 @@ const VideoListContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px 15px;
-
-  & a {
-    text-decoration: none;
-  }
 `;
 
 const VideoList = ({ videos = {} }) => {
@@ -22,7 +18,7 @@ const VideoList = ({ videos = {} }) => {
   return (
     <VideoListContainer>
       {items.map((item) => (
-        <VideoItem item={item} key={item.etag} />
+        <VideoItem item={item} key={item.id.videoId} />
       ))}
     </VideoListContainer>
   );

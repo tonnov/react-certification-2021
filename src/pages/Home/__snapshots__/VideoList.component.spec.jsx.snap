@@ -5,7 +5,8 @@ exports[`VideoList component should match snapshot 1`] = `
   className="sc-jSFjdj drHbGR"
 >
   <a
-    href="/video/UCPGzT4wecuWM0BH9mPiulXg"
+    href="/video/undefined"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -33,6 +34,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/nmXMgqjQzls"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -60,6 +62,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/HYyRZiwBWc8"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -87,6 +90,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/Po3VwR_NNGk"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -114,6 +118,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/7PtYNO6g7eI"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -141,6 +146,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/YuW0CE_8i1I"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -168,6 +174,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/CHzlSGRvWPs"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -195,6 +202,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/cjO2fJy8asM"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -222,6 +230,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/zClI9OjgKXM"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -249,6 +258,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/8bz9R61oY5o"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -276,6 +286,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/7dJFraOqcoQ"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -303,6 +314,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/w-Qwc_XJrWc"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -330,6 +342,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/rjir_cHTl5w"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -357,6 +370,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/DcFK1x3NHGY"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -384,6 +398,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/3BzYWAqZgFw"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -411,6 +426,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/3KVFmT-Tp2w"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -438,6 +454,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/aKuPmY2m1Ro"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -465,6 +482,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/24sTHUyWhRM"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -492,6 +510,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/IxGc1gSqB3A"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -519,6 +538,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/NP1gAnbeNno"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -546,6 +566,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/F6Krwu6lUc8"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -573,6 +594,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/RFq7gfvhtCk"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -600,6 +622,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/E1Vq_A3WKK8"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -627,6 +650,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/ZmkslANDz0Q"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
@@ -654,6 +678,7 @@ exports[`VideoList component should match snapshot 1`] = `
   </a>
   <a
     href="/video/Nss3EmTDD3s"
+    onClick={[Function]}
   >
     <div
       className="sc-bdnxRM dSjWoT"
