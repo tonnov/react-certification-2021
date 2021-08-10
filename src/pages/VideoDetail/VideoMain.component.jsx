@@ -70,14 +70,15 @@ export const ListVideoRelated = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: 5px 0;
+  gap: 2px 0;
   height: 800px;
   overflow-y: scroll;
   overflow-x: hidden;
 
   @media screen and (max-width: 768px) {
     /* display: none; */
-    flex: 1;
+    flex: 100%;
+    overflow-y: hidden;
   }
 `;
 

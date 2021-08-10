@@ -2,23 +2,23 @@
 
 exports[`VideoList component should match snapshot 1`] = `
 <div
-  className="sc-jSFjdj biqziF"
+  className="sc-jSFjdj drHbGR"
 >
   <a
-    href="/etag/_PVKwNJf_qw9nukFeRFOtQ837o0"
+    href="/video/UCPGzT4wecuWM0BH9mPiulXg"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT FkKVT"
+        className="sc-gtsrHT Qkqxt"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline
         </h3>
@@ -32,20 +32,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/erqeM78PZDWIBe8qOGHGM2WdSE8"
+    href="/video/nmXMgqjQzls"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT ehAgTo"
+        className="sc-gtsrHT gVEJrq"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Video Tour | Welcome to Wizeline Guadalajara
         </h3>
@@ -59,20 +59,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/7VY0u60YdqamyHOCAufd7r6qTsQ"
+    href="/video/HYyRZiwBWc8"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT dGUdeC"
+        className="sc-gtsrHT fbHbTg"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline Guadalajara | Bringing Silicon Valley to Mexico
         </h3>
@@ -86,20 +86,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/by0t_nrT2TB-IQkQpgSWUVUwpKI"
+    href="/video/Po3VwR_NNGk"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT czQKHm"
+        className="sc-gtsrHT iZMlbc"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline hace sentir a empleados como en casa
         </h3>
@@ -113,20 +113,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/9-Ag8hUNYBLTjuli6eECa5GXV1Y"
+    href="/video/7PtYNO6g7eI"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT gDIKdX"
+        className="sc-gtsrHT bvoxGB"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           We Are Wizeline
         </h3>
@@ -140,20 +140,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/pVQGVs72zHvpgl0ewNKX2DTOH6w"
+    href="/video/YuW0CE_8i1I"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT bwElOh"
+        className="sc-gtsrHT bGRuTT"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline Thrives in Mexico City
         </h3>
@@ -167,20 +167,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/HlSqzTYW4HGFDNAOPCs6nIRXdq8"
+    href="/video/CHzlSGRvWPs"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT gKdUlz"
+        className="sc-gtsrHT cjsOpN"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline
         </h3>
@@ -194,20 +194,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/S1Ewc2IMjGC1VE5mH3AryZ43IPQ"
+    href="/video/cjO2fJy8asM"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT cepRIs"
+        className="sc-gtsrHT ffuYeC"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           A Day in the Life of an Engineering Manager at Wizeline
         </h3>
@@ -221,20 +221,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/jZZv6Ufu43kg1KzFlBOWDVKfPkY"
+    href="/video/zClI9OjgKXM"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT EpbWL"
+        className="sc-gtsrHT dZVSeJ"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline Technical Writing Academy | Featuring Eduardo Ocejo
         </h3>
@@ -248,20 +248,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/z5o2tIUROuWNZU5-1pzMPjoqQC8"
+    href="/video/8bz9R61oY5o"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT gGUGDO"
+        className="sc-gtsrHT dIKHzg"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Silicon Valley en México
         </h3>
@@ -275,20 +275,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/Q4bqsw7kAYe6PV1sh494TQ-UJ8c"
+    href="/video/7dJFraOqcoQ"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT cIbaNx"
+        className="sc-gtsrHT iWwMon"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Why Wizeline? featuring Juan Pablo Villa in Mexico City
         </h3>
@@ -302,20 +302,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/cXSMV8jX2lv1ue3UUnbW3xCmIU4"
+    href="/video/w-Qwc_XJrWc"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT hPGwXe"
+        className="sc-gtsrHT jyOieU"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline&#39;s 2020 Year in Review
         </h3>
@@ -329,20 +329,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/j9q9-dcRhTRDr0MCkJUMKdYt7u8"
+    href="/video/rjir_cHTl5w"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT jfofNf"
+        className="sc-gtsrHT cShjd"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Why Wizeline? featuring Hugo Lopez in Mexico City
         </h3>
@@ -356,20 +356,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/MYfT5K8aZNvalrm2RR_HtylFffc"
+    href="/video/DcFK1x3NHGY"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT hXldfW"
+        className="sc-gtsrHT ODbOs"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Why Wizeline? (We&#39;re Hiring in Mexico!)
         </h3>
@@ -383,20 +383,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/8dssV5QkZWEMmoo4DIq0k27aoIg"
+    href="/video/3BzYWAqZgFw"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT jQJTMT"
+        className="sc-gtsrHT hvxiJx"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Why Wizeline? featuring Oswaldo Herrera in Mexico City
         </h3>
@@ -410,20 +410,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/FMbfPlflDyPx4UgcA42igb97xlk"
+    href="/video/3KVFmT-Tp2w"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT jJQRdL"
+        className="sc-gtsrHT czhVnJ"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Caso de Éxito AWS: Wizeline [Spanish]
         </h3>
@@ -437,20 +437,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/0ww3Jk-j4d4TMsFNL213EhE0gGg"
+    href="/video/aKuPmY2m1Ro"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT egKzVO"
+        className="sc-gtsrHT lhYRVM"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline&#39;s 2019 Year in Review
         </h3>
@@ -464,20 +464,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/8q-ajUMnXZm4gQzfSIiyrG2tA7A"
+    href="/video/24sTHUyWhRM"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT hLOJDv"
+        className="sc-gtsrHT bkgiqV"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           [1 of 2] Wizeline CEO shares career lessons from Google
         </h3>
@@ -491,20 +491,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/4QA9Eisz9-HncD9EENUm0LV7hXI"
+    href="/video/IxGc1gSqB3A"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT ioZtBX"
+        className="sc-gtsrHT kBNfYJ"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline Data Engineering featuring Tania Reyes
         </h3>
@@ -518,20 +518,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/5_OftJlDpcfykudIpO7nn92Pq6s"
+    href="/video/NP1gAnbeNno"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT guhTyZ"
+        className="sc-gtsrHT efCEcD"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Wizeline Querétaro | Mexico&#39;s New Knowledge Economy (We&#39;re hiring!)
         </h3>
@@ -545,20 +545,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/0XmhUGwmJNRilJR1S6VgOmdO9ho"
+    href="/video/F6Krwu6lUc8"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT cwRgEB"
+        className="sc-gtsrHT eevLbr"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Miriam Godinez | Women in Leadership at Wizeline
         </h3>
@@ -572,20 +572,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/mM9qAwvNhFKGUv6mCIamuWVo0NE"
+    href="/video/RFq7gfvhtCk"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT frGFeD"
+        className="sc-gtsrHT dCoLlp"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Welcome Back to Wizeline Vietnam | Extended Version
         </h3>
@@ -599,20 +599,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/sVz5aNJZHehOf7qJCTLOLh1V40M"
+    href="/video/E1Vq_A3WKK8"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT cXxyHj"
+        className="sc-gtsrHT eJWRUZ"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           How does Wizeline work?
         </h3>
@@ -626,20 +626,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/kiG9Z-CXE-mbZVBeom4qLurWb4w"
+    href="/video/ZmkslANDz0Q"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT euAYNZ"
+        className="sc-gtsrHT juoFrv"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           12 Wishes from Wizeline | Happy Holidays 2019
         </h3>
@@ -653,20 +653,20 @@ exports[`VideoList component should match snapshot 1`] = `
     </div>
   </a>
   <a
-    href="/etag/bzZZYb96wT_IQHNp5sXm3VDUbXA"
+    href="/video/Nss3EmTDD3s"
   >
     <div
-      className="sc-bdnxRM ezpyKv"
+      className="sc-bdnxRM dSjWoT"
     >
       <div
-        className="sc-gtsrHT jakyLj"
+        className="sc-gtsrHT hgAXhp"
         role="img"
       />
       <div
-        className="sc-dlnjwi kgZjlP"
+        className="sc-dlnjwi ghopxz"
       >
         <h3
-          className="sc-hKFxyN ggnpgc"
+          className="sc-hKFxyN dwRALg"
         >
           Why Wizeline?
         </h3>

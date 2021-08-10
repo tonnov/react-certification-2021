@@ -12,9 +12,12 @@ import {
   SearchContainer,
   SearchInput,
   IconContainer,
+  ModalWrapper,
+  LinkList,
+  LinkItemNav
 } from './Navbar.Elements';
 
-import './Navbar.styles.css';
+// import './Navbar.styles.css';
 
 import { useSearch } from '../../providers/Search';
 import { useDebounce } from '../../utils/hooks/useDebounce';
@@ -24,7 +27,7 @@ function Navbar() {
   const { query, setQuery } = useSearch();
   const [localQuery, setLocalQuery] = useState(query);
 
-  const debounceValue = useDebounce(localQuery, 500);
+  const debounceValue = useDebounce(localQuery, 800);
 
   useEffect(() => {
     if (!debounceValue) return;
@@ -49,13 +52,13 @@ function Navbar() {
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
           </IconButton>
-          <SideBar className={sidebar ? 'sidebar active' : null} onClick={showSidebar}>
-            <ul className="nav-menu-items">
-              <li className="nav-text">
-                <a href="/">Home</a>
-              </li>
-            </ul>
-          </SideBar>
+          <ModalWrapper className={sidebar ? 'sidebar-active' : null} onClick={showSidebar}>
+            <SideBar className={sidebar ? 'sidebar-active' : null} onClick={showSidebar}>
+              <LinkList>
+                <LinkItemNav item={{route: '/', name: 'Home'}} />
+              </LinkList>
+            </SideBar>
+          </ModalWrapper>
           <SearchContainer>
             <IconContainer>
               <SearchIcon />

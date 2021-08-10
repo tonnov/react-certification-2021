@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 const VideoContainer = styled.div`
   width: 350px;
@@ -46,7 +46,7 @@ const VideoItem = ({ item }) => {
   const videoId = item.id.videoId || item.id.channelId;
 
   return (
-    <Link to={`/video/${videoId}`}>
+    <a href={`/video/${videoId}`}>
       <VideoContainer>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>
@@ -54,7 +54,7 @@ const VideoItem = ({ item }) => {
           <VideoDescription role="note">{description}</VideoDescription>
         </VideoText>
       </VideoContainer>
-    </Link>
+    </a>
   );
 };
 

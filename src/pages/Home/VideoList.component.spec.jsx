@@ -18,4 +18,12 @@ describe('VideoList component', () => {
 
     expect(listItems.length).toBeGreaterThan(0);
   });
+
+  it('should match a list of 25 videos', () => {
+    render(<VideoList videos={videos} />);
+
+    const listItems = screen.getAllByRole('link');
+
+    expect(listItems.length).toBe(25);
+  });
 });

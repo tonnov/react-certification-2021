@@ -4,15 +4,24 @@ import { Link } from 'react-router-dom';
 
 const LinkVideoRel = styled(Link)`
   text-decoration: none;
-`;
-const VideoRelContainer = styled.div`
-  background-color: white;
-  height: 100px;
   width: 100%;
+  border-bottom: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
+
+  & :hover{
+      background-color: #edf1f7;
+      transition: all 0.3s ease-out;
+    }
+`;
+
+const VideoRelContainer = styled.div`
+  height: 92px;
+  /* min-width: 100%; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  border-bottom: 1px solid #ccc;
+  
   margin: 1px;
   padding: 1px;
 `;
@@ -22,14 +31,15 @@ const RelThumbnail = styled.img`
   padding: 1px;
 
   @media screen and (max-width: 768px) {
-    height: 80px;
+    height: 95px;
   }
 `;
 
 const RelText = styled.div`
   flex: auto;
-  height: 100%;
+  height: auto;
   max-width: 100%;
+  min-width: 50px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -38,7 +48,7 @@ const RelText = styled.div`
   padding-left: 2px;
 
   @media screen and (max-width: 768px) {
-    max-width: 80%;
+    /* max-width: 80%; */
   }
 `;
 
@@ -48,8 +58,9 @@ const RelTitle = styled.span`
   max-width: 90%;
   padding: 2px;
   font-size: 1em;
-  display: inline-block;
+  /* display: block; */
   color: #4f4f4f;
+  /* box-sizing: content-box; */
 
   line-height: 20px;
   display: -webkit-box;
@@ -58,8 +69,8 @@ const RelTitle = styled.span`
 
   /* word-wrap: break-word; */
   
-  white-space: normal !important;
-	word-break: normal;
+  white-space: normal;
+	word-break: break-word;
   /* overflow-wrap: break-word; */
   overflow: hidden;
   text-overflow: ellipsis;

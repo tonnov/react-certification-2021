@@ -2,20 +2,20 @@
 
 exports[`Video Item Component should match snapshot 1`] = `
 <a
-  href="/etag/_PVKwNJf_qw9nukFeRFOtQ837o0"
+  href="/video/UCPGzT4wecuWM0BH9mPiulXg"
 >
   <div
-    className="sc-bdnxRM ezpyKv"
+    className="sc-bdnxRM dSjWoT"
   >
     <div
-      className="sc-gtsrHT FkKVT"
+      className="sc-gtsrHT Qkqxt"
       role="img"
     />
     <div
-      className="sc-dlnjwi kgZjlP"
+      className="sc-dlnjwi ghopxz"
     >
       <h3
-        className="sc-hKFxyN ggnpgc"
+        className="sc-hKFxyN dwRALg"
       >
         Wizeline
       </h3>

@@ -2,10 +2,10 @@
 
 exports[`Navbar Component should match snapshot 1`] = `
 <nav
-  className="sc-bdnxRM jvnRaH"
+  className="sc-bdnxRM jhGmdS"
 >
   <div
-    className="sc-gtsrHT ifozem"
+    className="sc-gtsrHT bfKaBC"
   >
     <button
       aria-label="open drawer"
@@ -41,26 +41,32 @@ exports[`Navbar Component should match snapshot 1`] = `
         </svg>
       </span>
     </button>
-    <nav
-      className="sc-pNWdM gkuvOo"
+    <div
+      className="sc-fujyAs ctKQWQ"
       onClick={[Function]}
     >
-      <ul
-        className="nav-menu-items"
+      <nav
+        className="sc-pNWdM cjYudH"
+        onClick={[Function]}
       >
-        <li
-          className="nav-text"
+        <ul
+          className="sc-jrsJWt gyfqor"
         >
-          <a
-            href="/"
+          <li
+            className="sc-kEqXSa fsCpBf"
           >
-            Home
-          </a>
-        </li>
-      </ul>
-    </nav>
+            <a
+              className="sc-iqAclL gnEzMY"
+              href="/"
+            >
+              Home
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
     <div
-      className="sc-eCApnc lNglJ"
+      className="sc-eCApnc ktiLQa"
     >
       <span
         className="sc-gKAaRy iXzfoV"

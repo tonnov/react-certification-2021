@@ -1,1 +1,1 @@
-export { default, useSearch } from './Search.provider';
+export { default, useSearch, SearchContext } from './Search.provider';

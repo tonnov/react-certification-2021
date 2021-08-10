@@ -2,14 +2,35 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import Navbar from './Navbar.component';
+import { SearchContext } from '../../providers/Search';
+
+const RenderNavWithSearchProvider = (snap) => {
+  const query = 'wizeline';
+  const setQuery = jest.fn();
+  const isSnap = snap || false;
+
+  const component = (
+    <SearchContext.Provider value={{ query, setQuery }}>
+      <Navbar />
+    </SearchContext.Provider>
+  );
+
+  if (isSnap) {
+    return renderer.create(component);
+  }
+
+  return render(component);
+}
+
 
 describe('Navbar Component', () => {
   beforeEach(() => {
-    render(<Navbar />);
+    RenderNavWithSearchProvider();
   });
 
   it('should match snapshot', () => {
-    const snap = renderer.create(<Navbar />);
+    // const snap = renderer.create(<Navbar />);
+    const snap = RenderNavWithSearchProvider(true);
 
     expect(snap.toJSON()).toMatchSnapshot();
   });

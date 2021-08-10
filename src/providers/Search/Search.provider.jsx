@@ -1,6 +1,6 @@
 import React, { useContext, useState } from 'react';
 
-const SearchContext = React.createContext();
+export const SearchContext = React.createContext(null);
 
 export const useSearch = () => {
   const context = useContext(SearchContext);
