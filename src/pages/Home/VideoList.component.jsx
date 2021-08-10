@@ -17,9 +17,12 @@ const VideoList = ({ videos = {} }) => {
 
   return (
     <VideoListContainer>
-      {items.map((item) => (
-        <VideoItem item={item} key={item.id.videoId} />
-      ))}
+      {items.map((item) => 
+      // { console.log(item.id.videoId)}
+      (
+        <VideoItem item={item} key={item.etag} />
+      )
+      )}
     </VideoListContainer>
   );
 };

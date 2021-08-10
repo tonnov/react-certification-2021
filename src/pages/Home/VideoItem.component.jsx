@@ -1,8 +1,17 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
-const LinkVideo = styled(Link)`
+// const LinkVideo = styled(Link)`
+//   text-decoration: none;
+
+//   & :hover {
+//     background-color: #f1f2f3;
+//     transition: all 0.3s ease-out;
+//   }
+// `;
+
+const LinkVideo = styled.a`
   text-decoration: none;
 
   & :hover {
@@ -55,7 +64,7 @@ const VideoItem = ({ item }) => {
   const videoId = item.id.videoId;
 
   return (
-    <LinkVideo to={`/video/${videoId}`}>
+    <LinkVideo href={`/video/${videoId}`}>
       <VideoContainer>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>
