@@ -1,13 +1,17 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { VideoLayout, VideoContainer, ListVideoRelated, VideoMain } from './VideoMain.component';
+import {
+  VideoLayout,
+  VideoContainer,
+  ListVideoRelated,
+  VideoMain,
+} from './VideoMain.component';
 import VideoRelated from './VideoRelated.component';
 // import infoVideo from '../../mock/single-video.json';
 // import relatedVideos from '../../mock/related-to.json';
 import { useVideo, useRelatedVideos } from '../../providers/Youtube/Youtube.helper';
 
 const VideoDetail = () => {
-
   const { id } = useParams();
 
   const selVideo = useVideo(id);
@@ -16,21 +20,17 @@ const VideoDetail = () => {
   // const [selVideo] = infoVideo.items;
   // const { items: relVideos } = relatedVideos;
 
-
   return (
-    
-      <VideoLayout>
-        <VideoContainer>
-          <VideoMain embedId={id} video={selVideo} />
-        </VideoContainer>
-        <ListVideoRelated>
-          {relVideos && relVideos.map((vid) => (
-            <VideoRelated key={vid.id.videoId} video={vid} />
-          ))}
-        </ListVideoRelated>
-      </VideoLayout>
-    
-  )
+    <VideoLayout>
+      <VideoContainer>
+        <VideoMain embedId={id} video={selVideo} />
+      </VideoContainer>
+      <ListVideoRelated>
+        {relVideos &&
+          relVideos.map((vid) => <VideoRelated key={vid.id.videoId} video={vid} />)}
+      </ListVideoRelated>
+    </VideoLayout>
+  );
 };
 
 export default VideoDetail;

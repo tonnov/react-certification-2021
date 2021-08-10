@@ -154,7 +154,7 @@ export const ModalWrapper = styled.div`
   display: none;
   /* align-items: baseline; */
 
-  &.sidebar-active{
+  &.sidebar-active {
     display: flex;
     transition: 850ms;
   }
@@ -173,12 +173,11 @@ export const SideBar = styled.nav`
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
   z-index: 1050;
 
-  &.sidebar-active{
+  &.sidebar-active {
     left: 0;
     transition: 350ms;
   }
 `;
-
 
 export const LinkList = styled.ul`
   width: 100%;
@@ -210,13 +209,10 @@ const LinkNav = styled.a`
   }
 `;
 
-export const LinkItemNav = ({item}) => {
-
+export const LinkItemNav = ({ item }) => {
   return (
     <LinkItem>
-      <LinkNav href={item.route}>
-        {item.name}
-      </LinkNav>
+      <LinkNav href={item.route}>{item.name}</LinkNav>
     </LinkItem>
-  )
-}
+  );
+};

@@ -14,7 +14,7 @@ import {
   IconContainer,
   ModalWrapper,
   LinkList,
-  LinkItemNav
+  LinkItemNav,
 } from './Navbar.Elements';
 
 // import './Navbar.styles.css';
@@ -52,10 +52,13 @@ function Navbar() {
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
           </IconButton>
-          <ModalWrapper className={sidebar ? 'sidebar-active' : null} onClick={showSidebar}>
+          <ModalWrapper
+            className={sidebar ? 'sidebar-active' : null}
+            onClick={showSidebar}
+          >
             <SideBar className={sidebar ? 'sidebar-active' : null} onClick={showSidebar}>
               <LinkList>
-                <LinkItemNav item={{route: '/', name: 'Home'}} />
+                <LinkItemNav item={{ route: '/', name: 'Home' }} />
               </LinkList>
             </SideBar>
           </ModalWrapper>

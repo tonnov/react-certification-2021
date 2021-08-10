@@ -20,8 +20,7 @@ const RenderNavWithSearchProvider = (snap) => {
   }
 
   return render(component);
-}
-
+};
 
 describe('Navbar Component', () => {
   beforeEach(() => {

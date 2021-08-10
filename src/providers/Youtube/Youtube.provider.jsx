@@ -34,7 +34,6 @@ export const YouTubeApiProvider = ({ children }) => {
   }, []);
 
   const getVideo = useCallback(async (videoId) => {
-    
     const resp = {};
 
     try {
@@ -48,7 +47,6 @@ export const YouTubeApiProvider = ({ children }) => {
       }
 
       return resp;
-
     } catch (err) {
       return null;
     }

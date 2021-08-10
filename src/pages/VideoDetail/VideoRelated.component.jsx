@@ -9,10 +9,10 @@ const LinkVideoRel = styled(Link)`
   margin: 0;
   padding: 0;
 
-  & :hover{
-      background-color: #edf1f7;
-      transition: all 0.3s ease-out;
-    }
+  & :hover {
+    background-color: #edf1f7;
+    transition: all 0.3s ease-out;
+  }
 `;
 
 const VideoRelContainer = styled.div`
@@ -21,7 +21,7 @@ const VideoRelContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  
+
   margin: 1px;
   padding: 1px;
 `;
@@ -68,13 +68,12 @@ const RelTitle = styled.span`
   -webkit-box-orient: vertical;
 
   /* word-wrap: break-word; */
-  
+
   white-space: normal;
-	word-break: break-word;
+  word-break: break-word;
   /* overflow-wrap: break-word; */
   overflow: hidden;
   text-overflow: ellipsis;
-  
 `;
 
 const RelAuthor = styled.span`
@@ -94,27 +93,24 @@ const RelAuthor = styled.span`
   text-overflow: ellipsis;
 `;
 
-const VideoRelated = ({video}) => {
+const VideoRelated = ({ video }) => {
+  if (!video.snippet) return null;
 
-    if(!video.snippet) return null;
+  const { thumbnails, title, channelTitle } = video.snippet;
+  const { videoId } = video.id;
+  // console.log(videoId);
 
-    const { thumbnails, title, channelTitle} = video.snippet;
-    const { videoId } = video.id;
-    // console.log(videoId);
-    
-    return (
-      <LinkVideoRel to={`/video/${videoId}`} >
-        <VideoRelContainer >
-            <RelThumbnail src={thumbnails.medium.url} />
-            <RelText>
-                <RelTitle>{title}</RelTitle>
-                <RelAuthor>{channelTitle}</RelAuthor>
-            </RelText>
-        </VideoRelContainer>
-      </LinkVideoRel>
-
-    )
-    
-}
+  return (
+    <LinkVideoRel to={`/video/${videoId}`}>
+      <VideoRelContainer>
+        <RelThumbnail src={thumbnails.medium.url} />
+        <RelText>
+          <RelTitle>{title}</RelTitle>
+          <RelAuthor>{channelTitle}</RelAuthor>
+        </RelText>
+      </VideoRelContainer>
+    </LinkVideoRel>
+  );
+};
 
 export default VideoRelated;

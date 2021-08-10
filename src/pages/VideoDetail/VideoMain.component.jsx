@@ -98,15 +98,15 @@ const VideoFrame = styled.div`
   }
 `;
 
-
 export const VideoMain = ({ embedId, video }) => {
-
   if (!video) return null;
-  
-  const { snippet, statistics} = video;
+
+  const { snippet, statistics } = video;
   const publicado = new Date(snippet.publishedAt).toLocaleDateString();
-  const vistas = new Intl.NumberFormat('es-MX', {style: 'decimal'}).format(statistics.viewCount);
-  var firstLine = snippet.description.split('\n')[0];
+  const vistas = new Intl.NumberFormat('es-MX', { style: 'decimal' }).format(
+    statistics.viewCount
+  );
+  const firstLine = snippet.description.split('\n')[0];
 
   return (
     <>
@@ -128,8 +128,8 @@ export const VideoMain = ({ embedId, video }) => {
       </VideoDetails>
       <VideoDescription>{firstLine}</VideoDescription>
     </>
-  )
-}
+  );
+};
 
 VideoMain.propTypes = {
   embedId: PropTypes.string.isRequired,
