@@ -4,9 +4,8 @@ exports[`VideoList component should match snapshot 1`] = `
 <div
   className="sc-gKAaRy cTjvxd"
 >
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/undefined"
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -31,10 +30,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/nmXMgqjQzls"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -59,10 +57,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/HYyRZiwBWc8"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -87,10 +84,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/Po3VwR_NNGk"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -115,10 +111,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/7PtYNO6g7eI"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -143,10 +138,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/YuW0CE_8i1I"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -171,10 +165,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/CHzlSGRvWPs"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -199,10 +192,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/cjO2fJy8asM"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -227,10 +219,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/zClI9OjgKXM"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -255,10 +246,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/8bz9R61oY5o"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -283,10 +273,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/7dJFraOqcoQ"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -311,10 +300,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/w-Qwc_XJrWc"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -339,10 +327,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/rjir_cHTl5w"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -367,10 +354,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/DcFK1x3NHGY"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -395,10 +381,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/3BzYWAqZgFw"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -423,10 +408,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/3KVFmT-Tp2w"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -451,10 +435,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/aKuPmY2m1Ro"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -479,10 +462,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/24sTHUyWhRM"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -507,10 +489,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/IxGc1gSqB3A"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -535,10 +516,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/NP1gAnbeNno"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -563,10 +543,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/F6Krwu6lUc8"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -591,10 +570,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/RFq7gfvhtCk"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -619,10 +597,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/E1Vq_A3WKK8"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -647,10 +624,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/ZmkslANDz0Q"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -675,10 +651,9 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
-  <a
-    className="sc-bdnxRM gYqsOu"
-    href="/video/Nss3EmTDD3s"
+  </div>
+  <div
+    role="link"
   >
     <div
       className="sc-gtsrHT NaRnq"
@@ -703,6 +678,6 @@ exports[`VideoList component should match snapshot 1`] = `
         </p>
       </div>
     </div>
-  </a>
+  </div>
 </div>
 `;

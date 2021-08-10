@@ -1,9 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Video Item Component should match snapshot 1`] = `
-<a
-  className="sc-bdnxRM gYqsOu"
-  href="/video/undefined"
+<div
+  role="link"
 >
   <div
     className="sc-gtsrHT NaRnq"
@@ -28,5 +27,5 @@ exports[`Video Item Component should match snapshot 1`] = `
       </p>
     </div>
   </div>
-</a>
+</div>
 `;

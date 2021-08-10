@@ -12,6 +12,12 @@ import videos from '../../mock/youtube-videos-mock.json';
 
 // })
 
+jest.mock('react-router-dom', () => {
+  return {
+    Link: jest.fn(({ children }) => <div role="link">{children}</div>),
+  };
+});
+
 describe('Video Item Component', () => {
   const item = videos.items[0];
 
