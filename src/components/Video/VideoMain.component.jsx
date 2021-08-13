@@ -106,7 +106,7 @@ export const VideoMain = ({ embedId, video }) => {
   const vistas = new Intl.NumberFormat('es-MX', { style: 'decimal' }).format(
     statistics.viewCount
   );
-  const firstLine = snippet.description.split('\n')[0];
+  const [firstLine] = snippet.description.split('\n');
 
   return (
     <>
@@ -119,6 +119,7 @@ export const VideoMain = ({ embedId, video }) => {
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
           title="Embedded youtube"
+          data-testid="iframe"
         />
       </VideoFrame>
       <VideoTitle>{snippet.title}</VideoTitle>

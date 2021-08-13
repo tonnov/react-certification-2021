@@ -102,10 +102,10 @@ const VideoRelated = ({ video }) => {
 
   return (
     <LinkVideoRel to={`/video/${videoId}`}>
-      <VideoRelContainer>
-        <RelThumbnail src={thumbnails.medium.url} />
+      <VideoRelContainer role="listitem">
+        <RelThumbnail src={thumbnails.medium.url} role="img" />
         <RelText>
-          <RelTitle>{title}</RelTitle>
+          <RelTitle role="note">{title}</RelTitle>
           <RelAuthor>{channelTitle}</RelAuthor>
         </RelText>
       </VideoRelContainer>

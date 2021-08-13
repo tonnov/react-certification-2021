@@ -5,8 +5,8 @@ import {
   VideoContainer,
   ListVideoRelated,
   VideoMain,
-} from './VideoMain.component';
-import VideoRelated from './VideoRelated.component';
+} from '../../components/Video/VideoMain.component';
+import VideoRelated from '../../components/Video/VideoRelated.component';
 // import infoVideo from '../../mock/single-video.json';
 // import relatedVideos from '../../mock/related-to.json';
 import { useVideo, useRelatedVideos } from '../../providers/Youtube/Youtube.helper';

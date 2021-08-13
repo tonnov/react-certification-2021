@@ -16,6 +16,7 @@ import {
   LinkList,
   LinkItemNav,
 } from './Navbar.Elements';
+import { useHistory } from "react-router-dom";
 
 // import './Navbar.styles.css';
 
@@ -23,17 +24,20 @@ import { useSearch } from '../../providers/Search';
 import { useDebounce } from '../../utils/hooks/useDebounce';
 
 function Navbar() {
+  const history = useHistory();
   const [sidebar, setSidebar] = useState(false);
   const { query, setQuery } = useSearch();
   const [localQuery, setLocalQuery] = useState(query);
 
-  const debounceValue = useDebounce(localQuery, 800);
+  const debounceValue = useDebounce(localQuery, 700);
 
   useEffect(() => {
     if (!debounceValue) return;
 
     setQuery(debounceValue);
-  }, [debounceValue, setQuery]);
+    history?.push('/');
+
+  }, [debounceValue, setQuery, history]);
 
   // const [themeMode, setThemeMode] = useState(false);
 

@@ -1,0 +1,33 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoRelated component should match snapshot 1`] = `
+<div
+  role="link"
+>
+  <div
+    className="sc-gtsrHT fCeESP"
+    role="listitem"
+  >
+    <img
+      className="sc-dlnjwi ieKdUs"
+      role="img"
+      src="https://i.ytimg.com/vi/T_j60n1zgu0/mqdefault.jpg"
+    />
+    <div
+      className="sc-hKFxyN bhYAoB"
+    >
+      <span
+        className="sc-eCApnc jOcfdZ"
+        role="note"
+      >
+        Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)
+      </span>
+      <span
+        className="sc-jSFjdj gVyIlH"
+      >
+        midudev
+      </span>
+    </div>
+  </div>
+</div>
+`;

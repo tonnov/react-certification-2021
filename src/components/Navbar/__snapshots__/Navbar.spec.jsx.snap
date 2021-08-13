@@ -42,11 +42,11 @@ exports[`Navbar Component should match snapshot 1`] = `
       </span>
     </button>
     <div
-      className="sc-fujyAs ctKQWQ"
+      className="sc-fujyAs bXHYqQ"
       onClick={[Function]}
     >
       <nav
-        className="sc-pNWdM cjYudH"
+        className="sc-pNWdM jAavLj"
         onClick={[Function]}
       >
         <ul

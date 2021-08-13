@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 // import { useAuth } from '../../providers/Auth';
 import VideoList from './VideoList.component';
 import { useSearch } from '../../providers/Search';
-import './Home.styles.css';
 import { useYoutubeApi } from '../../providers/Youtube';
+import { Home, HomeTitle } from './Home.styled';
 
 // import listaVideos from '../../mock/react-response.json';
 
@@ -26,10 +26,10 @@ function HomePage() {
   }, [query, searchVideos]);
 
   return (
-    <section className="homepage">
-      <h1>Welcome to the Challenge!</h1>
+    <Home>
+      <HomeTitle>Welcome to the Challenge!</HomeTitle>
       <VideoList videos={videos} />
-    </section>
+    </Home>
   );
 }
 

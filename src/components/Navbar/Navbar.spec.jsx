@@ -1,6 +1,6 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
-import { render, screen } from '@testing-library/react';
+import { render, screen, fireEvent } from '@testing-library/react';
 import Navbar from './Navbar.component';
 import { SearchContext } from '../../providers/Search';
 
@@ -57,4 +57,19 @@ describe('Navbar Component', () => {
 
     expect(component).toBeInTheDocument();
   });
+
+
+  it('Input should change should not be empty', () => {
+    const searchBox = screen.getByRole('textbox');
+    expect(searchBox.value).not.toBe('');
+  });
+  
+
+  it('Input should change query value', () => {
+    const searchBox = screen.getByRole('textbox');
+    const preValue = searchBox.value;
+    fireEvent.change(searchBox,{target: { value: `${preValue} Rocks!`}});
+    expect(searchBox.value).toBe('wizeline Rocks!');
+  });
+
 });
