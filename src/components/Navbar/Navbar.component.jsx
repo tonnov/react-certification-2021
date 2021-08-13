@@ -35,7 +35,7 @@ function Navbar() {
     if (!debounceValue) return;
 
     setQuery(debounceValue);
-    history?.push('/');
+    history && history.push('/');
 
   }, [debounceValue, setQuery, history]);
 

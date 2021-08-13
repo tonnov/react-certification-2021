@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Navbar from './Navbar.component';
 import { SearchContext } from '../../providers/Search';
+import { useDebounce } from '../../utils/hooks/useDebounce';
 
 const RenderNavWithSearchProvider = (snap) => {
   const query = 'wizeline';
@@ -69,7 +70,15 @@ describe('Navbar Component', () => {
     const searchBox = screen.getByRole('textbox');
     const preValue = searchBox.value;
     fireEvent.change(searchBox,{target: { value: `${preValue} Rocks!`}});
+
+    // const spyChangeValue = jest.spyOn(Navbar,"changeLocalQuery");
+    // jest.spyOn(Navbar, 'changeLocalQuery').mockImplementation((e) => {
+    //   return e;
+    // })
+    // const spyChangeValue = jest.spyOn(navBar);
+    
     expect(searchBox.value).toBe('wizeline Rocks!');
+    // expect(spyChangeValue).toHaveBeenCalled();
   });
 
 });
