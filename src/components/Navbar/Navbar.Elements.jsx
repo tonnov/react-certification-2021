@@ -156,11 +156,11 @@ export const ModalWrapper = styled.div`
 
   &.sidebar-active {
     display: flex;
-    transition: 850ms;
+    transition: 650ms;
   }
 `;
 
-export const SideBar = styled.nav`
+export const SideBar = styled.div`
   width: 250px;
   height: 100vh;
   display: flex;
@@ -175,9 +175,10 @@ export const SideBar = styled.nav`
 
   &.sidebar-active {
     left: 0;
-    transition: 350ms;
+    transition: 650ms;
   }
 `;
+
 
 export const LinkList = styled.ul`
   width: 100%;
@@ -208,6 +209,7 @@ const LinkNav = styled.a`
     background-color: #e0e0e0;
   }
 `;
+
 
 export const LinkItemNav = ({ item }) => {
   return (

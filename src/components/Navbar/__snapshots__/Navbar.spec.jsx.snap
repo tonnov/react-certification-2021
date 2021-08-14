@@ -42,12 +42,14 @@ exports[`Navbar Component should match snapshot 1`] = `
       </span>
     </button>
     <div
-      className="sc-fujyAs bXHYqQ"
+      className="sc-fujyAs ceCVVi"
       onClick={[Function]}
     >
-      <nav
-        className="sc-pNWdM jAavLj"
+      <div
+        aria-label="sidebar"
+        className="sc-pNWdM eQpdju"
         onClick={[Function]}
+        role="menu"
       >
         <ul
           className="sc-jrsJWt gyfqor"
@@ -63,7 +65,7 @@ exports[`Navbar Component should match snapshot 1`] = `
             </a>
           </li>
         </ul>
-      </nav>
+      </div>
     </div>
     <div
       className="sc-eCApnc ktiLQa"
@@ -142,6 +144,7 @@ exports[`Navbar Component should match snapshot 1`] = `
       </span>
     </label>
     <button
+      aria-label="user"
       className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
       disabled={false}
       onBlur={[Function]}

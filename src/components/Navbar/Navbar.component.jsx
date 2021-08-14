@@ -60,7 +60,7 @@ function Navbar() {
             className={sidebar ? 'sidebar-active' : null}
             onClick={showSidebar}
           >
-            <SideBar className={sidebar ? 'sidebar-active' : null} onClick={showSidebar}>
+            <SideBar className={sidebar ? 'sidebar-active' : null} onClick={showSidebar} role="menu" aria-label="sidebar">
               <LinkList>
                 <LinkItemNav item={{ route: '/', name: 'Home' }} />
               </LinkList>
@@ -90,7 +90,7 @@ function Navbar() {
             }
             label="Dark mode"
           />
-          <IconButton color="inherit">
+          <IconButton color="inherit" aria-label="user">
             <UserAvatar />
           </IconButton>
         </NavRight>

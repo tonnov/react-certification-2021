@@ -3,7 +3,7 @@ import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Navbar from './Navbar.component';
 import { SearchContext } from '../../providers/Search';
-import { useDebounce } from '../../utils/hooks/useDebounce';
+// import { useDebounce } from '../../utils/hooks/useDebounce';
 
 const RenderNavWithSearchProvider = (snap) => {
   const query = 'wizeline';
@@ -22,6 +22,7 @@ const RenderNavWithSearchProvider = (snap) => {
 
   return render(component);
 };
+
 
 describe('Navbar Component', () => {
   beforeEach(() => {
@@ -61,24 +62,37 @@ describe('Navbar Component', () => {
 
 
   it('Input should change should not be empty', () => {
-    const searchBox = screen.getByRole('textbox');
+    const searchBox = screen.getByRole('textbox', {name: 'search'});
     expect(searchBox.value).not.toBe('');
   });
   
 
   it('Input should change query value', () => {
-    const searchBox = screen.getByRole('textbox');
+    const searchBox = screen.getByRole('textbox', {name: 'search'});
     const preValue = searchBox.value;
     fireEvent.change(searchBox,{target: { value: `${preValue} Rocks!`}});
+    expect(searchBox.value).toBe('wizeline Rocks!');
+  });
 
-    // const spyChangeValue = jest.spyOn(Navbar,"changeLocalQuery");
+
+
+  // it('Spying Navbar', () => {
+
+    // const spyChangeValue = jest.spyOn(Navbar, 'changeLocalQuery');
     // jest.spyOn(Navbar, 'changeLocalQuery').mockImplementation((e) => {
     //   return e;
     // })
-    // const spyChangeValue = jest.spyOn(navBar);
-    
-    expect(searchBox.value).toBe('wizeline Rocks!');
+
     // expect(spyChangeValue).toHaveBeenCalled();
-  });
+
+    // spyChangeValue.mockRestore();
+  // });
+
+  it('check if sidebar works', () => {
+    const openMenu = screen.getByRole('button', { name: 'open drawer'});
+    fireEvent.click(openMenu);
+    const sideBar = screen.getByLabelText('sidebar');
+    expect(sideBar).toHaveClass('sidebar-active');
+  })
 
 });
