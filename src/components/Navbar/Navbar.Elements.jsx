@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-
 import PersonIcon from '@material-ui/icons/Person';
 
 export const Nav = styled.nav`
@@ -74,11 +73,11 @@ export const SearchContainer = styled.div`
   border-radius: 4px;
   display: flex;
   align-items: center;
-
   padding-left: 5px;
-  transition: all 0.2s ease;
+  
 
   &:hover {
+    transition: all 0.2s ease;
     background-color: rgba(255, 255, 255, 0.3);
   }
   @media screen and (max-width: 600px) {
@@ -142,79 +141,3 @@ export const UserAvatar = () => {
   );
 };
 
-export const ModalWrapper = styled.div`
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  z-index: 1000;
-  display: none;
-  /* align-items: baseline; */
-
-  &.sidebar-active {
-    display: flex;
-    transition: 650ms;
-  }
-`;
-
-export const SideBar = styled.div`
-  width: 250px;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  position: absolute;
-  top: 0;
-  left: -100%;
-  transition: 850ms;
-  background: #fff;
-  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
-  z-index: 1050;
-
-  &.sidebar-active {
-    left: 0;
-    transition: 650ms;
-  }
-`;
-
-
-export const LinkList = styled.ul`
-  width: 100%;
-  padding: 0;
-  list-style-type: none;
-`;
-
-const LinkItem = styled.li`
-  margin: 0;
-  padding: 0;
-  height: 50px;
-
-  display: flex;
-  justify-content: center;
-`;
-
-const LinkNav = styled.a`
-  text-decoration: none;
-  color: rgb(73, 73, 73);
-  font-size: 16px;
-  width: 100%;
-  height: 100%;
-  padding: 20px;
-  display: flex;
-  align-items: center;
-
-  &:hover {
-    background-color: #e0e0e0;
-  }
-`;
-
-
-export const LinkItemNav = ({ item }) => {
-  return (
-    <LinkItem>
-      <LinkNav href={item.route}>{item.name}</LinkNav>
-    </LinkItem>
-  );
-};

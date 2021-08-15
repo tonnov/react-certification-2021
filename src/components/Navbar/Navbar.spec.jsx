@@ -3,6 +3,7 @@ import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import Navbar from './Navbar.component';
 import { SearchContext } from '../../providers/Search';
+import { BrowserRouter } from 'react-router-dom';
 // import { useDebounce } from '../../utils/hooks/useDebounce';
 
 const RenderNavWithSearchProvider = (snap) => {
@@ -12,7 +13,9 @@ const RenderNavWithSearchProvider = (snap) => {
 
   const component = (
     <SearchContext.Provider value={{ query, setQuery }}>
-      <Navbar />
+      <BrowserRouter>
+        <Navbar />
+      </BrowserRouter>
     </SearchContext.Provider>
   );
 
@@ -75,7 +78,6 @@ describe('Navbar Component', () => {
   });
 
 
-
   // it('Spying Navbar', () => {
 
     // const spyChangeValue = jest.spyOn(Navbar, 'changeLocalQuery');
@@ -88,6 +90,7 @@ describe('Navbar Component', () => {
     // spyChangeValue.mockRestore();
   // });
 
+  
   it('check if sidebar works', () => {
     const openMenu = screen.getByRole('button', { name: 'open drawer'});
     fireEvent.click(openMenu);

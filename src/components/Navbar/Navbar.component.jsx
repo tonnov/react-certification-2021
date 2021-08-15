@@ -8,17 +8,16 @@ import {
   NavLeft,
   NavRight,
   UserAvatar,
-  SideBar,
+  // SideBar,
   SearchContainer,
   SearchInput,
   IconContainer,
-  ModalWrapper,
-  LinkList,
-  LinkItemNav,
+  // ModalWrapper,
+  // LinkList,
+  // LinkItemNav,
 } from './Navbar.Elements';
+import FullSideBar from './Sidebar.styled';
 import { useHistory } from "react-router-dom";
-
-// import './Navbar.styles.css';
 
 import { useSearch } from '../../providers/Search';
 import { useDebounce } from '../../utils/hooks/useDebounce';
@@ -49,6 +48,11 @@ function Navbar() {
 
   const handleChangeTheme = () => {};
 
+  const menuItems = [
+    { route: '/', name: 'Home' },
+    { route: '/video/HYyRZiwBWc8', name: 'Video' }
+  ];
+
   return (
     <>
       <Nav>
@@ -56,7 +60,8 @@ function Navbar() {
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
           </IconButton>
-          <ModalWrapper
+          <FullSideBar updateState={showSidebar} activeClass={sidebar ? 'sidebar-active' : null} menuItems={menuItems} />
+          {/* <ModalWrapper
             className={sidebar ? 'sidebar-active' : null}
             onClick={showSidebar}
           >
@@ -65,7 +70,7 @@ function Navbar() {
                 <LinkItemNav item={{ route: '/', name: 'Home' }} />
               </LinkList>
             </SideBar>
-          </ModalWrapper>
+          </ModalWrapper> */}
           <SearchContainer>
             <IconContainer>
               <SearchIcon />

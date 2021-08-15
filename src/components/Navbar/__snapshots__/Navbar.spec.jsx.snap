@@ -42,33 +42,83 @@ exports[`Navbar Component should match snapshot 1`] = `
       </span>
     </button>
     <div
-      className="sc-fujyAs ceCVVi"
-      onClick={[Function]}
+      className="sc-kEqXSa ZWEPl"
     >
-      <div
+      <nav
         aria-label="sidebar"
-        className="sc-pNWdM eQpdju"
-        onClick={[Function]}
+        className="sc-iqAclL jGsVBe"
         role="menu"
       >
+        <button
+          className="MuiButtonBase-root MuiIconButton-root"
+          disabled={false}
+          onBlur={[Function]}
+          onClick={[Function]}
+          onDragLeave={[Function]}
+          onFocus={[Function]}
+          onKeyDown={[Function]}
+          onKeyUp={[Function]}
+          onMouseDown={[Function]}
+          onMouseLeave={[Function]}
+          onMouseUp={[Function]}
+          onTouchEnd={[Function]}
+          onTouchMove={[Function]}
+          onTouchStart={[Function]}
+          tabIndex={0}
+          type="button"
+        >
+          <span
+            className="MuiIconButton-label"
+          >
+            <svg
+              aria-hidden={true}
+              className="MuiSvgIcon-root"
+              focusable="false"
+              style={
+                Object {
+                  "color": "black",
+                  "fontSize": 30,
+                }
+              }
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+              />
+            </svg>
+          </span>
+        </button>
         <ul
-          className="sc-jrsJWt gyfqor"
+          className="sc-fujyAs cMagDw"
+          onClick={[Function]}
         >
           <li
-            className="sc-kEqXSa fsCpBf"
+            className="sc-pNWdM kPGGBi"
           >
             <a
-              className="sc-iqAclL gnEzMY"
+              className="sc-jrsJWt cpKzTv"
               href="/"
+              onClick={[Function]}
             >
               Home
             </a>
           </li>
+          <li
+            className="sc-pNWdM kPGGBi"
+          >
+            <a
+              className="sc-jrsJWt cpKzTv"
+              href="/video/HYyRZiwBWc8"
+              onClick={[Function]}
+            >
+              Video
+            </a>
+          </li>
         </ul>
-      </div>
+      </nav>
     </div>
     <div
-      className="sc-eCApnc ktiLQa"
+      className="sc-eCApnc jvfZpC"
     >
       <span
         className="sc-gKAaRy iXzfoV"
