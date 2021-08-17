@@ -2,14 +2,15 @@ import React, { useEffect, useState } from 'react';
 // import { Link, useHistory } from 'react-router-dom';
 // import { useAuth } from '../../providers/Auth';
 import VideoList from './VideoList.component';
-import { useSearch } from '../../providers/Search';
+// import { useSearch } from '../../providers/Search';
+import { useGlobal } from '../../providers/Global';
 import { useYoutubeApi } from '../../providers/Youtube';
 import { Home, HomeTitle } from './Home.styled';
 
 // import listaVideos from '../../mock/react-response.json';
 
 function HomePage() {
-  const { query } = useSearch();
+  const { query } = useGlobal();
   const { searchVideos } = useYoutubeApi();
 
   const [videos, SetVideos] = useState({});

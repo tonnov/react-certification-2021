@@ -26,11 +26,10 @@ const RenderNavWithSearchProvider = (snap) => {
   return render(component);
 };
 
+beforeEach(() => RenderNavWithSearchProvider());
+
 
 describe('Navbar Component', () => {
-  beforeEach(() => {
-    RenderNavWithSearchProvider();
-  });
 
   it('should match snapshot', () => {
     // const snap = renderer.create(<Navbar />);
@@ -63,6 +62,9 @@ describe('Navbar Component', () => {
     expect(component).toBeInTheDocument();
   });
 
+});
+
+describe('Navbar User Interaction', () => {
 
   it('Input should change should not be empty', () => {
     const searchBox = screen.getByRole('textbox', {name: 'search'});
@@ -91,11 +93,12 @@ describe('Navbar Component', () => {
   // });
 
   
-  it('check if sidebar works', () => {
+  it('check if sidebar shows on click', () => {
     const openMenu = screen.getByRole('button', { name: 'open drawer'});
     fireEvent.click(openMenu);
     const sideBar = screen.getByLabelText('sidebar');
     expect(sideBar).toHaveClass('sidebar-active');
   })
+
 
 });

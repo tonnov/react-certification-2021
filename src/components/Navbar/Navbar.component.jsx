@@ -8,37 +8,34 @@ import {
   NavLeft,
   NavRight,
   UserAvatar,
-  // SideBar,
   SearchContainer,
   SearchInput,
   IconContainer,
-  // ModalWrapper,
-  // LinkList,
-  // LinkItemNav,
 } from './Navbar.Elements';
 import FullSideBar from './Sidebar.styled';
 import { useHistory } from "react-router-dom";
-
-import { useSearch } from '../../providers/Search';
+// import { useSearch } from '../../providers/Search';
 import { useDebounce } from '../../utils/hooks/useDebounce';
+import { useGlobal } from '../../providers/Global';
 
 function Navbar() {
-  const history = useHistory();
   const [sidebar, setSidebar] = useState(false);
-  const { query, setQuery } = useSearch();
+  // const { query, setQuery } = useSearch();
+  const {query, setQuery, darkTheme, setDarkTheme} = useGlobal();
   const [localQuery, setLocalQuery] = useState(query);
+  // const [localTheme, setLocalTheme] = useState(darkTheme);
+  
+  const history = useHistory();
 
-  const debounceValue = useDebounce(localQuery, 700);
+  const debounceValue = useDebounce(localQuery, 500);
 
   useEffect(() => {
     if (!debounceValue) return;
 
     setQuery(debounceValue);
-    history && history.push('/');
+    history.push('/');
 
   }, [debounceValue, setQuery, history]);
-
-  // const [themeMode, setThemeMode] = useState(false);
 
   const showSidebar = () => setSidebar(!sidebar);
 
@@ -46,7 +43,12 @@ function Navbar() {
     setLocalQuery(e.target.value);
   };
 
-  const handleChangeTheme = () => {};
+  const handleChangeTheme = (event) => {
+    // setLocalTheme(event.target.checked);
+    const swValue = event.target.checked;
+    // console.log(swValue);
+    setDarkTheme(swValue);
+  };
 
   const menuItems = [
     { route: '/', name: 'Home' },
@@ -61,16 +63,6 @@ function Navbar() {
             <MenuIcon />
           </IconButton>
           <FullSideBar updateState={showSidebar} activeClass={sidebar ? 'sidebar-active' : null} menuItems={menuItems} />
-          {/* <ModalWrapper
-            className={sidebar ? 'sidebar-active' : null}
-            onClick={showSidebar}
-          >
-            <SideBar className={sidebar ? 'sidebar-active' : null} onClick={showSidebar} role="menu" aria-label="sidebar">
-              <LinkList>
-                <LinkItemNav item={{ route: '/', name: 'Home' }} />
-              </LinkList>
-            </SideBar>
-          </ModalWrapper> */}
           <SearchContainer>
             <IconContainer>
               <SearchIcon />
@@ -87,7 +79,7 @@ function Navbar() {
           <FormControlLabel
             control={
               <Switch
-                checked={false}
+                checked={darkTheme}
                 name="toggleTheme"
                 color="primary"
                 onChange={handleChangeTheme}
