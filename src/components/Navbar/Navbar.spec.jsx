@@ -1,9 +1,9 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
+import { BrowserRouter } from 'react-router-dom';
 import Navbar from './Navbar.component';
 import { SearchContext } from '../../providers/Search';
-import { BrowserRouter } from 'react-router-dom';
 // import { useDebounce } from '../../utils/hooks/useDebounce';
 
 const RenderNavWithSearchProvider = (snap) => {
@@ -28,9 +28,7 @@ const RenderNavWithSearchProvider = (snap) => {
 
 beforeEach(() => RenderNavWithSearchProvider());
 
-
 describe('Navbar Component', () => {
-
   it('should match snapshot', () => {
     // const snap = renderer.create(<Navbar />);
     const snap = RenderNavWithSearchProvider(true);
@@ -61,44 +59,37 @@ describe('Navbar Component', () => {
 
     expect(component).toBeInTheDocument();
   });
-
 });
 
 describe('Navbar User Interaction', () => {
-
   it('Input should change should not be empty', () => {
-    const searchBox = screen.getByRole('textbox', {name: 'search'});
+    const searchBox = screen.getByRole('textbox', { name: 'search' });
     expect(searchBox.value).not.toBe('');
   });
-  
 
   it('Input should change query value', () => {
-    const searchBox = screen.getByRole('textbox', {name: 'search'});
+    const searchBox = screen.getByRole('textbox', { name: 'search' });
     const preValue = searchBox.value;
-    fireEvent.change(searchBox,{target: { value: `${preValue} Rocks!`}});
+    fireEvent.change(searchBox, { target: { value: `${preValue} Rocks!` } });
     expect(searchBox.value).toBe('wizeline Rocks!');
   });
 
-
   // it('Spying Navbar', () => {
 
-    // const spyChangeValue = jest.spyOn(Navbar, 'changeLocalQuery');
-    // jest.spyOn(Navbar, 'changeLocalQuery').mockImplementation((e) => {
-    //   return e;
-    // })
+  // const spyChangeValue = jest.spyOn(Navbar, 'changeLocalQuery');
+  // jest.spyOn(Navbar, 'changeLocalQuery').mockImplementation((e) => {
+  //   return e;
+  // })
 
-    // expect(spyChangeValue).toHaveBeenCalled();
+  // expect(spyChangeValue).toHaveBeenCalled();
 
-    // spyChangeValue.mockRestore();
+  // spyChangeValue.mockRestore();
   // });
 
-  
   it('check if sidebar shows on click', () => {
-    const openMenu = screen.getByRole('button', { name: 'open drawer'});
+    const openMenu = screen.getByRole('button', { name: 'open drawer' });
     fireEvent.click(openMenu);
     const sideBar = screen.getByLabelText('sidebar');
     expect(sideBar).toHaveClass('sidebar-active');
-  })
-
-
+  });
 });

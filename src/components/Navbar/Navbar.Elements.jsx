@@ -74,7 +74,6 @@ export const SearchContainer = styled.div`
   display: flex;
   align-items: center;
   padding-left: 5px;
-  
 
   &:hover {
     transition: all 0.2s ease;
@@ -140,4 +139,3 @@ export const UserAvatar = () => {
     </UserBackground>
   );
 };
-

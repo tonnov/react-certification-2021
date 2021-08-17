@@ -15,7 +15,6 @@ import VideoDetail from '../../pages/VideoDetail';
 // import { random } from '../../utils/fns';
 
 function App() {
-
   return (
     <BrowserRouter>
       <GlobalProvider>

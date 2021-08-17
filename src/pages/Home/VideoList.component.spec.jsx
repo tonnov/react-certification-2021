@@ -4,13 +4,11 @@ import { render, screen } from '@testing-library/react';
 import VideoList from './VideoList.component';
 import videos from '../../mock/youtube-videos-mock.json';
 
-
 jest.mock('react-router-dom', () => {
   return {
     Link: jest.fn(({ children }) => <div role="link">{children}</div>),
   };
 });
-
 
 describe('VideoList component', () => {
   it('should match snapshot', () => {

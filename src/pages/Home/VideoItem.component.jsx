@@ -52,7 +52,7 @@ const VideoDescription = styled.p`
 const VideoItem = ({ item }) => {
   const { thumbnails, title, description } = item.snippet;
 
-  const videoId = item.id.videoId;
+  const { videoId } = item.id;
 
   return (
     <LinkVideo to={`/video/${videoId}`}>
