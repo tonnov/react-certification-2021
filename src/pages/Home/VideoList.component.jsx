@@ -14,7 +14,7 @@ const VideoList = ({ videos = {} }) => {
   const { items = [] } = videos;
 
   if (items.length <= 0) return null;
-
+  
   return (
     <VideoListContainer>
       {items.map((item) => (
