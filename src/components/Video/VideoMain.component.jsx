@@ -11,6 +11,7 @@ export const VideoLayout = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding: 5px;
+  background-color: ${props => props.dark ? '#3b3b3b' : '#fff'};
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
@@ -29,15 +30,16 @@ export const VideoContainer = styled.div`
 
 const VideoTitle = styled.h3`
   font-weight: 900;
+  color: ${props => props.dark ? '#f5f5f5' : '#383838'};
 `;
 
 const VideoDetails = styled.div`
   display: flex;
   flex-direction: row;
-  color: #383838;
   font-size: 10pt;
   padding: 0 10px;
   margin: 0;
+  color: ${props => props.dark ? '#b5b5b5' : '#383838'};
 `;
 
 const VideoPub = styled.div`
@@ -54,7 +56,7 @@ const VideoViews = styled.div`
 
 const VideoDescription = styled.p`
   padding: 10px;
-  color: #757575;
+  color: ${props => props.dark ? '#d1d1d1' : '#757575'};
   display: inline-block;
   word-wrap: break-word;
   white-space: pre-line;
@@ -98,7 +100,7 @@ const VideoFrame = styled.div`
   }
 `;
 
-export const VideoMain = ({ embedId, video }) => {
+export const VideoMain = ({ embedId, video, dark }) => {
   if (!video) return null;
 
   const { snippet, statistics } = video;
@@ -122,12 +124,12 @@ export const VideoMain = ({ embedId, video }) => {
           data-testid="iframe"
         />
       </VideoFrame>
-      <VideoTitle>{snippet.title}</VideoTitle>
-      <VideoDetails>
-        <VideoPub>{`Publicado: ${publicado}`}</VideoPub>
-        <VideoViews>{`${vistas} Visualizaciones`}</VideoViews>
+      <VideoTitle dark={dark}>{snippet.title}</VideoTitle>
+      <VideoDetails dark={dark}>
+        <VideoPub >{`Publicado: ${publicado}`}</VideoPub>
+        <VideoViews >{`${vistas} Visualizaciones`}</VideoViews>
       </VideoDetails>
-      <VideoDescription>{firstLine}</VideoDescription>
+      <VideoDescription dark={dark}>{firstLine}</VideoDescription>
     </>
   );
 };

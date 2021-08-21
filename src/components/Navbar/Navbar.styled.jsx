@@ -3,8 +3,7 @@ import styled from 'styled-components';
 import PersonIcon from '@material-ui/icons/Person';
 
 export const Nav = styled.nav`
-  /* background-color: #fff; */
-  background-color: #1c5476;
+  background-color: ${props => props.dark ? '#556CD6' : '#1c5476'};
   color: #fafafa;
   height: 64px;
   width: 100%;
@@ -113,29 +112,23 @@ export const IconContainer = styled.span`
   padding-left: 8px;
 `;
 
-// export const SearchBar = (props) => {
-//     return (
-//         <SearchContainer>
-//             <IconContainer>
-//                 <SearchIcon />
-//             </IconContainer>
-//             <SearchInput placeholder={props.placeholder} value={props.value} />
-//         </SearchContainer>
-//     )
-// }
-
 const UserBackground = styled.span`
   padding: 5px;
   border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: ${props => props.dark ? 'rgba(168, 168, 168, 0.7)' : 'rgba(255, 255, 255, 0.5)' };
   display: flex;
   align-items: center;
 `;
 
-export const UserAvatar = () => {
+const Icon = styled(PersonIcon)`
+  font-size: 27px !important;
+  color: ${props => props.dark ? '#4f4f4f' : '#fff' };
+`;
+
+export const UserAvatar = ({ dark }) => {
   return (
-    <UserBackground>
-      <PersonIcon style={{ fontSize: 27 }} />
+    <UserBackground dark={dark}>
+      <Icon dark={dark} />
     </UserBackground>
   );
 };

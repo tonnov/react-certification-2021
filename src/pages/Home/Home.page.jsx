@@ -12,7 +12,7 @@ function HomePage() {
   const [videos, SetVideos] = useState({});
 
   const { state } = useGlobal();
-  const { query } = state;
+  const { query, darkTheme } = state;
   // console.log(state);
 
   useEffect(() => {
@@ -23,13 +23,14 @@ function HomePage() {
 
     runAsync();
     // SetVideos(listaVideos);
+    // }, [query]);
   }, [query, searchVideos]);
 
 
   return (
-    <Home>
+    <Home dark={darkTheme} >
       <HomeTitle>Welcome to the Challenge!</HomeTitle>
-      <VideoList videos={videos} />
+      <VideoList videos={videos} dark={darkTheme} />
     </Home>
   );
 }

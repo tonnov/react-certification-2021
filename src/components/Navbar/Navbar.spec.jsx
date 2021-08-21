@@ -3,20 +3,22 @@ import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './Navbar.component';
-import { SearchContext } from '../../providers/Search';
-// import { useDebounce } from '../../utils/hooks/useDebounce';
+import { GlobalContext } from '../../providers/Global';
+
 
 const RenderNavWithSearchProvider = (snap) => {
-  const query = 'wizeline';
-  const setQuery = jest.fn();
+
   const isSnap = snap || false;
 
+  const state = { query: 'wizeline', darkTheme: false };
+  const dispatch = jest.fn();
+
   const component = (
-    <SearchContext.Provider value={{ query, setQuery }}>
+    <GlobalContext.Provider value={{ state, dispatch }}>
       <BrowserRouter>
         <Navbar />
       </BrowserRouter>
-    </SearchContext.Provider>
+    </GlobalContext.Provider>
   );
 
   if (isSnap) {
@@ -25,6 +27,7 @@ const RenderNavWithSearchProvider = (snap) => {
 
   return render(component);
 };
+
 
 beforeEach(() => RenderNavWithSearchProvider());
 
@@ -74,17 +77,6 @@ describe('Navbar User Interaction', () => {
     expect(searchBox.value).toBe('wizeline Rocks!');
   });
 
-  // it('Spying Navbar', () => {
-
-  // const spyChangeValue = jest.spyOn(Navbar, 'changeLocalQuery');
-  // jest.spyOn(Navbar, 'changeLocalQuery').mockImplementation((e) => {
-  //   return e;
-  // })
-
-  // expect(spyChangeValue).toHaveBeenCalled();
-
-  // spyChangeValue.mockRestore();
-  // });
 
   it('check if sidebar shows on click', () => {
     const openMenu = screen.getByRole('button', { name: 'open drawer' });
@@ -92,4 +84,5 @@ describe('Navbar User Interaction', () => {
     const sideBar = screen.getByLabelText('sidebar');
     expect(sideBar).toHaveClass('sidebar-active');
   });
+
 });

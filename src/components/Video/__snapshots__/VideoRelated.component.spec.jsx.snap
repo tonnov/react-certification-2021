@@ -17,13 +17,13 @@ exports[`VideoRelated component should match snapshot 1`] = `
       className="sc-hKFxyN bhYAoB"
     >
       <span
-        className="sc-eCApnc jOcfdZ"
+        className="sc-eCApnc hvrJiu"
         role="note"
       >
         Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)
       </span>
       <span
-        className="sc-jSFjdj gVyIlH"
+        className="sc-jSFjdj itozLk"
       >
         midudev
       </span>

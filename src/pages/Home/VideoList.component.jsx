@@ -8,9 +8,11 @@ const VideoListContainer = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px 15px;
+  background-color: inherit;
+  /* background-color: ${props => props.dark ? '#4d4d4d' : '#fff'}; */
 `;
 
-const VideoList = ({ videos = {} }) => {
+const VideoList = ({ videos = {}, dark }) => {
   const { items = [] } = videos;
 
   if (items.length <= 0) return null;
@@ -19,7 +21,7 @@ const VideoList = ({ videos = {} }) => {
     <VideoListContainer>
       {items.map((item) => (
         // { console.log(item.id.videoId)}
-        <VideoItem item={item} key={item.etag} />
+        <VideoItem item={item} key={item.etag} dark={dark} />
       ))}
     </VideoListContainer>
   );

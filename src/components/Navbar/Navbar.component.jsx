@@ -11,7 +11,7 @@ import {
   SearchContainer,
   SearchInput,
   IconContainer,
-} from './Navbar.Elements';
+} from './Navbar.styled';
 import FullSideBar from './Sidebar.styled';
 import { useHistory } from "react-router-dom";
 import { useDebounce } from '../../utils/hooks/useDebounce';
@@ -44,10 +44,8 @@ function Navbar() {
   };
 
   const handleChangeTheme = (event) => {
-    // setLocalTheme(event.target.checked);
     const swValue = event.target.checked;
     // console.log(swValue);
-    // setDarkTheme(swValue);
     dispatch({ type: 'toggle_theme', payload: swValue });
   };
 
@@ -58,12 +56,12 @@ function Navbar() {
 
   return (
     <>
-      <Nav>
+      <Nav dark={darkTheme} >
         <NavLeft>
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
           </IconButton>
-          <FullSideBar updateState={showSidebar} activeClass={sidebar ? 'sidebar-active' : null} menuItems={menuItems} />
+          <FullSideBar dark={darkTheme} updateState={showSidebar} activeClass={sidebar ? 'sidebar-active' : null} menuItems={menuItems} />
           <SearchContainer>
             <IconContainer>
               <SearchIcon />
@@ -89,7 +87,7 @@ function Navbar() {
             label="Dark mode"
           />
           <IconButton color="inherit" aria-label="user">
-            <UserAvatar />
+            <UserAvatar dark={darkTheme} />
           </IconButton>
         </NavRight>
       </Nav>

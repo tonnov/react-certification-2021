@@ -23,7 +23,8 @@ const LinkItem = styled.li`
 
 const LinkNav = styled(Link)`
   text-decoration: none;
-  color: rgb(73, 73, 73);
+  /* color: rgb(73, 73, 73); */
+  color: inherit;
   font-size: 16px;
   width: 100%;
   height: 100%;
@@ -31,8 +32,8 @@ const LinkNav = styled(Link)`
   display: flex;
   align-items: center;
 
-  &:hover {
-    background-color: #e0e0e0;
+  :hover {
+    background-color: #d9d8d8;
   }
 `;
 
@@ -76,7 +77,9 @@ const SideBar = styled.nav`
   justify-content: flex-start;
   align-items: center;
   padding-top: 10px;
-  background: #fff;
+  /* background: #fff; */
+  background-color: ${props => props.dark ? '#4d4d4d' : '#fff'};
+  color: ${props => props.dark ? '#f2f2f2' : '#4d4d4d'};
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
   z-index: 1050;
 
@@ -86,16 +89,16 @@ const SideBar = styled.nav`
   }
 `;
 
-const FullSideBar = ({ activeClass, updateState, menuItems }) => {
+const FullSideBar = ({ activeClass, updateState, menuItems, dark }) => {
   const handleOnClick = () => {
     updateState();
   };
 
   return (
     <ModalWrapper className={activeClass}>
-      <SideBar className={activeClass} role="menu" aria-label="sidebar">
+      <SideBar className={activeClass} role="menu" aria-label="sidebar" dark={dark}>
         <IconButton onClick={handleOnClick}>
-          <CloseIcon style={{ color: 'black', fontSize: 30 }} />
+          <CloseIcon style={{ color: 'inherit', fontSize: 30 }} />
         </IconButton>
         <LinkList onClick={handleOnClick}>
           {menuItems &&

@@ -2,28 +2,28 @@
 
 exports[`VideoList component should match snapshot 1`] = `
 <div
-  className="sc-gKAaRy cTjvxd"
+  className="sc-gKAaRy jZIFDO"
 >
   <div
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi cAICiJ"
+        className="sc-dlnjwi bNBXpQ"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Wizeline transforms how teams build technology. Its customers accelerate the delivery of innovative products with proven solutions, which combine Wizeline's ...
@@ -35,22 +35,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi ckEFay"
+        className="sc-dlnjwi hnysdr"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Video Tour | Welcome to Wizeline Guadalajara
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Follow Hector Padilla, Wizeline Director of Engineering, for a lively tour of our office. In 2018, Wizeline opened its stunning new office in Guadalajara, Jalisco, ...
@@ -62,22 +62,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi nfApA"
+        className="sc-dlnjwi jVbZQl"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline Guadalajara | Bringing Silicon Valley to Mexico
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Wizeline continues to offer a Silicon Valley culture in burgeoning innovation hubs like Mexico and Vietnam. In 2018, our Guadalajara team moved into a ...
@@ -89,22 +89,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi cRtYNo"
+        className="sc-dlnjwi WWKKp"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline hace sentir a empleados como en casa
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           En el 2014, Bismarck fundó Wizeline, compañía tecnológica que trabaja con los corporativos ofreciendo una plataforma para que desarrollen software de forma ...
@@ -116,22 +116,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi kqYTVB"
+        className="sc-dlnjwi dtxDfE"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           We Are Wizeline
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Engineering a better tomorrow. Wizeline is a global software development company that helps its clients solve their biggest challenges with design and ...
@@ -143,22 +143,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi logoGn"
+        className="sc-dlnjwi kcbAgq"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline Thrives in Mexico City
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Our vibrant Mexico City office is home to agile software engineers, talented UX designers, and brilliant data scientists. Learn about the rich history of Mexico City.
@@ -170,22 +170,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi ieZPEN"
+        className="sc-dlnjwi esjTPM"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           El plan de Wizeline, una empresa de inteligencia artificial, para ayudar a crecer la comunidad de ciencia de datos en CDMX y todo el país, a través de cursos ...
@@ -197,22 +197,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi gvRWsi"
+        className="sc-dlnjwi bXmUFj"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           A Day in the Life of an Engineering Manager at Wizeline
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Fernando Espinoza shares his experience working as an engineering manager at Wizeline and mentoring other engineers. Learn about Fernando's passions ...
@@ -224,22 +224,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi euHMDl"
+        className="sc-dlnjwi uXCRo"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline Technical Writing Academy | Featuring Eduardo Ocejo
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           
@@ -251,22 +251,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi bPTmYU"
+        className="sc-dlnjwi jKwhSZ"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Silicon Valley en México
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Empresas de Silicon Valley buscan establecerse en México por el gran talento que hay en nuestro país. Es una investigación de Roberto Domínguez.
@@ -278,22 +278,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi jFWbMX"
+        className="sc-dlnjwi iSvhGm"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Why Wizeline? featuring Juan Pablo Villa in Mexico City
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Juan Pablo, known as Gianpa at Wizeline, is a software engineer in our Mexico City office. Gianpa focuses on Android apps, is an integral part of our culture, ...
@@ -305,22 +305,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi bMPtgA"
+        className="sc-dlnjwi isfCEV"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline&#39;s 2020 Year in Review
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           There's no doubt that 2020 has been an unprecedented year. However, amidst all the chaos, we achieved remarkable growth in various areas of our business.
@@ -332,22 +332,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi gLjOhp"
+        className="sc-dlnjwi bNyLQM"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Why Wizeline? featuring Hugo Lopez in Mexico City
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           
@@ -359,22 +359,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi kYubRY"
+        className="sc-dlnjwi cTQmXh"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Why Wizeline? (We&#39;re Hiring in Mexico!)
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           A quick look at why people join Wizeline, what motivates us as a team and what it's like to work in our Guadalajara office. Learn more and apply here: ...
@@ -386,22 +386,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi dCImnR"
+        className="sc-dlnjwi eOkqtU"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Why Wizeline? featuring Oswaldo Herrera in Mexico City
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Oswaldo is a software engineering in Wizeline's Mexico City office. He joined Wizeline because of the camaraderie and deep sense of commitment of our teams.
@@ -413,22 +413,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi hRjUsd"
+        className="sc-dlnjwi eoRTtI"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Caso de Éxito AWS: Wizeline [Spanish]
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Central de socios de APN - https://amzn.to/2S7tIXM Fundada en 2014, Wizeline es una compañía joven e innovadora que nació en la nube para ofrecer soporte ...
@@ -440,22 +440,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi dpjAuU"
+        className="sc-dlnjwi cCgA-dF"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline&#39;s 2019 Year in Review
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           
@@ -467,22 +467,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi cDPPzV"
+        className="sc-dlnjwi cxHnqg"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           [1 of 2] Wizeline CEO shares career lessons from Google
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Founder & CEO Bismarck Lepe on growth opportunities at Wizeline and his career-path experience as an early Google employee. Join our team!
@@ -494,22 +494,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi VOMiN"
+        className="sc-dlnjwi llkWOc"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline Data Engineering featuring Tania Reyes
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Tania discovered her interest in Big Data while working at Wizeline and took Wizeline Academy courses to skill up and join the data team. Now, she works on ...
@@ -521,22 +521,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi dTdVKz"
+        className="sc-dlnjwi jlKVkK"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Wizeline Querétaro | Mexico&#39;s New Knowledge Economy (We&#39;re hiring!)
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           A small but mighty (and growing) team, the Queretaro crew has taken ownership of growing the office and brand, speaking at university events, hosting tech ...
@@ -548,22 +548,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi DkTAr"
+        className="sc-dlnjwi bZHeYe"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Miriam Godinez | Women in Leadership at Wizeline
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Science and technology always caught Miriam's attention. One of her ultimate goals as a Senior Engineer Manager and Lead from the Mobile Team at Wizeline ...
@@ -575,22 +575,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi LxXrJ"
+        className="sc-dlnjwi cmluvE"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Welcome Back to Wizeline Vietnam | Extended Version
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Thanks to swift government action, the COVID-19 situation in Vietnam has reached a point where businesses are able to return to work and reopen offices.
@@ -602,22 +602,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi kKVKjZ"
+        className="sc-dlnjwi zuULE"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           How does Wizeline work?
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Wizeline builds teams with a mix of technical and non-technical talent to deliver better products, faster. Learn more about our consulting services: ...
@@ -629,22 +629,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi jfwXHb"
+        className="sc-dlnjwi izoclK"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           12 Wishes from Wizeline | Happy Holidays 2019
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           
@@ -656,22 +656,22 @@ exports[`VideoList component should match snapshot 1`] = `
     role="link"
   >
     <div
-      className="sc-gtsrHT NaRnq"
+      className="sc-gtsrHT kpAzWm"
     >
       <div
-        className="sc-dlnjwi OHUvt"
+        className="sc-dlnjwi TRKVM"
         role="img"
       />
       <div
         className="sc-hKFxyN eaXTjP"
       >
         <h3
-          className="sc-eCApnc eSfhDM"
+          className="sc-eCApnc gjoEUb"
         >
           Why Wizeline?
         </h3>
         <p
-          className="sc-jSFjdj edDWTs"
+          className="sc-jSFjdj drPurb"
           role="note"
         >
           Hear from our employees directly about what excites them about their roles here at Wizeline. Wizeline wants to hire the best and the brightest to accelerate their ...

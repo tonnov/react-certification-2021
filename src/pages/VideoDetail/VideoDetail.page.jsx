@@ -10,6 +10,7 @@ import VideoRelated from '../../components/Video/VideoRelated.component';
 // import infoVideo from '../../mock/single-video.json';
 // import relatedVideos from '../../mock/related-to.json';
 import { useVideo, useRelatedVideos } from '../../providers/Youtube/Youtube.helper';
+import { useGlobal } from '../../providers/Global';
 
 const VideoDetail = () => {
   const { id } = useParams();
@@ -17,17 +18,20 @@ const VideoDetail = () => {
   const selVideo = useVideo(id);
   const relVideos = useRelatedVideos(id);
 
+  const { state } = useGlobal();
+  const { darkTheme } = state;
+
   // const [selVideo] = infoVideo.items;
   // const { items: relVideos } = relatedVideos;
 
   return (
-    <VideoLayout>
+    <VideoLayout dark={darkTheme}>
       <VideoContainer>
-        <VideoMain embedId={id} video={selVideo} />
+        <VideoMain embedId={id} video={selVideo} dark={darkTheme} />
       </VideoContainer>
       <ListVideoRelated>
         {relVideos &&
-          relVideos.map((vid) => <VideoRelated key={vid.id.videoId} video={vid} />)}
+          relVideos.map((vid) => <VideoRelated key={vid.id.videoId} video={vid} dark={darkTheme} />)}
       </ListVideoRelated>
     </VideoLayout>
   );
