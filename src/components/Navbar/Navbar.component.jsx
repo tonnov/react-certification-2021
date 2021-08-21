@@ -4,6 +4,7 @@ import Switch from '@material-ui/core/Switch';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
 import {
+  GlobalStyle,
   Nav,
   NavLeft,
   NavRight,
@@ -56,6 +57,7 @@ function Navbar() {
 
   return (
     <>
+      <GlobalStyle dark={darkTheme} />
       <Nav dark={darkTheme} >
         <NavLeft>
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>

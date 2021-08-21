@@ -1,6 +1,14 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 import PersonIcon from '@material-ui/icons/Person';
+
+
+export const GlobalStyle = createGlobalStyle`
+  body {
+    background-color: ${props => props.dark ? '#3b3b3b' : '#fff'};
+    color: ${props => props.dark ? '#f2f2f2' : '#3d3d3d'};
+  }
+`;
 
 export const Nav = styled.nav`
   background-color: ${props => props.dark ? '#556CD6' : '#1c5476'};

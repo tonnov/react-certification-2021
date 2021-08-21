@@ -11,7 +11,8 @@ export const VideoLayout = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding: 5px;
-  background-color: ${props => props.dark ? '#3b3b3b' : '#fff'};
+  /* background-color: ${props => props.dark ? '#3b3b3b' : '#fff'}; */
+  background-color: inherit;
 
   @media screen and (max-width: 768px) {
     flex-direction: column;
