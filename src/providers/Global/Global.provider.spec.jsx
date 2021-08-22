@@ -1,26 +1,43 @@
 import React from 'react';
 // import { render } from '@testing-library/react';
-import { renderHook } from '@testing-library/react-hooks';
-import { GlobalContext, GlobalProvider, useGlobal } from './';
+import { renderHook, act } from '@testing-library/react-hooks';
+import { GlobalProvider, useGlobal } from './Global.provider';
 
 
-const state = { query: 'wizeline', darkTheme: false };
-const dispatch = jest.fn();
 
 const wrapper = ({ children }) => (
-    <GlobalContext.Provider value={{ state, dispatch }}>{children}</GlobalContext.Provider>
+    <GlobalProvider>{children}</GlobalProvider>
   )
 
 describe('Global Provider', () => {
 
-    it('should toggle theme mode', () => {
-        const { result } = renderHook(() => useGlobal(), { wrapper } )
+    it('should update the query state', () => {
+        const { result } = renderHook(() => useGlobal(), { wrapper } );
 
-        // result.current.dispatch({ type: 'update_search_query', payload: 'string upd' });
-        // console.log(result.current);
+        const { dispatch } = result.current;
+
+        act(() => {
+            dispatch({ type: 'update_search_query', payload: 'probando test hook' });
+        })
+        
         const { query } = result.current.state;
 
-        expect(query).toBe('wizeline');
+        expect(query).toBe('probando test hook');
+    });
+
+
+    it('should toggle the darkTheme state', () => {
+        const { result } = renderHook(() => useGlobal(), { wrapper } );
+
+        const { dispatch } = result.current;
+
+        act(() => {
+            dispatch({ type: 'toggle_theme', payload: true });
+        })
+        
+        const { darkTheme } = result.current.state;
+
+        expect(darkTheme).toBe(true);
     })
 
 })
