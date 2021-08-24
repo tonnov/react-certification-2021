@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import VideoItem from './VideoItem.component';
+import { VideoItem } from './VideoItem.component';
 
 const VideoListContainer = styled.div`
   margin: 0 auto;
@@ -12,7 +12,7 @@ const VideoListContainer = styled.div`
   /* background-color: ${props => props.dark ? '#4d4d4d' : '#fff'}; */
 `;
 
-const VideoList = ({ videos = {}, dark }) => {
+export const VideoList = ({ videos = {}, dark }) => {
   const { items = [] } = videos;
 
   if (items.length <= 0) return null;
@@ -27,4 +27,4 @@ const VideoList = ({ videos = {}, dark }) => {
   );
 };
 
-export default VideoList;
+// export default VideoList;

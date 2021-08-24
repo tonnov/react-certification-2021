@@ -1,33 +1,35 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`VideoRelated component should match snapshot 1`] = `
-<div
-  role="link"
+<a
+  className="sc-crzoAE iHRBYX"
+  href="/video/undefined"
+  onClick={[Function]}
 >
   <div
-    className="sc-gtsrHT fCeESP"
+    className="sc-dIsUp jgDbzO"
     role="listitem"
   >
     <img
-      className="sc-dlnjwi ieKdUs"
+      className="sc-bqGGPW hTPOWC"
       role="img"
       src="https://i.ytimg.com/vi/T_j60n1zgu0/mqdefault.jpg"
     />
     <div
-      className="sc-hKFxyN bhYAoB"
+      className="sc-ksluID laHNKv"
     >
       <span
-        className="sc-eCApnc hvrJiu"
+        className="sc-hBMUJo dozAhD"
         role="note"
       >
         Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)
       </span>
       <span
-        className="sc-jSFjdj itozLk"
+        className="sc-fnVZcZ itgAzK"
       >
         midudev
       </span>
     </div>
   </div>
-</div>
+</a>
 `;

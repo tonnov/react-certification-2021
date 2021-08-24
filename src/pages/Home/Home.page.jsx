@@ -1,31 +1,17 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 // import { useAuth } from '../../providers/Auth';
-import VideoList from './VideoList.component';
+import {VideoList} from '../../components/Video';
 import { useGlobal } from '../../providers/Global';
-import { useYoutubeApi } from '../../providers/Youtube';
 import { Home, HomeTitle } from './Home.styled';
+import { useVideos } from '../../utils/hooks/useVideos';
 
 // import listaVideos from '../../mock/react-response.json';
 
 function HomePage() {
-  const { searchVideos } = useYoutubeApi();
-  const [videos, SetVideos] = useState({});
-
   const { state } = useGlobal();
   const { query, darkTheme } = state;
-  // console.log(state);
 
-  useEffect(() => {
-    const runAsync = async () => {
-      const data = await searchVideos(query);
-      SetVideos(data || []);
-    };
-
-    runAsync();
-    // SetVideos(listaVideos);
-    // }, [query]);
-  }, [query, searchVideos]);
-
+  const videos = useVideos(query);
 
   return (
     <Home dark={darkTheme} >

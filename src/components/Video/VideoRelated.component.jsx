@@ -93,7 +93,7 @@ const RelAuthor = styled.span`
   text-overflow: ellipsis;
 `;
 
-const VideoRelated = ({ video, dark }) => {
+export const VideoRelated = ({ video, dark }) => {
   if (!video.snippet) return null;
 
   const { thumbnails, title, channelTitle } = video.snippet;
@@ -113,4 +113,4 @@ const VideoRelated = ({ video, dark }) => {
   );
 };
 
-export default VideoRelated;
+// export default VideoRelated;

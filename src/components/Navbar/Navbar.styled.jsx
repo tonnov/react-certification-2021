@@ -136,7 +136,7 @@ const Icon = styled(PersonIcon)`
 export const UserAvatar = ({ dark }) => {
   return (
     <UserBackground dark={dark}>
-      <Icon dark={dark} />
+      <Icon dark={dark ? 1 : 0} />
     </UserBackground>
   );
 };

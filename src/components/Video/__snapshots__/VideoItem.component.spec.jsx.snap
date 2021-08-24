@@ -5,22 +5,22 @@ exports[`Video Item Component should match snapshot 1`] = `
   role="link"
 >
   <div
-    className="sc-gtsrHT kpAzWm"
+    className="sc-dlnjwi dnxiUi"
   >
     <div
-      className="sc-dlnjwi bNBXpQ"
+      className="sc-hKFxyN zdQQw"
       role="img"
     />
     <div
-      className="sc-hKFxyN eaXTjP"
+      className="sc-eCApnc BJArj"
     >
       <h3
-        className="sc-eCApnc gjoEUb"
+        className="sc-jSFjdj kpXLlS"
       >
         Wizeline
       </h3>
       <p
-        className="sc-jSFjdj drPurb"
+        className="sc-gKAaRy fLlwH"
         role="note"
       >
         Wizeline transforms how teams build technology. Its customers accelerate the delivery of innovative products with proven solutions, which combine Wizeline's ...

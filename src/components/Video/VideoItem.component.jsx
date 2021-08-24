@@ -52,7 +52,7 @@ const VideoDescription = styled.p`
   color: ${props => props.dark ? '#dbdbdb' : '#757575'};
 `;
 
-const VideoItem = ({ item, dark }) => {
+export const VideoItem = ({ item, dark }) => {
   const { thumbnails, title, description } = item.snippet;
 
   const { videoId } = item.id;
@@ -70,4 +70,4 @@ const VideoItem = ({ item, dark }) => {
   );
 };
 
-export default VideoItem;
+// export default VideoItem;

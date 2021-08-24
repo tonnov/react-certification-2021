@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
-import VideoList from './VideoList.component';
+import { VideoList } from './';
 import videos from '../../mock/youtube-videos-mock.json';
 
 jest.mock('react-router-dom', () => {

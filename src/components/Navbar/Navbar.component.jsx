@@ -34,7 +34,7 @@ function Navbar() {
     if (!debounceValue) return;
 
     dispatch({ type: 'update_search_query', payload: debounceValue });
-    history && history.push('/');
+    history.push('/');
 
   }, [debounceValue, history, dispatch]);
 
@@ -47,12 +47,12 @@ function Navbar() {
   const handleChangeTheme = (event) => {
     const swValue = event.target.checked;
     // console.log(swValue);
-    dispatch({ type: 'toggle_theme', payload: swValue });
+    dispatch({ type: 'toggle_theme', darkTheme: swValue });
   };
 
   const menuItems = [
     { route: '/', name: 'Home' },
-    { route: '/video/HYyRZiwBWc8', name: 'Video' }
+    // { route: '/video/HYyRZiwBWc8', name: 'Video' }
   ];
 
   return (

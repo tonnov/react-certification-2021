@@ -43,6 +43,7 @@ const reducer = (state, action) => {
 export const GlobalProvider = (props) => {
 
   const [state, dispatch] = useReducer(reducer, initialState);
+  // console.log('GlobalProvider called!')
 
   return (
     <GlobalContext.Provider value={{state, dispatch}}>

@@ -2,32 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-export const VideoLayout = styled.div`
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 5px;
-  /* background-color: ${props => props.dark ? '#3b3b3b' : '#fff'}; */
-  background-color: inherit;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
-export const VideoContainer = styled.div`
-  flex: 70%;
-  padding: 5px;
-
-  @media screen and (max-width: 768px) {
-    flex: 100%;
-    /* flex: 1; */
-  }
-`;
 
 const VideoTitle = styled.h3`
   font-weight: 900;
@@ -67,23 +41,6 @@ const VideoDescription = styled.p`
   /* background-color: cadetblue; */
 `;
 
-export const ListVideoRelated = styled.div`
-  flex: 30%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px 0;
-  height: 800px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-
-  @media screen and (max-width: 768px) {
-    /* display: none; */
-    flex: 100%;
-    overflow-y: hidden;
-  }
-`;
 
 const VideoFrame = styled.div`
   position: relative;
@@ -103,7 +60,7 @@ const VideoFrame = styled.div`
 
 export const VideoMain = ({ embedId, video, dark }) => {
   if (!video) return null;
-
+  // console.log(video);
   const { snippet, statistics } = video;
   const publicado = new Date(snippet.publishedAt).toLocaleDateString();
   const vistas = new Intl.NumberFormat('es-MX', { style: 'decimal' }).format(

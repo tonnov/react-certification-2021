@@ -1,7 +1,7 @@
 import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
-import VideoItem from './VideoItem.component';
+import { VideoItem } from './VideoItem.component';
 import videos from '../../mock/youtube-videos-mock.json';
 
 // test('render VideoItem', () => {

@@ -3,7 +3,7 @@
 exports[`VideoMain component should match snapshot 1`] = `
 Array [
   <div
-    className="sc-fujyAs dTcaAt"
+    className="sc-jSFjdj kEFjmY"
   >
     <iframe
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -17,26 +17,26 @@ Array [
     />
   </div>,
   <h3
-    className="sc-dlnjwi gSEKKh"
+    className="sc-bdnxRM htCLwI"
   >
     Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)
   </h3>,
   <div
-    className="sc-hKFxyN cjIctm"
+    className="sc-gtsrHT dRVsAK"
   >
     <div
-      className="sc-eCApnc gPnuTA"
+      className="sc-dlnjwi eDONLI"
     >
       Publicado: 4/11/2020
     </div>
     <div
-      className="sc-jSFjdj ceWepK"
+      className="sc-hKFxyN erKfLT"
     >
       99,052 Visualizaciones
     </div>
   </div>,
   <p
-    className="sc-gKAaRy jqAMhv"
+    className="sc-eCApnc byzKEe"
   >
     Te enseño React desde cero. 👨‍🏫 ¿Qué es React? ¿Por qué deberías aprenderlo? ¿Por qué lo necesitamos? ¿Qué es JSX 🤔? Props y State. Eventos. Renderizado condicional y useState. 🔥
   </p>,
