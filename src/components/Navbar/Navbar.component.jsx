@@ -3,6 +3,7 @@ import { IconButton, FormControlLabel } from '@material-ui/core';
 import Switch from '@material-ui/core/Switch';
 import MenuIcon from '@material-ui/icons/Menu';
 import SearchIcon from '@material-ui/icons/Search';
+import { useHistory } from 'react-router-dom';
 import {
   GlobalStyle,
   Nav,
@@ -14,7 +15,6 @@ import {
   IconContainer,
 } from './Navbar.styled';
 import FullSideBar from './Sidebar.styled';
-import { useHistory } from "react-router-dom";
 import { useDebounce } from '../../utils/hooks/useDebounce';
 import { useGlobal } from '../../providers/Global';
 
@@ -25,7 +25,7 @@ function Navbar() {
   const { query, darkTheme } = state;
 
   const [localQuery, setLocalQuery] = useState(query);
-  
+
   const history = useHistory();
 
   const debounceValue = useDebounce(localQuery, 600);
@@ -35,7 +35,6 @@ function Navbar() {
 
     dispatch({ type: 'update_search_query', payload: debounceValue });
     history.push('/');
-
   }, [debounceValue, history, dispatch]);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -58,12 +57,17 @@ function Navbar() {
   return (
     <>
       <GlobalStyle dark={darkTheme} />
-      <Nav dark={darkTheme} >
+      <Nav dark={darkTheme}>
         <NavLeft>
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
           </IconButton>
-          <FullSideBar dark={darkTheme} updateState={showSidebar} activeClass={sidebar ? 'sidebar-active' : null} menuItems={menuItems} />
+          <FullSideBar
+            dark={darkTheme}
+            updateState={showSidebar}
+            activeClass={sidebar ? 'sidebar-active' : null}
+            menuItems={menuItems}
+          />
           <SearchContainer>
             <IconContainer>
               <SearchIcon />

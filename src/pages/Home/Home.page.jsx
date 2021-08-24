@@ -1,6 +1,6 @@
 import React from 'react';
 // import { useAuth } from '../../providers/Auth';
-import {VideoList} from '../../components/Video';
+import { VideoList } from '../../components/Video';
 import { useGlobal } from '../../providers/Global';
 import { Home, HomeTitle } from './Home.styled';
 import { useVideos } from '../../utils/hooks/useVideos';
@@ -14,7 +14,7 @@ function HomePage() {
   const videos = useVideos(query);
 
   return (
-    <Home dark={darkTheme} >
+    <Home dark={darkTheme}>
       <HomeTitle>Welcome to the Challenge!</HomeTitle>
       <VideoList videos={videos} dark={darkTheme} />
     </Home>

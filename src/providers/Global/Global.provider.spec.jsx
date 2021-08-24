@@ -3,11 +3,7 @@ import React from 'react';
 import { renderHook, act } from '@testing-library/react-hooks';
 import { GlobalProvider, useGlobal } from './Global.provider';
 
-
-
-const wrapper = ({ children }) => (
-    <GlobalProvider>{children}</GlobalProvider>
-)
+const wrapper = ({ children }) => <GlobalProvider>{children}</GlobalProvider>;
 
 // beforeEach(() => {
 
@@ -18,37 +14,33 @@ const wrapper = ({ children }) => (
 // })
 
 describe('Global Provider', () => {
+  it('should update the query state', () => {
+    const { result } = renderHook(() => useGlobal(), { wrapper });
 
-    it('should update the query state', () => {
-        const { result } = renderHook(() => useGlobal(), { wrapper } );
+    const { dispatch } = result.current;
 
-        const { dispatch } = result.current;
-
-        act(() => {
-            dispatch({ type: 'update_search_query', payload: 'probando test hook' });
-        })
-        
-        const { query } = result.current.state;
-
-        expect(query).toBe('probando test hook');
+    act(() => {
+      dispatch({ type: 'update_search_query', payload: 'probando test hook' });
     });
 
+    const { query } = result.current.state;
 
+    expect(query).toBe('probando test hook');
+  });
 
-    it('should toggle the darkTheme state', () => {
-        const { result } = renderHook(() => useGlobal(), { wrapper } );
+  it('should toggle the darkTheme state', () => {
+    const { result } = renderHook(() => useGlobal(), { wrapper });
 
-        const { state, dispatch } = result.current;
-        
-        const { darkTheme: initialValue } = state;
+    const { state, dispatch } = result.current;
 
-        act(() => {
-            dispatch({ type: 'toggle_theme', payload: true });
-        })
-        
-        const { darkTheme: afterDispatchValue } = result.current.state;
+    const { darkTheme: initialValue } = state;
 
-        expect(initialValue).not.toBe(afterDispatchValue);
-    })
+    act(() => {
+      dispatch({ type: 'toggle_theme', payload: true });
+    });
 
-})
+    const { darkTheme: afterDispatchValue } = result.current.state;
+
+    expect(initialValue).not.toBe(afterDispatchValue);
+  });
+});

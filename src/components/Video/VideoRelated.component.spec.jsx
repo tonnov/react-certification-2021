@@ -6,7 +6,6 @@ import { VideoRelated } from './VideoRelated.component';
 import infoVideo from '../../mock/single-video.json';
 
 describe('VideoRelated component', () => {
-
   const [vid] = infoVideo.items;
 
   // const component = render(

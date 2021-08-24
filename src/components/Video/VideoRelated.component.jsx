@@ -10,7 +10,7 @@ const LinkVideoRel = styled(Link)`
   padding: 0;
 
   :hover {
-    /* opacity: ${prop => prop.dark ? '0.2' : '0.8' }; */
+    /* opacity: ${(prop) => (prop.dark ? '0.2' : '0.8')}; */
     opacity: 0.8;
     transition: all 0.3s ease-out;
   }
@@ -59,7 +59,7 @@ const RelTitle = styled.span`
   max-width: 90%;
   padding: 2px;
   font-size: 1em;
-  color: ${props => props.dark ? '#f0f0f0' : '#4f4f4f'};
+  color: ${(props) => (props.dark ? '#f0f0f0' : '#4f4f4f')};
   /* box-sizing: content-box; */
 
   line-height: 20px;
@@ -80,7 +80,7 @@ const RelAuthor = styled.span`
   flex: 1;
   max-width: 80%;
   padding: 2px;
-  color: ${props => props.dark ? '#9e9e9e' : '#8c8c8c'};
+  color: ${(props) => (props.dark ? '#9e9e9e' : '#8c8c8c')};
   font-size: 0.8em;
   font-style: italic;
 
@@ -105,7 +105,9 @@ export const VideoRelated = ({ video, dark }) => {
       <VideoRelContainer role="listitem">
         <RelThumbnail src={thumbnails.medium.url} role="img" />
         <RelText>
-          <RelTitle role="note" dark={dark}>{title}</RelTitle>
+          <RelTitle role="note" dark={dark}>
+            {title}
+          </RelTitle>
           <RelAuthor dark={dark}>{channelTitle}</RelAuthor>
         </RelText>
       </VideoRelContainer>

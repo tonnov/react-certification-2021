@@ -78,8 +78,8 @@ const SideBar = styled.nav`
   align-items: center;
   padding-top: 10px;
   /* background: #fff; */
-  background-color: ${props => props.dark ? '#4d4d4d' : '#fff'};
-  color: ${props => props.dark ? '#f2f2f2' : '#4d4d4d'};
+  background-color: ${(props) => (props.dark ? '#4d4d4d' : '#fff')};
+  color: ${(props) => (props.dark ? '#f2f2f2' : '#4d4d4d')};
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
   z-index: 1050;
 

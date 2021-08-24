@@ -5,9 +5,7 @@ import { BrowserRouter } from 'react-router-dom';
 import Navbar from './Navbar.component';
 import { GlobalContext } from '../../providers/Global';
 
-
 const RenderNavWithSearchProvider = (snap) => {
-
   const isSnap = snap || false;
 
   const state = { query: 'wizeline', darkTheme: false };
@@ -27,7 +25,6 @@ const RenderNavWithSearchProvider = (snap) => {
 
   return render(component);
 };
-
 
 beforeEach(() => RenderNavWithSearchProvider());
 
@@ -77,12 +74,10 @@ describe('Navbar User Interaction', () => {
     expect(searchBox.value).toBe('wizeline Rocks!');
   });
 
-
   it('check if sidebar shows on click', () => {
     const openMenu = screen.getByRole('button', { name: 'open drawer' });
     fireEvent.click(openMenu);
     const sideBar = screen.getByLabelText('sidebar');
     expect(sideBar).toHaveClass('sidebar-active');
   });
-
 });

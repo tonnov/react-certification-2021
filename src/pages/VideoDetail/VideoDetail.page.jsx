@@ -1,6 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import {   VideoLayout, VideoContainer, ListVideoRelated } from './VideoDetail.styled';
+import { VideoLayout, VideoContainer, ListVideoRelated } from './VideoDetail.styled';
 import { VideoMain } from '../../components/Video';
 import { VideoRelated } from '../../components/Video/VideoRelated.component';
 // import infoVideo from '../../mock/single-video.json';
@@ -27,7 +27,9 @@ const VideoDetail = () => {
       </VideoContainer>
       <ListVideoRelated>
         {relVideos &&
-          relVideos.map((vid) => <VideoRelated key={vid.id.videoId} video={vid} dark={darkTheme ? 1 : 0} />)}
+          relVideos.map((vid) => (
+            <VideoRelated key={vid.id.videoId} video={vid} dark={darkTheme ? 1 : 0} />
+          ))}
       </ListVideoRelated>
     </VideoLayout>
   );

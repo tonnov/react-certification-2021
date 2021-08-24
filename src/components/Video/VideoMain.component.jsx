@@ -2,10 +2,9 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-
 const VideoTitle = styled.h3`
   font-weight: 900;
-  color: ${props => props.dark ? '#f5f5f5' : '#383838'};
+  color: ${(props) => (props.dark ? '#f5f5f5' : '#383838')};
 `;
 
 const VideoDetails = styled.div`
@@ -14,7 +13,7 @@ const VideoDetails = styled.div`
   font-size: 10pt;
   padding: 0 10px;
   margin: 0;
-  color: ${props => props.dark ? '#b5b5b5' : '#383838'};
+  color: ${(props) => (props.dark ? '#b5b5b5' : '#383838')};
 `;
 
 const VideoPub = styled.div`
@@ -31,7 +30,7 @@ const VideoViews = styled.div`
 
 const VideoDescription = styled.p`
   padding: 10px;
-  color: ${props => props.dark ? '#d1d1d1' : '#757575'};
+  color: ${(props) => (props.dark ? '#d1d1d1' : '#757575')};
   display: inline-block;
   word-wrap: break-word;
   white-space: pre-line;
@@ -40,7 +39,6 @@ const VideoDescription = styled.p`
   text-overflow: ellipsis; */
   /* background-color: cadetblue; */
 `;
-
 
 const VideoFrame = styled.div`
   position: relative;
@@ -84,8 +82,8 @@ export const VideoMain = ({ embedId, video, dark }) => {
       </VideoFrame>
       <VideoTitle dark={dark}>{snippet.title}</VideoTitle>
       <VideoDetails dark={dark}>
-        <VideoPub >{`Publicado: ${publicado}`}</VideoPub>
-        <VideoViews >{`${vistas} Visualizaciones`}</VideoViews>
+        <VideoPub>{`Publicado: ${publicado}`}</VideoPub>
+        <VideoViews>{`${vistas} Visualizaciones`}</VideoViews>
       </VideoDetails>
       <VideoDescription dark={dark}>{firstLine}</VideoDescription>
     </>

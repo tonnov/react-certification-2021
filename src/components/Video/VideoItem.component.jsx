@@ -19,12 +19,12 @@ const VideoContainer = styled.div`
   display: flex;
   flex-direction: column;
   /* border: 1px solid rgb(233, 233, 233); */
-  border: 1px solid ${props => props.dark ? '#1f1f1f' : '#e8e8e8' };
+  border: 1px solid ${(props) => (props.dark ? '#1f1f1f' : '#e8e8e8')};
   border-radius: 4px;
   box-shadow: 0 1px 5px 0 rgba(79, 79, 79, 0.1);
   overflow: hidden;
-  background-color: ${props => props.dark ? '#4d4d4d' : '#fff'};
-  color: ${props => props.dark ? '#f2f2f2' : '#3d3d3d'};
+  background-color: ${(props) => (props.dark ? '#4d4d4d' : '#fff')};
+  color: ${(props) => (props.dark ? '#f2f2f2' : '#3d3d3d')};
 `;
 
 const VideoThumbnail = styled.div`
@@ -42,14 +42,14 @@ const VideoText = styled.div`
 `;
 
 const VideoTitle = styled.h3`
-  color: ${props => props.dark ? '#f0f0f0' : '#454545'};
+  color: ${(props) => (props.dark ? '#f0f0f0' : '#454545')};
 `;
 
 const VideoDescription = styled.p`
   line-height: 1.5;
   font-size: 10.5pt;
   overflow: hidden;
-  color: ${props => props.dark ? '#dbdbdb' : '#757575'};
+  color: ${(props) => (props.dark ? '#dbdbdb' : '#757575')};
 `;
 
 export const VideoItem = ({ item, dark }) => {
@@ -59,11 +59,13 @@ export const VideoItem = ({ item, dark }) => {
 
   return (
     <LinkVideo to={`/video/${videoId}`}>
-      <VideoContainer dark={dark} >
+      <VideoContainer dark={dark}>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>
           <VideoTitle dark={dark}>{title}</VideoTitle>
-          <VideoDescription role="note" dark={dark}>{description}</VideoDescription>
+          <VideoDescription role="note" dark={dark}>
+            {description}
+          </VideoDescription>
         </VideoText>
       </VideoContainer>
     </LinkVideo>
