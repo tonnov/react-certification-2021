@@ -1,0 +1,44 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`VideoMain component should match snapshot 1`] = `
+Array [
+  <div
+    className="sc-fujyAs dTcaAt"
+  >
+    <iframe
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowFullScreen={true}
+      data-testid="iframe"
+      frameborser="0"
+      height="480"
+      src="https://www.youtube.com/embed/T_j60n1zgu0"
+      title="Embedded youtube"
+      width="854"
+    />
+  </div>,
+  <h3
+    className="sc-dlnjwi gSEKKh"
+  >
+    Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)
+  </h3>,
+  <div
+    className="sc-hKFxyN cjIctm"
+  >
+    <div
+      className="sc-eCApnc gPnuTA"
+    >
+      Publicado: 4/11/2020
+    </div>
+    <div
+      className="sc-jSFjdj ceWepK"
+    >
+      99,052 Visualizaciones
+    </div>
+  </div>,
+  <p
+    className="sc-gKAaRy jqAMhv"
+  >
+    Te enseño React desde cero. 👨‍🏫 ¿Qué es React? ¿Por qué deberías aprenderlo? ¿Por qué lo necesitamos? ¿Qué es JSX 🤔? Props y State. Eventos. Renderizado condicional y useState. 🔥
+  </p>,
+]
+`;

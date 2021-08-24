@@ -1,38 +1,37 @@
-import React, { useRef } from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import React, { useEffect, useState } from 'react';
+// import { useAuth } from '../../providers/Auth';
+import VideoList from './VideoList.component';
+import { useGlobal } from '../../providers/Global';
+import { useYoutubeApi } from '../../providers/Youtube';
+import { Home, HomeTitle } from './Home.styled';
 
-import { useAuth } from '../../providers/Auth';
-import './Home.styles.css';
+// import listaVideos from '../../mock/react-response.json';
 
 function HomePage() {
-  const history = useHistory();
-  const sectionRef = useRef(null);
-  const { authenticated, logout } = useAuth();
+  const { searchVideos } = useYoutubeApi();
+  const [videos, SetVideos] = useState({});
 
-  function deAuthenticate(event) {
-    event.preventDefault();
-    logout();
-    history.push('/');
-  }
+  const { state } = useGlobal();
+  const { query, darkTheme } = state;
+  // console.log(state);
+
+  useEffect(() => {
+    const runAsync = async () => {
+      const data = await searchVideos(query);
+      SetVideos(data || []);
+    };
+
+    runAsync();
+    // SetVideos(listaVideos);
+    // }, [query]);
+  }, [query, searchVideos]);
+
 
   return (
-    <section className="homepage" ref={sectionRef}>
-      <h1>Hello stranger!</h1>
-      {authenticated ? (
-        <>
-          <h2>Good to have you back</h2>
-          <span>
-            <Link to="/" onClick={deAuthenticate}>
-              ← logout
-            </Link>
-            <span className="separator" />
-            <Link to="/secret">show me something cool →</Link>
-          </span>
-        </>
-      ) : (
-        <Link to="/login">let me in →</Link>
-      )}
-    </section>
+    <Home dark={darkTheme} >
+      <HomeTitle>Welcome to the Challenge!</HomeTitle>
+      <VideoList videos={videos} dark={darkTheme} />
+    </Home>
   );
 }
 

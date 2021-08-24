@@ -1,0 +1,102 @@
+{
+    "kind": "youtube#videoListResponse",
+    "etag": "IxFOcxNDIIxW9wgQlVedZ4hmRos",
+    "items": [
+      {
+        "kind": "youtube#video",
+        "etag": "70bj5BtakVqtZr7Hlx91o7qSwb8",
+        "id": "T_j60n1zgu0",
+        "snippet": {
+          "publishedAt": "2020-04-11T08:16:31Z",
+          "channelId": "UC8LeXCWOalN8SxlrPcG-PaQ",
+          "title": "Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)",
+          "description": "Te enseño React desde cero. 👨\u200d🏫 ¿Qué es React? ¿Por qué deberías aprenderlo? ¿Por qué lo necesitamos? ¿Qué es JSX 🤔? Props y State. Eventos. Renderizado condicional y useState. 🔥\n\n¡No olvides suscribirte para próximos vídeos!\nhttps://www.youtube.com/c/midudev?sub_confirmation=1\n\nEl código del ejemplo:\n https://codesandbox.io/s/dawn-silence-le4b4?file=/index.html\n\n🎥 SEGMENTOS:\n00:00 - Bienvenida y saludos\n03:28 - ¿Prefieres Vue o React?\n04:00 - ¿Qué es React?\n06:40 - Declarativo vs. Imperativo. El ejemplo del sushi.\n07:25 - React está basado en componentes\n11:00 - ¿Por qué React es tan estable en su desarrollo?\n12:10 - npm trends: React vs Angular vs Vue\n17:30 - Creando un componente Avatar con HTML puro\n20:58 - Creando el componente Avatar con Vanila Javascript.\n32:30 - Empezando a usar React sin Webpack y sin JSX\n37:10 - Usando ReactDOM\n40:58 - El parámetro children y por qué usamos JSX\n43:10 - Usando babel al vuelo\n44:10 - La transpilación de JSX\n50:40 - Props para eventos: onClick\n53:55 - Los parámetros de un componente son las props\n55:25 - El estado de los componentes con useState\n59:05 - Renderizado condicional declarativo\n01:01:30 - DOM Virtual y cambios mínimos\n01:04:42 - Arrow function (función flecha)\n01:05:05 - Componente reusable con diferentes tamaños\n01:09:24 - Props con valores por defect: defaultProps\n01:13:25 - Renderizado condicional en el render\n01:22:39 - Usa PascalCase para los componentes de React\n01:24:20 - useState explicado paso a paso\n01:37:20 - Mi opinión sobre tener el estado en una Global Store\n01:38:33 - Últimas preguntas y agradecimientos",
+          "thumbnails": {
+            "default": {
+              "url": "https://i.ytimg.com/vi/T_j60n1zgu0/default.jpg",
+              "width": 120,
+              "height": 90
+            },
+            "medium": {
+              "url": "https://i.ytimg.com/vi/T_j60n1zgu0/mqdefault.jpg",
+              "width": 320,
+              "height": 180
+            },
+            "high": {
+              "url": "https://i.ytimg.com/vi/T_j60n1zgu0/hqdefault.jpg",
+              "width": 480,
+              "height": 360
+            },
+            "standard": {
+              "url": "https://i.ytimg.com/vi/T_j60n1zgu0/sddefault.jpg",
+              "width": 640,
+              "height": 480
+            },
+            "maxres": {
+              "url": "https://i.ytimg.com/vi/T_j60n1zgu0/maxresdefault.jpg",
+              "width": 1280,
+              "height": 720
+            }
+          },
+          "channelTitle": "midudev",
+          "tags": [
+            "react",
+            "react desde cero",
+            "reactjs desde cero",
+            "reactjs tutorial español",
+            "aprender react desde cero",
+            "que es reactjs",
+            "reactjs tutorial",
+            "react tutorial 2020",
+            "react tutorial español 2020",
+            "react tutorial español 2019",
+            "react para principantes",
+            "react aprender",
+            "curso react js en español",
+            "aprende react",
+            "aprender react",
+            "como aprender react",
+            "curso completo react",
+            "curso react",
+            "react js",
+            "react app",
+            "aprender reactjs",
+            "aprender react js desde cero",
+            "react js desde cero",
+            "reactjs"
+          ],
+          "categoryId": "24",
+          "liveBroadcastContent": "none",
+          "localized": {
+            "title": "Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)",
+            "description": "Te enseño React desde cero. 👨\u200d🏫 ¿Qué es React? ¿Por qué deberías aprenderlo? ¿Por qué lo necesitamos? ¿Qué es JSX 🤔? Props y State. Eventos. Renderizado condicional y useState. 🔥\n\n¡No olvides suscribirte para próximos vídeos!\nhttps://www.youtube.com/c/midudev?sub_confirmation=1\n\nEl código del ejemplo:\n https://codesandbox.io/s/dawn-silence-le4b4?file=/index.html\n\n🎥 SEGMENTOS:\n00:00 - Bienvenida y saludos\n03:28 - ¿Prefieres Vue o React?\n04:00 - ¿Qué es React?\n06:40 - Declarativo vs. Imperativo. El ejemplo del sushi.\n07:25 - React está basado en componentes\n11:00 - ¿Por qué React es tan estable en su desarrollo?\n12:10 - npm trends: React vs Angular vs Vue\n17:30 - Creando un componente Avatar con HTML puro\n20:58 - Creando el componente Avatar con Vanila Javascript.\n32:30 - Empezando a usar React sin Webpack y sin JSX\n37:10 - Usando ReactDOM\n40:58 - El parámetro children y por qué usamos JSX\n43:10 - Usando babel al vuelo\n44:10 - La transpilación de JSX\n50:40 - Props para eventos: onClick\n53:55 - Los parámetros de un componente son las props\n55:25 - El estado de los componentes con useState\n59:05 - Renderizado condicional declarativo\n01:01:30 - DOM Virtual y cambios mínimos\n01:04:42 - Arrow function (función flecha)\n01:05:05 - Componente reusable con diferentes tamaños\n01:09:24 - Props con valores por defect: defaultProps\n01:13:25 - Renderizado condicional en el render\n01:22:39 - Usa PascalCase para los componentes de React\n01:24:20 - useState explicado paso a paso\n01:37:20 - Mi opinión sobre tener el estado en una Global Store\n01:38:33 - Últimas preguntas y agradecimientos"
+          },
+          "defaultAudioLanguage": "es-ES"
+        },
+        "contentDetails": {
+          "duration": "PT1H50M7S",
+          "dimension": "2d",
+          "definition": "hd",
+          "caption": "false",
+          "licensedContent": false,
+          "contentRating": {},
+          "projection": "rectangular"
+        },
+        "statistics": {
+          "viewCount": "99052",
+          "likeCount": "3845",
+          "dislikeCount": "38",
+          "favoriteCount": "0",
+          "commentCount": "220"
+        },
+        "player": {
+          "embedHtml": "\u003ciframe width=\"480\" height=\"270\" src=\"//www.youtube.com/embed/T_j60n1zgu0\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen\u003e\u003c/iframe\u003e"
+        }
+      }
+    ],
+    "pageInfo": {
+      "totalResults": 1,
+      "resultsPerPage": 1
+    }
+  }
+  
