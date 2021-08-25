@@ -43,10 +43,10 @@ function Navbar() {
     setLocalQuery(e.target.value);
   };
 
-  const handleChangeTheme = (event) => {
-    const swValue = event.target.checked;
+  const handleChangeTheme = () => {
+    // const swValue = event.target.checked;
     // console.log(swValue);
-    dispatch({ type: 'toggle_theme', darkTheme: swValue });
+    dispatch({ type: 'toggle_theme' });
   };
 
   const menuItems = [
@@ -92,9 +92,11 @@ function Navbar() {
             }
             label="Dark mode"
           />
-          <IconButton color="inherit" aria-label="user">
-            <UserAvatar dark={darkTheme} />
-          </IconButton>
+          {/* <Link to={'/login'} > */}
+            <IconButton color="inherit" aria-label="user" >
+              <UserAvatar dark={darkTheme} />
+            </IconButton>
+          {/* </Link> */}
         </NavRight>
       </Nav>
     </>
