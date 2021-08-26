@@ -51,8 +51,6 @@ describe('Navbar Component', () => {
     expect(snap.toJSON()).toMatchSnapshot();
   });
 
-  
-
   it('Should render a menu bar', () => {
     const menuBars = screen.getByRole('button', {
       name: 'open drawer',

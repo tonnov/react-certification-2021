@@ -1,13 +1,11 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react';
 import MenuItem from '@material-ui/core/MenuItem';
 import { withStyles } from '@material-ui/core/styles';
 import Menu from '@material-ui/core/Menu';
 import Login from '../Login';
 import { useAuth } from '../../providers/Auth';
 
-
-const MenuLogin = ({anchor, toggleMenu}) => {
-
+const MenuLogin = ({ anchor, toggleMenu }) => {
   const StyledMenu = withStyles({
     paper: {
       border: '1px solid #d3d4d5',
@@ -32,19 +30,19 @@ const MenuLogin = ({anchor, toggleMenu}) => {
 
   const showLogin = () => {
     toggleMenu(null);
-    setLoginForm(!loginForm)
+    setLoginForm(!loginForm);
   };
 
   const { authenticated, logout } = useAuth();
 
   const handleClose = () => {
     toggleMenu(null);
-  }
+  };
 
   const handleLogout = () => {
     logout();
     toggleMenu(null);
-  }
+  };
 
   return (
     <>
@@ -55,15 +53,14 @@ const MenuLogin = ({anchor, toggleMenu}) => {
         open={Boolean(anchor)}
         onClose={handleClose}
       >
-        { authenticated 
-            ? <MenuItem onClick={handleLogout}>Log Out</MenuItem>
-            : <MenuItem onClick={showLogin}>Log In</MenuItem>
-        }
-      
+        {authenticated ? (
+          <MenuItem onClick={handleLogout}>Log Out</MenuItem>
+        ) : (
+          <MenuItem onClick={showLogin}>Log In</MenuItem>
+        )}
       </StyledMenu>
     </>
+  );
+};
 
-  )
-}
-
-export default MenuLogin
+export default MenuLogin;

@@ -39,14 +39,13 @@ function Navbar() {
 
     dispatch({ type: 'update_search_query', payload: debounceValue });
     history.push('/');
-
   }, [debounceValue, history, dispatch]);
 
   const showSidebar = () => setSidebar(!sidebar);
 
   const showMenu = (event) => {
     setAnchorEl(event.currentTarget);
-  }
+  };
   const hideMenu = () => setAnchorEl(null);
 
   const changeLocalQuery = (e) => {
@@ -101,11 +100,10 @@ function Navbar() {
             }
             label="Dark mode"
           />
-          
-          <IconButton color="inherit" aria-label="user" onClick={showMenu} >
+
+          <IconButton color="inherit" aria-label="user" onClick={showMenu}>
             <UserAvatar dark={darkTheme} />
           </IconButton>
-        
         </NavRight>
       </Nav>
     </>
