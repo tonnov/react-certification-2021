@@ -13,32 +13,35 @@ import {
   SearchContainer,
   SearchInput,
   IconContainer,
+  AuthAvatar
 } from './Navbar.styled';
 import FullSideBar from './Sidebar.component';
 import { useDebounce } from '../../utils/hooks/useDebounce';
 import { useGlobal } from '../../providers/Global';
 import MenuLogin from './Menu.component';
+import { useAuth } from '../../providers/Auth'
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
   const [anchorEl, setAnchorEl] = useState(null);
 
+  const { authenticated } = useAuth();
   const { state, dispatch } = useGlobal();
-  const { query, darkTheme } = state;
+  const { query, darkTheme, sessionData } = state;
 
   const [localQuery, setLocalQuery] = useState(query);
 
   const history = useHistory();
 
-  const debounceValue = useDebounce(localQuery, 600);
-
-  // console.log('Navbar rendered');
+  const debounceValue = useDebounce(localQuery, 500);
+  
 
   useEffect(() => {
     if (!debounceValue) return;
 
     dispatch({ type: 'update_search_query', payload: debounceValue });
     history.push('/');
+
   }, [debounceValue, history, dispatch]);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -102,7 +105,7 @@ function Navbar() {
           />
 
           <IconButton color="inherit" aria-label="user" onClick={showMenu}>
-            <UserAvatar dark={darkTheme} />
+          { authenticated ?  <AuthAvatar url={sessionData?.avatarUrl} /> : <UserAvatar dark={darkTheme} /> }
           </IconButton>
         </NavRight>
       </Nav>

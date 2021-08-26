@@ -40,7 +40,7 @@ export const NavRight = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 25px;
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 600px) {
     display: none;
   }
 `;
@@ -140,3 +140,27 @@ export const UserAvatar = ({ dark }) => {
     </UserBackground>
   );
 };
+
+const AuthContainer = styled.span`
+  width: 43px;
+  height: 43px;
+  padding: 2px;
+  border-radius: 50%;
+  background-color: ${(props) =>
+    props.dark ? 'rgba(168, 168, 168, 0.7)' : 'rgba(255, 255, 255, 0.5)'};
+  display: flex;
+  align-items: center;
+`;
+
+const Avatar = styled.img`
+  height: 100%;
+  border-radius: 50%;
+`;
+
+export const AuthAvatar = ({url}) => {
+  return (
+    <AuthContainer>
+      <Avatar src={url} />
+    </AuthContainer>
+  )
+}

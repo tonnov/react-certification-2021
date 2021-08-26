@@ -14,7 +14,7 @@ export const useVideos = (query) => {
     const runAsync = async () => {
       const data = await fetchData(term, params);
       setVideos(data || []);
-      storage.set('storedQuery', { storedQuery: query, data });
+      storage.set('storedData', { storedQuery: query, data });
       // localStorage.setItem('storedQuery', JSON.stringify({ storedQuery: query, data }));
     };
 
@@ -29,7 +29,7 @@ export const useVideos = (query) => {
 
     // runAsync();
 
-    const storedData = storage.get('storedQuery');
+    const storedData = storage.get('storedData');
     // JSON.parse(localStorage.getItem('storedQuery'));
 
     if (storedData) {

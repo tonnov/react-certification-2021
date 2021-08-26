@@ -1,4 +1,5 @@
 import React, { useContext, useReducer } from 'react';
+// import { storage } from '../../utils/storage';
 
 export const GlobalContext = React.createContext(null);
 
@@ -15,11 +16,13 @@ export const useGlobal = () => {
 const initialState = {
   query: 'wizeline',
   darkTheme: false,
+  sessioData: {}
 };
 
 const ACTIONS = {
   UPDATE_SEARCH_QUERY: 'update_search_query',
   TOGGLE_THEME: 'toggle_theme',
+  UPDATE_SESSION_DATA: 'update_session_data'
 };
 
 const reducer = (state, action) => {
@@ -34,14 +37,28 @@ const reducer = (state, action) => {
         ...state,
         darkTheme: !state.darkTheme,
       };
+    case ACTIONS.UPDATE_SESSION_DATA:
+      return {
+        ...state,
+        sessionData: action.payload
+      }
     default:
       return state;
   }
 };
 
 export const GlobalProvider = (props) => {
-  const [state, dispatch] = useReducer(reducer, initialState);
+  
   // console.log('GlobalProvider called!')
+  
+  // useEffect(() => {
+  //   const stored = storage.get('storedData');
+  //   const { storedQuery } = stored;
+  //   console.log(storedQuery.length, initialState.query)
+  //   if (storedQuery?.length > 0 ) initialState.query = storedQuery;
+  // }, [])
+
+  const [state, dispatch] = useReducer(reducer, initialState);
 
   return (
     <GlobalContext.Provider value={{ state, dispatch }}>

@@ -8,6 +8,7 @@ import DialogTitle from '@material-ui/core/DialogTitle';
 import Alert from '@material-ui/lab/Alert';
 import { useAuth } from '../../providers/Auth';
 import loginApi from './Login.api';
+// import { useGlobal } from '../../providers/Global';
 // import { useHistory } from 'react-router-dom';
 
 const Login = ({ show, toggleShow }) => {
@@ -20,6 +21,7 @@ const Login = ({ show, toggleShow }) => {
   // const history = useHistory();
 
   const { login } = useAuth();
+  // const { dispatch } = useGlobal();
 
   // console.log('Login auth', authenticated);
 
@@ -37,9 +39,12 @@ const Login = ({ show, toggleShow }) => {
     const pass = passWord.current.value;
 
     try {
-      const solveUser = await loginApi(user, pass);
-      console.log(solveUser);
-      login();
+
+      const solvedUser = await loginApi(user, pass);
+      // dispatch({ type: 'update_session_data', payload: solvedUser });
+      login(solvedUser);
+      toggleShow();
+
     } catch (err) {
       setMsgError(err.message);
       setError(true);
