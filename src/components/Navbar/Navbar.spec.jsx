@@ -3,38 +3,55 @@ import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './Navbar.component';
-import { GlobalContext } from '../../providers/Global';
+// import { GlobalContext } from '../../providers/Global';
+import AuthProvider from '../../providers/Auth';
+import GlobalProvider from '../../providers/Global';
 
-const RenderNavWithSearchProvider = (snap) => {
-  const isSnap = snap || false;
-
-  const state = { query: 'wizeline', darkTheme: false };
-  const dispatch = jest.fn();
-
-  const component = (
-    <GlobalContext.Provider value={{ state, dispatch }}>
+const component = (
+  <GlobalProvider>
+    <AuthProvider>
       <BrowserRouter>
         <Navbar />
       </BrowserRouter>
-    </GlobalContext.Provider>
-  );
+    </AuthProvider>
+  </GlobalProvider>
+);
 
-  if (isSnap) {
-    return renderer.create(component);
-  }
+// const RenderNavWithSearchProvider = (snap) => {
+//   const isSnap = snap || false;
 
-  return render(component);
-};
+//   // const state = { query: 'wizeline', darkTheme: false };
+//   // const dispatch = jest.fn();
 
-beforeEach(() => RenderNavWithSearchProvider());
+//   const component = (
+//     <GlobalProvider>
+//       <AuthProvider>
+//         <BrowserRouter>
+//           <Navbar />
+//         </BrowserRouter>
+//       </AuthProvider>
+//     </GlobalProvider>
+//   );
+
+//   if (isSnap) {
+//     return renderer.create(component);
+//   }
+
+//   return render(component);
+// };
+
+beforeEach(() => render(component));
 
 describe('Navbar Component', () => {
   it('should match snapshot', () => {
     // const snap = renderer.create(<Navbar />);
-    const snap = RenderNavWithSearchProvider(true);
+    const snap = renderer.create(component);
+    // const snap = RenderNavWithSearchProvider(true);
 
     expect(snap.toJSON()).toMatchSnapshot();
   });
+
+  
 
   it('Should render a menu bar', () => {
     const menuBars = screen.getByRole('button', {
@@ -53,11 +70,11 @@ describe('Navbar Component', () => {
   });
 
   it('should render a checkbox for theme switch', () => {
-    const component = screen.getByRole('checkbox', {
+    const checkbox = screen.getByRole('checkbox', {
       name: 'Dark mode',
     });
 
-    expect(component).toBeInTheDocument();
+    expect(checkbox).toBeInTheDocument();
   });
 });
 

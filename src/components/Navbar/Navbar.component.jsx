@@ -14,12 +14,14 @@ import {
   SearchInput,
   IconContainer,
 } from './Navbar.styled';
-import FullSideBar from './Sidebar.styled';
+import FullSideBar from './Sidebar.component';
 import { useDebounce } from '../../utils/hooks/useDebounce';
 import { useGlobal } from '../../providers/Global';
+import MenuLogin from './Menu.component';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
 
   const { state, dispatch } = useGlobal();
   const { query, darkTheme } = state;
@@ -30,22 +32,28 @@ function Navbar() {
 
   const debounceValue = useDebounce(localQuery, 600);
 
+  // console.log('Navbar rendered');
+
   useEffect(() => {
     if (!debounceValue) return;
 
     dispatch({ type: 'update_search_query', payload: debounceValue });
     history.push('/');
+
   }, [debounceValue, history, dispatch]);
 
   const showSidebar = () => setSidebar(!sidebar);
+
+  const showMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  }
+  const hideMenu = () => setAnchorEl(null);
 
   const changeLocalQuery = (e) => {
     setLocalQuery(e.target.value);
   };
 
   const handleChangeTheme = () => {
-    // const swValue = event.target.checked;
-    // console.log(swValue);
     dispatch({ type: 'toggle_theme' });
   };
 
@@ -56,6 +64,7 @@ function Navbar() {
 
   return (
     <>
+      <MenuLogin anchor={anchorEl} toggleMenu={hideMenu} />
       <GlobalStyle dark={darkTheme} />
       <Nav dark={darkTheme}>
         <NavLeft>
@@ -92,11 +101,11 @@ function Navbar() {
             }
             label="Dark mode"
           />
-          {/* <Link to={'/login'} > */}
-            <IconButton color="inherit" aria-label="user" >
-              <UserAvatar dark={darkTheme} />
-            </IconButton>
-          {/* </Link> */}
+          
+          <IconButton color="inherit" aria-label="user" onClick={showMenu} >
+            <UserAvatar dark={darkTheme} />
+          </IconButton>
+        
         </NavRight>
       </Nav>
     </>
