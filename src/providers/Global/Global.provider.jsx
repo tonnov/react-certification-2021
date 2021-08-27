@@ -1,7 +1,7 @@
 import React, { useContext, useReducer } from 'react';
 // import { storage } from '../../utils/storage';
 
-export const GlobalContext = React.createContext(null);
+const GlobalContext = React.createContext(null);
 
 export const useGlobal = () => {
   const context = useContext(GlobalContext);
@@ -16,13 +16,13 @@ export const useGlobal = () => {
 const initialState = {
   query: 'wizeline',
   darkTheme: false,
-  sessioData: {}
+  sessionData: {},
 };
 
 const ACTIONS = {
   UPDATE_SEARCH_QUERY: 'update_search_query',
   TOGGLE_THEME: 'toggle_theme',
-  UPDATE_SESSION_DATA: 'update_session_data'
+  UPDATE_SESSION_DATA: 'update_session_data',
 };
 
 const reducer = (state, action) => {
@@ -40,17 +40,16 @@ const reducer = (state, action) => {
     case ACTIONS.UPDATE_SESSION_DATA:
       return {
         ...state,
-        sessionData: action.payload
-      }
+        sessionData: action.payload,
+      };
     default:
       return state;
   }
 };
 
 export const GlobalProvider = (props) => {
-  
   // console.log('GlobalProvider called!')
-  
+
   // useEffect(() => {
   //   const stored = storage.get('storedData');
   //   const { storedQuery } = stored;

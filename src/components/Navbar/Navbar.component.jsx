@@ -9,17 +9,18 @@ import {
   Nav,
   NavLeft,
   NavRight,
+  NavSwitch,
   UserAvatar,
   SearchContainer,
   SearchInput,
   IconContainer,
-  AuthAvatar
+  AuthAvatar,
 } from './Navbar.styled';
 import FullSideBar from './Sidebar.component';
 import { useDebounce } from '../../utils/hooks/useDebounce';
 import { useGlobal } from '../../providers/Global';
 import MenuLogin from './Menu.component';
-import { useAuth } from '../../providers/Auth'
+import { useAuth } from '../../providers/Auth';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
@@ -34,14 +35,12 @@ function Navbar() {
   const history = useHistory();
 
   const debounceValue = useDebounce(localQuery, 500);
-  
 
   useEffect(() => {
     if (!debounceValue) return;
 
     dispatch({ type: 'update_search_query', payload: debounceValue });
     history.push('/');
-
   }, [debounceValue, history, dispatch]);
 
   const showSidebar = () => setSidebar(!sidebar);
@@ -61,14 +60,19 @@ function Navbar() {
 
   const menuItems = [
     { route: '/', name: 'Home' },
-    // { route: '/video/HYyRZiwBWc8', name: 'Video' }
+    // { route: '/favorites', name: 'Favorites' }
   ];
+
+  if (authenticated) {
+    menuItems.push({ route: '/favorites', name: 'Favorites' })
+  }
+
 
   return (
     <>
-      <MenuLogin anchor={anchorEl} toggleMenu={hideMenu} />
       <GlobalStyle dark={darkTheme} />
       <Nav dark={darkTheme}>
+      <MenuLogin anchor={anchorEl} toggleMenu={hideMenu} userName={sessionData?.name} />
         <NavLeft>
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
@@ -92,20 +96,25 @@ function Navbar() {
           </SearchContainer>
         </NavLeft>
         <NavRight>
-          <FormControlLabel
-            control={
-              <Switch
-                checked={darkTheme}
-                name="toggleTheme"
-                color="primary"
-                onChange={handleChangeTheme}
-              />
-            }
-            label="Dark mode"
-          />
-
+          <NavSwitch>
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={darkTheme}
+                  name="toggleTheme"
+                  color="primary"
+                  onChange={handleChangeTheme}
+                />
+              }
+              label="Dark mode"
+            />
+          </NavSwitch>
           <IconButton color="inherit" aria-label="user" onClick={showMenu}>
-          { authenticated ?  <AuthAvatar url={sessionData?.avatarUrl} /> : <UserAvatar dark={darkTheme} /> }
+            {authenticated ? (
+              <AuthAvatar url={sessionData?.avatarUrl} />
+            ) : (
+              <UserAvatar dark={darkTheme} />
+            )}
           </IconButton>
         </NavRight>
       </Nav>

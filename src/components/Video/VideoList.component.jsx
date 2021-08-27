@@ -9,19 +9,16 @@ const VideoListContainer = styled.div`
   justify-content: center;
   gap: 20px 15px;
   background-color: inherit;
-  /* background-color: ${(props) => (props.dark ? '#4d4d4d' : '#fff')}; */
 `;
 
-export const VideoList = ({ videos = {}, dark }) => {
-  const { items = [] } = videos;
-
-  if (items.length <= 0) return null;
+export const VideoList = ({ videos = [], dark, origin }) => {
+  
+  if (videos.length <= 0) return null;
 
   return (
     <VideoListContainer>
-      {items.map((item) => (
-        // { console.log(item.id.videoId)}
-        <VideoItem item={item} key={item.etag} dark={dark} />
+      {videos.map((video) => (
+        <VideoItem item={video} key={video.etag} dark={dark} origin={origin} />
       ))}
     </VideoListContainer>
   );

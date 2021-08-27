@@ -3,9 +3,18 @@ import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './Navbar.component';
-// import { GlobalContext } from '../../providers/Global';
 import AuthProvider from '../../providers/Auth';
 import GlobalProvider from '../../providers/Global';
+
+jest.mock('@material-ui/core/Menu', () => ()=> {
+  return(  
+    <div>
+      <input
+        data-testid='mock-component'
+      />
+  </div>
+  )
+});
 
 const component = (
   <GlobalProvider>
@@ -17,36 +26,13 @@ const component = (
   </GlobalProvider>
 );
 
-// const RenderNavWithSearchProvider = (snap) => {
-//   const isSnap = snap || false;
 
-//   // const state = { query: 'wizeline', darkTheme: false };
-//   // const dispatch = jest.fn();
-
-//   const component = (
-//     <GlobalProvider>
-//       <AuthProvider>
-//         <BrowserRouter>
-//           <Navbar />
-//         </BrowserRouter>
-//       </AuthProvider>
-//     </GlobalProvider>
-//   );
-
-//   if (isSnap) {
-//     return renderer.create(component);
-//   }
-
-//   return render(component);
-// };
 
 beforeEach(() => render(component));
 
 describe('Navbar Component', () => {
   it('should match snapshot', () => {
-    // const snap = renderer.create(<Navbar />);
     const snap = renderer.create(component);
-    // const snap = RenderNavWithSearchProvider(true);
 
     expect(snap.toJSON()).toMatchSnapshot();
   });

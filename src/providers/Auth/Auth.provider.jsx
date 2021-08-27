@@ -6,7 +6,7 @@ import { useGlobal } from '../Global';
 
 const AuthContext = React.createContext(null);
 
-function useAuth() {
+export function useAuth() {
   const context = useContext(AuthContext);
   if (!context) {
     throw new Error(`Can't use "useAuth" without an AuthProvider!`);
@@ -27,12 +27,15 @@ function AuthProvider({ children }) {
     dispatch({ type: 'update_session_data', payload: userData });
   }, [dispatch]);
 
-  const login = useCallback((data) => {
-    setAuthenticated(true);
-    storage.set(AUTH_STORAGE_KEY, true);
-    dispatch({ type: 'update_session_data', payload: data });
-    storage.set(SESSION_STORAGE_DATA, data);
-  }, [dispatch]);
+  const login = useCallback(
+    (data) => {
+      setAuthenticated(true);
+      storage.set(AUTH_STORAGE_KEY, true);
+      dispatch({ type: 'update_session_data', payload: data });
+      storage.set(SESSION_STORAGE_DATA, data);
+    },
+    [dispatch]
+  );
 
   const logout = useCallback(() => {
     setAuthenticated(false);
@@ -48,5 +51,5 @@ function AuthProvider({ children }) {
   );
 }
 
-export { useAuth };
+// export { useAuth };
 export default AuthProvider;

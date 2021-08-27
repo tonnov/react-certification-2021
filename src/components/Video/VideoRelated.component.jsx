@@ -93,15 +93,20 @@ const RelAuthor = styled.span`
   text-overflow: ellipsis;
 `;
 
-export const VideoRelated = ({ video, dark }) => {
+export const VideoRelated = ({ video, dark, origin }) => {
   if (!video.snippet) return null;
 
   const { thumbnails, title, channelTitle } = video.snippet;
-  const { videoId } = video.id;
-  // console.log(videoId);
 
+  const videoId = video.id.videoId || video.id;
+  // console.log(videoId);
+  const path = (origin === 'fav') ? 'videofav' : 'video';
   return (
-    <LinkVideoRel dark={dark} to={`/video/${videoId}`}>
+    <LinkVideoRel dark={dark} to={`/${path}/${videoId}`}>
+      {/* to={{
+            pathname: `/video/${videoId}`, 
+            state: {origin},
+      }}> */}
       <VideoRelContainer role="listitem">
         <RelThumbnail src={thumbnails.medium.url} role="img" />
         <RelText>

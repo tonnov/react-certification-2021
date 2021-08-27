@@ -1,22 +1,22 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
-import { VideoLayout, VideoContainer, ListVideoRelated } from './VideoDetail.styled';
+import { VideoLayout, VideoContainer, ListVideoRelated } from './VideoFavDetail.styled';
 import { VideoMain } from '../../components/Video';
 import { VideoRelated } from '../../components/Video/VideoRelated.component';
-import { useVideo, useRelatedVideos } from '../../utils/hooks/useVideos';
+import { useVideo } from '../../utils/hooks/useVideos';
 import { useGlobal } from '../../providers/Global';
 import { useAuth } from '../../providers/Auth';
+import { useFavs } from '../../utils/hooks/useFavs';
 
 // import infoVideo from '../../mock/single-video.json';
 // import relatedVideos from '../../mock/related-to.json';
 
-const VideoDetail = () => {
+const VideoFavDetail = () => {
   const { id } = useParams();
+  const { allOtherFavs } = useFavs();
 
-  // const relVideos = (origin !== 'fav') ? RelatedVideos(id) : allOtherFavs(id);
-  
   const selVideo = useVideo(id);
-  const relVideos = useRelatedVideos(id);
+  const relVideos = allOtherFavs(id);
 
   const { state } = useGlobal();
   const { darkTheme } = state;
@@ -33,11 +33,11 @@ const VideoDetail = () => {
       <ListVideoRelated>
         {relVideos &&
           relVideos.map((vid) => (
-            <VideoRelated key={vid.id.videoId} video={vid} dark={darkTheme ? 1 : 0} origin={origin} />
+            <VideoRelated key={vid.id.videoId} video={vid} dark={darkTheme ? 1 : 0} origin={'fav'} />
           ))}
       </ListVideoRelated>
     </VideoLayout>
   );
 };
 
-export default VideoDetail;
+export default VideoFavDetail;

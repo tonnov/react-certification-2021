@@ -12,11 +12,12 @@ function HomePage() {
   const { query, darkTheme } = state;
 
   const videos = useVideos(query);
+  const { items } = videos;
 
   return (
     <Home dark={darkTheme}>
       <HomeTitle>Welcome to the Challenge!</HomeTitle>
-      <VideoList videos={videos} dark={darkTheme} />
+      <VideoList videos={items} dark={darkTheme} origin={'home'} />
     </Home>
   );
 }

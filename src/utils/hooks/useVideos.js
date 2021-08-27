@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { YoutubeApi } from '../Youtube/YoutubeApi';
+import { YoutubeApi } from '../../api/Youtube.api';
 import { storage } from '../storage';
 
 const YOUTUBE_API_KEY = process.env.REACT_APP_YOUTUBE_API_KEY;
@@ -15,7 +15,6 @@ export const useVideos = (query) => {
       const data = await fetchData(term, params);
       setVideos(data || []);
       storage.set('storedData', { storedQuery: query, data });
-      // localStorage.setItem('storedQuery', JSON.stringify({ storedQuery: query, data }));
     };
 
     term = 'search';
@@ -30,7 +29,6 @@ export const useVideos = (query) => {
     // runAsync();
 
     const storedData = storage.get('storedData');
-    // JSON.parse(localStorage.getItem('storedQuery'));
 
     if (storedData) {
       const { storedQuery, data } = storedData;

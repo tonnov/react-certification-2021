@@ -29,8 +29,8 @@ export const NavLeft = styled.div`
   margin-left: 20px;
   @media screen and (max-width: 600px) {
     /* margin-left: 15px; */
-    margin-right: 15px;
-    flex: 100%;
+    margin-right: 10px;
+    flex: 95%;
   }
 `;
 
@@ -40,6 +40,15 @@ export const NavRight = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 25px;
+  @media screen and (max-width: 600px) {
+    /* display: none; */
+    margin-right: 5px;
+    flex: 5%;
+  }
+`;
+
+export const NavSwitch = styled.span`
+
   @media screen and (max-width: 600px) {
     display: none;
   }
@@ -157,10 +166,10 @@ const Avatar = styled.img`
   border-radius: 50%;
 `;
 
-export const AuthAvatar = ({url}) => {
+export const AuthAvatar = ({ url }) => {
   return (
     <AuthContainer>
       <Avatar src={url} />
     </AuthContainer>
-  )
-}
+  );
+};

@@ -2,13 +2,15 @@ import React from 'react';
 import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import { VideoList } from '.';
-import videos from '../../mock/youtube-videos-mock.json';
+import data from '../../mock/youtube-videos-mock.json';
 
 jest.mock('react-router-dom', () => {
   return {
     Link: jest.fn(({ children }) => <div role="link">{children}</div>),
   };
 });
+
+const { items: videos } = data;
 
 describe('VideoList component', () => {
   it('should match snapshot', () => {

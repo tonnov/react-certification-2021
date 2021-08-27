@@ -52,13 +52,18 @@ const VideoDescription = styled.p`
   color: ${(props) => (props.dark ? '#dbdbdb' : '#757575')};
 `;
 
-export const VideoItem = ({ item, dark }) => {
+export const VideoItem = ({ item, dark, origin }) => {
+
   const { thumbnails, title, description } = item.snippet;
-
-  const { videoId } = item.id;
-
+  // const { videoId } = item.id;
+  const videoId = item.id.videoId || item.id;
+  const path = (origin === 'fav') ? 'videofav' : 'video';
   return (
-    <LinkVideo to={`/video/${videoId}`}>
+    <LinkVideo to={`/${path}/${videoId}`} >
+      {/*  to={{
+             pathname: `/video/${videoId}`, 
+             state: {origin},
+       }}> */}
       <VideoContainer dark={dark}>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>

@@ -1,10 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import VideoFavorite from './VideoFavorite.component'
+
+const VideoTitleBar = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 2px;
+`;
 
 const VideoTitle = styled.h3`
+  flex: 90%;
+  margin: 0;
   font-weight: 900;
+  word-break: normal;
   color: ${(props) => (props.dark ? '#f5f5f5' : '#383838')};
+`;
+
+const VideoFav = styled.span`
+  flex: 10%;
+  display: ${(props) => (props.auth ? 'flex' : 'none') };
+  justify-content: center;
+  margin: 0;
 `;
 
 const VideoDetails = styled.div`
@@ -56,9 +76,10 @@ const VideoFrame = styled.div`
   }
 `;
 
-export const VideoMain = ({ embedId, video, dark }) => {
+
+export const VideoMain = ({ embedId, video, dark, auth }) => {
   if (!video) return null;
-  // console.log(video);
+  // console.log('VideoMain auth -->',auth);
   const { snippet, statistics } = video;
   const publicado = new Date(snippet.publishedAt).toLocaleDateString();
   const vistas = new Intl.NumberFormat('es-MX', { style: 'decimal' }).format(
@@ -76,11 +97,16 @@ export const VideoMain = ({ embedId, video, dark }) => {
           frameborser="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          title="Embedded youtube"
+          title="Embedded Youtube Video"
           data-testid="iframe"
         />
       </VideoFrame>
-      <VideoTitle dark={dark}>{snippet.title}</VideoTitle>
+      <VideoTitleBar>
+        <VideoTitle dark={dark}>{snippet.title}</VideoTitle>
+        <VideoFav auth={auth}>
+          <VideoFavorite video={video} />
+        </VideoFav>
+      </VideoTitleBar>
       <VideoDetails dark={dark}>
         <VideoPub>{`Publicado: ${publicado}`}</VideoPub>
         <VideoViews>{`${vistas} Visualizaciones`}</VideoViews>

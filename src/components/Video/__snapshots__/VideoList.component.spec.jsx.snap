@@ -2,7 +2,7 @@
 
 exports[`VideoList component should match snapshot 1`] = `
 <div
-  className="sc-gKAaRy jZIFDO"
+  className="sc-gKAaRy guwtHl"
 >
   <div
     role="link"

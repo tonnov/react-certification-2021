@@ -4,11 +4,12 @@ import GlobalProvider from '../../providers/Global';
 import AuthProvider from '../../providers/Auth';
 import HomePage from '../../pages/Home';
 import NotFound from '../../pages/NotFound';
-import SecretPage from '../../pages/Secret';
+import FavoritePage from '../../pages/Favorite';
 import Private from '../Private';
 import Layout from '../Layout';
 import Navbar from '../Navbar';
 import VideoDetail from '../../pages/VideoDetail';
+import VideoFavDetail from '../../pages/VideoFavDetail';
 // import { random } from '../../utils/fns';
 
 function App() {
@@ -25,8 +26,11 @@ function App() {
               <Route exact path="/video/:id">
                 <VideoDetail />
               </Route>
-              <Private exact path="/secret">
-                <SecretPage />
+              <Private exact path="/favorites">
+                <FavoritePage />
+              </Private>
+              <Private exact path="/videofav/:id">
+                <VideoFavDetail />
               </Private>
               <Route path="*">
                 <NotFound />
