@@ -53,13 +53,12 @@ const VideoDescription = styled.p`
 `;
 
 export const VideoItem = ({ item, dark, origin }) => {
-
   const { thumbnails, title, description } = item.snippet;
   // const { videoId } = item.id;
   const videoId = item.id.videoId || item.id;
-  const path = (origin === 'fav') ? 'videofav' : 'video';
+  const path = origin === 'fav' ? 'videofav' : 'video';
   return (
-    <LinkVideo to={`/${path}/${videoId}`} >
+    <LinkVideo to={`/${path}/${videoId}`}>
       {/*  to={{
              pathname: `/video/${videoId}`, 
              state: {origin},

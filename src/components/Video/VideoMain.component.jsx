@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
-import VideoFavorite from './VideoFavorite.component'
+import VideoFavorite from './VideoFavorite.component';
 
 const VideoTitleBar = styled.div`
   display: flex;
@@ -22,7 +22,7 @@ const VideoTitle = styled.h3`
 
 const VideoFav = styled.span`
   flex: 10%;
-  display: ${(props) => (props.auth ? 'flex' : 'none') };
+  display: ${(props) => (props.auth ? 'flex' : 'none')};
   justify-content: center;
   margin: 0;
 `;
@@ -75,7 +75,6 @@ const VideoFrame = styled.div`
     border: 0;
   }
 `;
-
 
 export const VideoMain = ({ embedId, video, dark, auth }) => {
   if (!video) return null;

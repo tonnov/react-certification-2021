@@ -46,7 +46,7 @@ Array [
         onTouchMove={[Function]}
         onTouchStart={[Function]}
         tabIndex={0}
-        title="Agregar a Favs"
+        title="Add to Favorites"
         type="button"
       >
         <span

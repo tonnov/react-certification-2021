@@ -100,7 +100,7 @@ export const VideoRelated = ({ video, dark, origin }) => {
 
   const videoId = video.id.videoId || video.id;
   // console.log(videoId);
-  const path = (origin === 'fav') ? 'videofav' : 'video';
+  const path = origin === 'fav' ? 'videofav' : 'video';
   return (
     <LinkVideoRel dark={dark} to={`/${path}/${videoId}`}>
       {/* to={{

@@ -1,8 +1,8 @@
-import React from 'react'
+import React from 'react';
+import styled from 'styled-components';
 import { useFavs } from '../../utils/hooks/useFavs';
 import { VideoList } from '../../components/Video';
 import { useGlobal } from '../../providers/Global';
-import styled from 'styled-components';
 
 export const PageBody = styled.section`
   margin: 5px;
@@ -17,21 +17,20 @@ export const PageTitle = styled.h1`
 `;
 
 const FavoritePage = () => {
+  const { state } = useGlobal();
+  const { darkTheme, sessionData } = state;
+  const { name } = sessionData;
 
-    const { state } = useGlobal();
-    const { darkTheme, sessionData } = state;
-    const { name } = sessionData;
+  const { allFavs } = useFavs();
 
-    const { allFavs } = useFavs();
-    
-    const videos = allFavs();
+  const videos = allFavs();
 
-    return (
-        <PageBody>
-            <PageTitle>{`${name}'s`} Favorites!</PageTitle>
-            <VideoList videos={videos} dark={darkTheme} origin={'fav'}/>
-        </PageBody>
-    )
-}
+  return (
+    <PageBody>
+      <PageTitle>{`${name}'s`} Favorites!</PageTitle>
+      <VideoList videos={videos} dark={darkTheme} origin="fav" />
+    </PageBody>
+  );
+};
 
-export default FavoritePage
+export default FavoritePage;

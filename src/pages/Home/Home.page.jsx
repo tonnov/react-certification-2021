@@ -17,7 +17,7 @@ function HomePage() {
   return (
     <Home dark={darkTheme}>
       <HomeTitle>Welcome to the Challenge!</HomeTitle>
-      <VideoList videos={items} dark={darkTheme} origin={'home'} />
+      <VideoList videos={items} dark={darkTheme} origin="home" />
     </Home>
   );
 }

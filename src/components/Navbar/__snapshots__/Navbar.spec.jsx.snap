@@ -10,7 +10,7 @@ exports[`Navbar Component should match snapshot 1`] = `
     />
   </div>
   <div
-    className="sc-gtsrHT efmejS"
+    className="sc-gtsrHT buujYO"
   >
     <button
       aria-label="open drawer"
@@ -93,15 +93,66 @@ exports[`Navbar Component should match snapshot 1`] = `
             </svg>
           </span>
         </button>
+        <span
+          className="sc-dIsUp eOLNGD"
+        >
+          <label
+            className="MuiFormControlLabel-root"
+          >
+            <span
+              className="MuiSwitch-root"
+            >
+              <span
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <input
+                    checked={false}
+                    className="PrivateSwitchBase-input-5 MuiSwitch-input"
+                    name="toggleTheme"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  <span
+                    className="MuiSwitch-thumb"
+                  />
+                </span>
+              </span>
+              <span
+                className="MuiSwitch-track"
+              />
+            </span>
+            <span
+              className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+            >
+              Dark mode
+            </span>
+          </label>
+        </span>
         <ul
-          className="sc-iqAclL jjCUTo"
+          className="sc-kEqXSa jUGqmn"
           onClick={[Function]}
         >
           <li
-            className="sc-crzoAE cONkJO"
+            className="sc-iqAclL ckeQNY"
           >
             <a
-              className="sc-dIsUp dHdShb"
+              className="sc-crzoAE cjwZBk"
               href="/"
               onClick={[Function]}
             >
@@ -112,10 +163,10 @@ exports[`Navbar Component should match snapshot 1`] = `
       </nav>
     </div>
     <div
-      className="sc-jSFjdj hwrMmd"
+      className="sc-eCApnc YImrI"
     >
       <span
-        className="sc-iCoGMd dMQGIt"
+        className="sc-gKAaRy iXzfoV"
       >
         <svg
           aria-hidden={true}
@@ -130,7 +181,7 @@ exports[`Navbar Component should match snapshot 1`] = `
       </span>
       <input
         aria-label="search"
-        className="sc-gKAaRy kyIlRh"
+        className="sc-jSFjdj fsuZxZ"
         onChange={[Function]}
         placeholder="Search..."
         value="wizeline"
@@ -138,10 +189,10 @@ exports[`Navbar Component should match snapshot 1`] = `
     </div>
   </div>
   <div
-    className="sc-dlnjwi bnUAPG"
+    className="sc-dlnjwi ewKkWV"
   >
     <span
-      className="sc-hKFxyN epZIWW"
+      className="sc-hKFxyN bijRJo"
     >
       <label
         className="MuiFormControlLabel-root"
@@ -214,11 +265,11 @@ exports[`Navbar Component should match snapshot 1`] = `
         className="MuiIconButton-label"
       >
         <span
-          className="sc-fujyAs hbrBmh"
+          className="sc-iCoGMd hGktbA"
         >
           <svg
             aria-hidden={true}
-            className="MuiSvgIcon-root sc-pNWdM eqxZiU"
+            className="MuiSvgIcon-root sc-fujyAs cbBOTO"
             dark={0}
             focusable="false"
             viewBox="0 0 24 24"

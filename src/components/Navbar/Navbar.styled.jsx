@@ -26,11 +26,12 @@ export const NavLeft = styled.div`
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-left: 20px;
+  margin-left: 15px;
+  /* background-color: rgba(0, 255, 153, 0.35); */
   @media screen and (max-width: 600px) {
-    /* margin-left: 15px; */
-    margin-right: 10px;
     flex: 95%;
+    margin-left: 10px;
+    /* margin-right: 10px; */
   }
 `;
 
@@ -40,44 +41,44 @@ export const NavRight = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 25px;
+  /* background-color: rgba(191, 255, 0, 0.35); */
   @media screen and (max-width: 600px) {
-    /* display: none; */
-    margin-right: 5px;
     flex: 5%;
+    margin-right: 0;
   }
 `;
 
 export const NavSwitch = styled.span`
-
   @media screen and (max-width: 600px) {
     display: none;
   }
 `;
 
-export const Input = styled.input`
-  margin-left: 40px;
-  height: 60%;
-  font-size: 12pt;
-  width: 200px;
-  border: none;
-  outline: none;
-  border-radius: 4px;
-  padding: 0 15px;
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.2);
+// export const Input = styled.input`
+//   margin-left: 40px;
+//   height: 60%;
+//   font-size: 12pt;
+//   width: 200px;
+//   border: none;
+//   outline: none;
+//   border-radius: 4px;
+//   padding: 0 15px;
+//   color: #fff;
+//   background-color: rgba(255, 255, 255, 0.2);
 
-  &:focus,
-  &:active {
-    outline: none;
-  }
-  &::placeholder {
-    color: white;
-  }
+//   :focus,
+//   :active {
+//     outline: none;
+//   }
+//   ::placeholder {
+//     color: white;
+//   }
 
-  &:hover {
-    background-color: rgba(255, 255, 255, 0.3);
-  }
-`;
+//   :hover {
+//     background-color: rgba(255, 255, 255, 0.3);
+//   }
+  
+// `;
 
 export const SearchContainer = styled.div`
   position: relative;
@@ -90,14 +91,14 @@ export const SearchContainer = styled.div`
   align-items: center;
   padding-left: 5px;
 
-  &:hover {
+  :hover {
     transition: all 0.2s ease;
     background-color: rgba(255, 255, 255, 0.3);
   }
   @media screen and (max-width: 600px) {
     /* margin-left: 30px; */
     height: 65%;
-    width: 78%;
+    width: 85%;
   }
 `;
 
@@ -159,6 +160,11 @@ const AuthContainer = styled.span`
     props.dark ? 'rgba(168, 168, 168, 0.7)' : 'rgba(255, 255, 255, 0.5)'};
   display: flex;
   align-items: center;
+
+  @media screen and (max-width: 600px) {
+    width: 40px;
+    height: 40px;
+  }
 `;
 
 const Avatar = styled.img`

@@ -5,9 +5,9 @@ import Menu from '@material-ui/core/Menu';
 import PersonIcon from '@material-ui/icons/Person';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import styled from 'styled-components';
 import Login from '../Login';
 import { useAuth } from '../../providers/Auth';
-import styled from 'styled-components';
 
 const userContainer = styled.div`
   background-color: red;
@@ -15,7 +15,6 @@ const userContainer = styled.div`
 `;
 
 const MenuLogin = ({ anchor, toggleMenu, userName }) => {
-  
   const StyledMenu = withStyles({
     paper: {
       border: '1px solid #d3d4d5',
@@ -63,7 +62,6 @@ const MenuLogin = ({ anchor, toggleMenu, userName }) => {
         open={Boolean(anchor)}
         onClose={handleClose}
       >
-        
         {authenticated ? (
           <userContainer>
             <ListItemIcon>

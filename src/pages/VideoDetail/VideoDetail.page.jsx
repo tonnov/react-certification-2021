@@ -14,7 +14,7 @@ const VideoDetail = () => {
   const { id } = useParams();
 
   // const relVideos = (origin !== 'fav') ? RelatedVideos(id) : allOtherFavs(id);
-  
+
   const selVideo = useVideo(id);
   const relVideos = useRelatedVideos(id);
 
@@ -33,7 +33,12 @@ const VideoDetail = () => {
       <ListVideoRelated>
         {relVideos &&
           relVideos.map((vid) => (
-            <VideoRelated key={vid.id.videoId} video={vid} dark={darkTheme ? 1 : 0} origin={origin} />
+            <VideoRelated
+              key={vid.id.videoId}
+              video={vid}
+              dark={darkTheme ? 1 : 0}
+              origin={origin}
+            />
           ))}
       </ListVideoRelated>
     </VideoLayout>

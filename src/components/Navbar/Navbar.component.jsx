@@ -64,15 +64,14 @@ function Navbar() {
   ];
 
   if (authenticated) {
-    menuItems.push({ route: '/favorites', name: 'Favorites' })
+    menuItems.push({ route: '/favorites', name: 'Favorites' });
   }
-
 
   return (
     <>
       <GlobalStyle dark={darkTheme} />
       <Nav dark={darkTheme}>
-      <MenuLogin anchor={anchorEl} toggleMenu={hideMenu} userName={sessionData?.name} />
+        <MenuLogin anchor={anchorEl} toggleMenu={hideMenu} userName={sessionData?.name} />
         <NavLeft>
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
@@ -82,6 +81,7 @@ function Navbar() {
             updateState={showSidebar}
             activeClass={sidebar ? 'sidebar-active' : null}
             menuItems={menuItems}
+            updateTheme={handleChangeTheme}
           />
           <SearchContainer>
             <IconContainer>

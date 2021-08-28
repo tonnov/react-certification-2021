@@ -6,14 +6,12 @@ import Navbar from './Navbar.component';
 import AuthProvider from '../../providers/Auth';
 import GlobalProvider from '../../providers/Global';
 
-jest.mock('@material-ui/core/Menu', () => ()=> {
-  return(  
+jest.mock('@material-ui/core/Menu', () => () => {
+  return (
     <div>
-      <input
-        data-testid='mock-component'
-      />
-  </div>
-  )
+      <input data-testid="mock-component" />
+    </div>
+  );
 });
 
 const component = (
@@ -25,8 +23,6 @@ const component = (
     </AuthProvider>
   </GlobalProvider>
 );
-
-
 
 beforeEach(() => render(component));
 

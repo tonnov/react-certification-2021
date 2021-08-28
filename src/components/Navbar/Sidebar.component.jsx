@@ -3,7 +3,8 @@ import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 // import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 import CloseIcon from '@material-ui/icons/Close';
-import { IconButton } from '@material-ui/core';
+import { IconButton, FormControlLabel } from '@material-ui/core';
+import Switch from '@material-ui/core/Switch';
 
 const LinkList = styled.ul`
   width: 100%;
@@ -44,6 +45,13 @@ const LinkItemNav = ({ item }) => {
     </LinkItem>
   );
 };
+
+export const NavSwitch = styled.span`
+  display: none;
+  @media screen and (max-width: 600px) {
+    display: flex;
+  }
+`;
 
 const ModalWrapper = styled.div`
   position: fixed;
@@ -89,9 +97,13 @@ const SideBar = styled.nav`
   }
 `;
 
-const FullSideBar = ({ activeClass, updateState, menuItems, dark }) => {
+const FullSideBar = ({ activeClass, updateState, menuItems, dark, updateTheme }) => {
   const handleOnClick = () => {
     updateState();
+  };
+
+  const handleChangeTheme = () => {
+    updateTheme()
   };
 
   return (
@@ -100,6 +112,19 @@ const FullSideBar = ({ activeClass, updateState, menuItems, dark }) => {
         <IconButton onClick={handleOnClick}>
           <CloseIcon style={{ color: 'inherit', fontSize: 30 }} />
         </IconButton>
+          <NavSwitch>
+              <FormControlLabel
+                control={
+                  <Switch
+                    checked={dark}
+                    name="toggleTheme"
+                    color="primary"
+                    onChange={handleChangeTheme}
+                  />
+                }
+                label="Dark mode"
+              />
+            </NavSwitch>
         <LinkList onClick={handleOnClick}>
           {menuItems &&
             menuItems.map((item) => <LinkItemNav key={item.name} item={item} />)}

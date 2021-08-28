@@ -12,7 +12,6 @@ const VideoListContainer = styled.div`
 `;
 
 export const VideoList = ({ videos = [], dark, origin }) => {
-  
   if (videos.length <= 0) return null;
 
   return (
