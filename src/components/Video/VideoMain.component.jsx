@@ -103,7 +103,7 @@ export const VideoMain = ({ embedId, video, dark, auth }) => {
       <VideoTitleBar>
         <VideoTitle dark={dark}>{snippet.title}</VideoTitle>
         <VideoFav auth={auth}>
-          <VideoFavorite video={video} />
+          <VideoFavorite video={video} dark={dark} />
         </VideoFav>
       </VideoTitleBar>
       <VideoDetails dark={dark}>
