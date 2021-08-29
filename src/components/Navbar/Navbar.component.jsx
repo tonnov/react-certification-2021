@@ -60,7 +60,6 @@ function Navbar() {
 
   const menuItems = [
     { route: '/', name: 'Home' },
-    // { route: '/favorites', name: 'Favorites' }
   ];
 
   if (authenticated) {

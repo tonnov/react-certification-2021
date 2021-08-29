@@ -9,7 +9,6 @@ export const VideoLayout = styled.div`
   justify-content: flex-start;
   align-items: flex-start;
   padding: 5px;
-  /* background-color: ${(props) => (props.dark ? '#3b3b3b' : '#fff')}; */
   background-color: inherit;
 
   @media screen and (max-width: 768px) {
@@ -24,7 +23,6 @@ export const VideoContainer = styled.div`
   @media screen and (max-width: 768px) {
     flex: 100%;
     width: 100%;
-    /* flex: 1; */
   }
 `;
 
@@ -40,7 +38,6 @@ export const ListVideoRelated = styled.div`
   overflow-x: hidden;
 
   @media screen and (max-width: 768px) {
-    /* display: none; */
     flex: 100%;
     overflow-y: hidden;
   }

@@ -5,14 +5,8 @@ import Menu from '@material-ui/core/Menu';
 import PersonIcon from '@material-ui/icons/Person';
 import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
-import styled from 'styled-components';
 import Login from '../Login';
 import { useAuth } from '../../providers/Auth';
-
-const userContainer = styled.div`
-  background-color: red;
-  font-size: 10pt !important;
-`;
 
 const MenuLogin = ({ anchor, toggleMenu, userName }) => {
   const StyledMenu = withStyles({
@@ -63,13 +57,13 @@ const MenuLogin = ({ anchor, toggleMenu, userName }) => {
         onClose={handleClose}
       >
         {authenticated ? (
-          <userContainer>
+          <span>
             <ListItemIcon>
               <PersonIcon />
               <ListItemText fontSize="small" primary={userName} />
             </ListItemIcon>
             <MenuItem onClick={handleLogout}>Log Out</MenuItem>
-          </userContainer>
+          </span>
         ) : (
           <MenuItem onClick={showLogin}>Log In</MenuItem>
         )}

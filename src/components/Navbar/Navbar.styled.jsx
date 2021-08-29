@@ -27,11 +27,9 @@ export const NavLeft = styled.div`
   justify-content: flex-start;
   align-items: center;
   margin-left: 15px;
-  /* background-color: rgba(0, 255, 153, 0.35); */
   @media screen and (max-width: 600px) {
     flex: 95%;
     margin-left: 10px;
-    /* margin-right: 10px; */
   }
 `;
 
@@ -41,7 +39,6 @@ export const NavRight = styled.div`
   justify-content: flex-end;
   align-items: center;
   margin-right: 25px;
-  /* background-color: rgba(191, 255, 0, 0.35); */
   @media screen and (max-width: 600px) {
     flex: 5%;
     margin-right: 0;
@@ -53,32 +50,6 @@ export const NavSwitch = styled.span`
     display: none;
   }
 `;
-
-// export const Input = styled.input`
-//   margin-left: 40px;
-//   height: 60%;
-//   font-size: 12pt;
-//   width: 200px;
-//   border: none;
-//   outline: none;
-//   border-radius: 4px;
-//   padding: 0 15px;
-//   color: #fff;
-//   background-color: rgba(255, 255, 255, 0.2);
-
-//   :focus,
-//   :active {
-//     outline: none;
-//   }
-//   ::placeholder {
-//     color: white;
-//   }
-
-//   :hover {
-//     background-color: rgba(255, 255, 255, 0.3);
-//   }
-  
-// `;
 
 export const SearchContainer = styled.div`
   position: relative;
@@ -96,7 +67,6 @@ export const SearchContainer = styled.div`
     background-color: rgba(255, 255, 255, 0.3);
   }
   @media screen and (max-width: 600px) {
-    /* margin-left: 30px; */
     height: 65%;
     width: 85%;
   }

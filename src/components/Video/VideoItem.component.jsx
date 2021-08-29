@@ -6,7 +6,6 @@ const LinkVideo = styled(Link)`
   text-decoration: none;
 
   :hover {
-    /* background-color: #f1f2f3; */
     opacity: 0.8;
     transition: all 0.3s ease-out;
   }
@@ -15,10 +14,8 @@ const LinkVideo = styled(Link)`
 const VideoContainer = styled.div`
   width: 350px;
   height: 340px;
-  /* margin: 11px 8px; */
   display: flex;
   flex-direction: column;
-  /* border: 1px solid rgb(233, 233, 233); */
   border: 1px solid ${(props) => (props.dark ? '#1f1f1f' : '#e8e8e8')};
   border-radius: 4px;
   box-shadow: 0 1px 5px 0 rgba(79, 79, 79, 0.1);
@@ -54,15 +51,11 @@ const VideoDescription = styled.p`
 
 export const VideoItem = ({ item, dark, origin }) => {
   const { thumbnails, title, description } = item.snippet;
-  // const { videoId } = item.id;
+
   const videoId = item.id.videoId || item.id;
   const path = origin === 'fav' ? 'videofav' : 'video';
   return (
     <LinkVideo to={`/${path}/${videoId}`}>
-      {/*  to={{
-             pathname: `/video/${videoId}`, 
-             state: {origin},
-       }}> */}
       <VideoContainer dark={dark}>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>
@@ -75,5 +68,3 @@ export const VideoItem = ({ item, dark, origin }) => {
     </LinkVideo>
   );
 };
-
-// export default VideoItem;

@@ -2,12 +2,12 @@
 
 exports[`VideoRelated component should match snapshot 1`] = `
 <a
-  className="sc-bdnxRM bCFCZk"
+  className="sc-bdnxRM blJTxv"
   href="/video/T_j60n1zgu0"
   onClick={[Function]}
 >
   <div
-    className="sc-gtsrHT fCeESP"
+    className="sc-gtsrHT gvWcIF"
     role="listitem"
   >
     <img
@@ -16,10 +16,10 @@ exports[`VideoRelated component should match snapshot 1`] = `
       src="https://i.ytimg.com/vi/T_j60n1zgu0/mqdefault.jpg"
     />
     <div
-      className="sc-hKFxyN bhYAoB"
+      className="sc-hKFxyN jnNRJe"
     >
       <span
-        className="sc-eCApnc hvrJiu"
+        className="sc-eCApnc iXAzEw"
         role="note"
       >
         Curso REACT JS ⚛️ - Aprende desde CERO 📈 Componentes, State, JSX (Tutorial Desde Cero en Español)

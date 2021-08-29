@@ -13,8 +13,6 @@ import { useAuth } from '../../providers/Auth';
 const VideoDetail = () => {
   const { id } = useParams();
 
-  // const relVideos = (origin !== 'fav') ? RelatedVideos(id) : allOtherFavs(id);
-
   const selVideo = useVideo(id);
   const relVideos = useRelatedVideos(id);
 
@@ -37,7 +35,6 @@ const VideoDetail = () => {
               key={vid.id.videoId}
               video={vid}
               dark={darkTheme ? 1 : 0}
-              origin={origin}
             />
           ))}
       </ListVideoRelated>

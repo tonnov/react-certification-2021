@@ -22,5 +22,3 @@ export const VideoList = ({ videos = [], dark, origin }) => {
     </VideoListContainer>
   );
 };
-
-// export default VideoList;

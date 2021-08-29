@@ -1,29 +1,28 @@
-import React from 'react';
+import React, { useEffect, useState} from 'react';
 import { useParams } from 'react-router-dom';
-import { VideoLayout, VideoContainer, ListVideoRelated } from './VideoFavDetail.styled';
+import { VideoLayout, VideoContainer, ListVideoRelated } from '../VideoDetail/VideoDetail.styled';
 import { VideoMain } from '../../components/Video';
 import { VideoRelated } from '../../components/Video/VideoRelated.component';
 import { useVideo } from '../../utils/hooks/useVideos';
 import { useGlobal } from '../../providers/Global';
 import { useAuth } from '../../providers/Auth';
-import { useFavs } from '../../utils/hooks/useFavs';
-
-// import infoVideo from '../../mock/single-video.json';
-// import relatedVideos from '../../mock/related-to.json';
+import { excludeVideo } from '../../utils/favsHelper';
 
 const VideoFavDetail = () => {
+
   const { id } = useParams();
-  const { allOtherFavs } = useFavs();
-
-  const selVideo = useVideo(id);
-  const relVideos = allOtherFavs(id);
-
   const { state } = useGlobal();
-  const { darkTheme } = state;
+  const { darkTheme, userFavorites } = state;
   const { authenticated } = useAuth();
 
-  // const [selVideo] = infoVideo.items;
-  // const { items: relVideos } = relatedVideos;
+  const [ relFavVideos, setRelFavVideos ] = useState();
+  
+  useEffect(() => {
+    const filtered = excludeVideo(userFavorites, id);
+    setRelFavVideos(filtered);
+  }, [userFavorites, id]);
+
+  const selVideo = useVideo(id);
 
   return (
     <VideoLayout dark={darkTheme}>
@@ -31,13 +30,12 @@ const VideoFavDetail = () => {
         <VideoMain embedId={id} video={selVideo} dark={darkTheme} auth={authenticated} />
       </VideoContainer>
       <ListVideoRelated>
-        {relVideos &&
-          relVideos.map((vid) => (
+        {relFavVideos &&
+          relFavVideos.map((vid) => (
             <VideoRelated
               key={vid.id.videoId}
               video={vid}
               dark={darkTheme ? 1 : 0}
-              origin="fav"
             />
           ))}
       </ListVideoRelated>

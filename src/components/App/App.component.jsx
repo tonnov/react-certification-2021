@@ -10,7 +10,6 @@ import Layout from '../Layout';
 import Navbar from '../Navbar';
 import VideoDetail from '../../pages/VideoDetail';
 import VideoFavDetail from '../../pages/VideoFavDetail';
-// import { random } from '../../utils/fns';
 
 function App() {
   return (

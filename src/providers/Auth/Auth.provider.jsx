@@ -17,15 +17,12 @@ export function useAuth() {
 function AuthProvider({ children }) {
   const [authenticated, setAuthenticated] = useState(false);
   const { dispatch } = useGlobal();
-  // const { session_data } = state;
 
   useEffect(() => {
     const lastAuthState = storage.get(AUTH_STORAGE_KEY);
     const isAuthenticated = Boolean(lastAuthState);
-    const userData = storage.get(SESSION_STORAGE_DATA);
     setAuthenticated(isAuthenticated);
-    dispatch({ type: 'update_session_data', payload: userData });
-  }, [dispatch]);
+  }, []);
 
   const login = useCallback(
     (data) => {
@@ -51,5 +48,4 @@ function AuthProvider({ children }) {
   );
 }
 
-// export { useAuth };
 export default AuthProvider;

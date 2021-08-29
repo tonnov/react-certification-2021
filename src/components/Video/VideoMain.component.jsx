@@ -55,9 +55,6 @@ const VideoDescription = styled.p`
   word-wrap: break-word;
   white-space: pre-line;
   height: auto;
-  /* overflow: hidden;
-  text-overflow: ellipsis; */
-  /* background-color: cadetblue; */
 `;
 
 const VideoFrame = styled.div`
@@ -78,7 +75,6 @@ const VideoFrame = styled.div`
 
 export const VideoMain = ({ embedId, video, dark, auth }) => {
   if (!video) return null;
-  // console.log('VideoMain auth -->',auth);
   const { snippet, statistics } = video;
   const publicado = new Date(snippet.publishedAt).toLocaleDateString();
   const vistas = new Intl.NumberFormat('es-MX', { style: 'decimal' }).format(
