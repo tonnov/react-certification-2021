@@ -58,9 +58,7 @@ function Navbar() {
     dispatch({ type: 'toggle_theme' });
   };
 
-  const menuItems = [
-    { route: '/', name: 'Home' },
-  ];
+  const menuItems = [{ route: '/', name: 'Home' }];
 
   if (authenticated) {
     menuItems.push({ route: '/favorites', name: 'Favorites' });

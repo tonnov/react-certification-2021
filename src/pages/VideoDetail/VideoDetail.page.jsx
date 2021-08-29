@@ -31,11 +31,7 @@ const VideoDetail = () => {
       <ListVideoRelated>
         {relVideos &&
           relVideos.map((vid) => (
-            <VideoRelated
-              key={vid.id.videoId}
-              video={vid}
-              dark={darkTheme ? 1 : 0}
-            />
+            <VideoRelated key={vid.id.videoId} video={vid} dark={darkTheme ? 1 : 0} />
           ))}
       </ListVideoRelated>
     </VideoLayout>

@@ -12,7 +12,7 @@ const VideoFavorite = ({ video, dark }) => {
   const [isFavorite, setIsFavorite] = useState(false);
   const { state, dispatch } = useGlobal();
   const { userFavorites } = state;
-  
+
   useEffect(() => {
     const isFav = isVideoFavorite(userFavorites, id);
     setIsFavorite(isFav);
@@ -21,18 +21,22 @@ const VideoFavorite = ({ video, dark }) => {
   const handleClick = () => {
     const dispatchType = isFavorite ? 'remove_from_favorites' : 'add_to_favorites';
     const dispatchPayload = isFavorite ? id : video;
-    dispatch({type: dispatchType, payload: dispatchPayload});
+    dispatch({ type: dispatchType, payload: dispatchPayload });
   };
 
   const lightGrey = grey[200];
   const darkGrey = grey[700];
   const iconStyle = {
     fontSize: 27,
-    color: (dark ? lightGrey : darkGrey)
-  }
+    color: dark ? lightGrey : darkGrey,
+  };
 
   return (
-    <Tooltip title={isFavorite ? 'Remove from Favorites' : 'Add to Favorites'} placement="left" arrow>
+    <Tooltip
+      title={isFavorite ? 'Remove from Favorites' : 'Add to Favorites'}
+      placement="left"
+      arrow
+    >
       <IconButton aria-label="add to favorites" onClick={handleClick}>
         {isFavorite ? (
           <FavoriteIcon color="secondary" style={{ fontSize: 27 }} />

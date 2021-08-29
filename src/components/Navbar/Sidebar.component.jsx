@@ -99,15 +99,15 @@ const FullSideBar = ({ activeClass, updateState, menuItems, dark, updateTheme })
   };
 
   const handleChangeTheme = () => {
-    updateTheme()
+    updateTheme();
   };
 
   const lightGrey = grey[200];
   const darkGrey = grey[700];
   const iconStyle = {
     fontSize: 30,
-    color: (dark ? lightGrey : darkGrey)
-  }
+    color: dark ? lightGrey : darkGrey,
+  };
 
   return (
     <ModalWrapper className={activeClass} onClick={handleOnClick}>
@@ -115,19 +115,19 @@ const FullSideBar = ({ activeClass, updateState, menuItems, dark, updateTheme })
         <IconButton onClick={handleOnClick}>
           <CloseIcon style={iconStyle} />
         </IconButton>
-          <NavSwitch>
-              <FormControlLabel
-                control={
-                  <Switch
-                    checked={dark}
-                    name="toggleTheme"
-                    color="primary"
-                    onChange={handleChangeTheme}
-                  />
-                }
-                label="Dark mode"
+        <NavSwitch>
+          <FormControlLabel
+            control={
+              <Switch
+                checked={dark}
+                name="toggleTheme"
+                color="primary"
+                onChange={handleChangeTheme}
               />
-            </NavSwitch>
+            }
+            label="Dark mode"
+          />
+        </NavSwitch>
         <LinkList onClick={handleOnClick}>
           {menuItems &&
             menuItems.map((item) => <LinkItemNav key={item.name} item={item} />)}
