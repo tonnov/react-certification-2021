@@ -67,7 +67,7 @@ function Navbar() {
   return (
     <>
       <GlobalStyle dark={darkTheme} />
-      <Nav dark={darkTheme}>
+      <Nav dark={darkTheme} aria-label="NavBar">
         <MenuLogin anchor={anchorEl} toggleMenu={hideMenu} userName={sessionData?.name} />
         <NavLeft>
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>

@@ -1,15 +1,18 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-
-import './NotFound.styles.css';
+import { useGlobal } from '../../providers/Global';
+import { HomeLink, Error, ErrorTitle } from './NotFound.styled';
 
 function NotFoundPage() {
+  const { state } = useGlobal();
+  const { darkTheme } = state;
+
   return (
-    <section className="not-found">
-      <Link to="/" className="home-link">
+    <section className="not-found" data-testid="Not Found">
+      <HomeLink dark={darkTheme ? 1 : 0 } to="/" className="home-link">
         home
-      </Link>
-      <img src="404.gif" alt="page not found" />
+      </HomeLink>
+      <Error dark={darkTheme}>404</Error>
+      <ErrorTitle dark={darkTheme}>Page not found</ErrorTitle>
     </section>
   );
 }

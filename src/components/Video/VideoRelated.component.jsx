@@ -89,9 +89,11 @@ export const VideoRelated = ({ video, dark, origin }) => {
   const { thumbnails, title, channelTitle } = video.snippet;
 
   const videoId = video.id.videoId || video.id;
-  const path = origin === 'fav' ? 'videofav' : 'video';
   return (
-    <LinkVideoRel dark={dark} to={`/${path}/${videoId}`}>
+    <LinkVideoRel dark={dark}  to={{
+             pathname: `/video/${videoId}`, 
+             state: {origin},
+       }}>
       <VideoRelContainer role="listitem">
         <RelThumbnail src={thumbnails.medium.url} role="img" />
         <RelText>

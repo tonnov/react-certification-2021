@@ -58,6 +58,7 @@ Array [
             focusable="false"
             style={
               Object {
+                "color": "#616161",
                 "fontSize": 27,
               }
             }
@@ -89,7 +90,7 @@ Array [
     </div>
   </div>,
   <p
-    className="sc-gKAaRy jqAMhv"
+    className="sc-gKAaRy dnGvbU"
   >
     Te enseño React desde cero. 👨‍🏫 ¿Qué es React? ¿Por qué deberías aprenderlo? ¿Por qué lo necesitamos? ¿Qué es JSX 🤔? Props y State. Eventos. Renderizado condicional y useState. 🔥
   </p>,

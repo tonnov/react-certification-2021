@@ -65,6 +65,7 @@ const Login = ({ show, toggleShow }) => {
             inputRef={passWord}
             fullWidth
             disabled={disabled}
+            aria-label="password"
           />
           <DialogActions>
             <Button type="reset" color="primary">

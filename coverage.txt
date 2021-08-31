@@ -1,73 +1,72 @@
 ------------------------------|----------|----------|----------|----------|-------------------|
 File                          |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 ------------------------------|----------|----------|----------|----------|-------------------|
-All files                     |    51.65 |    33.79 |    48.08 |    53.44 |                   |
+All files                     |    72.59 |    41.61 |    69.81 |    74.41 |                   |
  src                          |        0 |      100 |      100 |        0 |                   |
   index.jsx                   |        0 |      100 |      100 |        0 |                 7 |
- src/api                      |        4 |        0 |        0 |     4.55 |                   |
-  Login.api.js                |     8.33 |        0 |        0 |       10 |... 21,22,23,24,26 |
-  Youtube.api.js              |        0 |        0 |        0 |        0 |... 16,17,19,21,24 |
- src/components/App           |        0 |      100 |        0 |        0 |                   |
-  App.component.jsx           |        0 |      100 |        0 |        0 |                15 |
+ src/api                      |    34.78 |        0 |     37.5 |       40 |                   |
+  Login.api.js                |       10 |        0 |        0 |     12.5 |... 19,20,22,23,25 |
+  Youtube.api.js              |    53.85 |        0 |      100 |    58.33 |    14,16,17,19,21 |
+ src/components/App           |      100 |      100 |      100 |      100 |                   |
+  App.component.jsx           |      100 |      100 |      100 |      100 |                   |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/components/Layout        |        0 |      100 |        0 |        0 |                   |
-  Layout.component.jsx        |        0 |      100 |        0 |        0 |                 5 |
-  Layout.styled.jsx           |        0 |      100 |      100 |        0 |                 3 |
+ src/components/Layout        |      100 |      100 |      100 |      100 |                   |
+  Layout.component.jsx        |      100 |      100 |      100 |      100 |                   |
+  Layout.styled.jsx           |      100 |      100 |      100 |      100 |                   |
   index.js                    |        0 |        0 |        0 |        0 |                   |
  src/components/Login         |    41.67 |       25 |    33.33 |    43.48 |                   |
   Login.component.jsx         |    41.67 |       25 |    33.33 |    43.48 |... 37,38,40,41,43 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
  src/components/Navbar        |    83.13 |    53.13 |    62.96 |       85 |                   |
   Menu.component.jsx          |    64.29 |       50 |       40 |    64.29 |    35,36,42,46,47 |
-  Navbar.component.jsx        |    81.48 |     62.5 |    57.14 |     87.5 |          49,58,66 |
+  Navbar.component.jsx        |    81.48 |     62.5 |    57.14 |     87.5 |          49,58,64 |
   Navbar.styled.jsx           |    90.91 |    42.86 |       75 |    90.91 |           130,146 |
   Sidebar.component.jsx       |       90 |     62.5 |    71.43 |       90 |            98,102 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/components/Private       |        0 |        0 |        0 |        0 |                   |
-  Private.component.jsx       |        0 |        0 |        0 |        0 |            7,9,10 |
+ src/components/Private       |      100 |       50 |      100 |      100 |                   |
+  Private.component.jsx       |      100 |       50 |      100 |      100 |                10 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/components/Video         |       80 |    42.55 |       90 |    83.33 |                   |
-  VideoFavorite.component.jsx |       25 |        0 |    33.33 |       25 |... 24,27,28,29,34 |
-  VideoItem.component.jsx     |      100 |    57.14 |      100 |      100 | 19,23,24,42,49,56 |
-  VideoList.component.jsx     |    83.33 |    33.33 |      100 |      100 |             14,15 |
+ src/components/Video         |    93.15 |    53.49 |       95 |    95.71 |                   |
+  VideoFavorite.component.jsx |    81.25 |       30 |    66.67 |    81.25 |          22,23,24 |
+  VideoItem.component.jsx     |      100 |    58.33 |      100 |      100 |    19,23,24,42,49 |
+  VideoList.component.jsx     |      100 |      100 |      100 |      100 |                   |
   VideoMain.component.jsx     |    95.24 |       50 |      100 |      100 |    20,25,36,53,77 |
-  VideoRelated.component.jsx  |    93.33 |       60 |      100 |      100 |       56,73,87,92 |
+  VideoRelated.component.jsx  |    92.86 |     62.5 |      100 |      100 |          56,73,87 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/pages/Favorite           |        0 |      100 |        0 |        0 |                   |
-  Favorite.page.jsx           |        0 |      100 |        0 |        0 |        6,7,8,9,11 |
-  Favorite.styled.jsx         |        0 |      100 |      100 |        0 |               3,9 |
+ src/pages/Favorite           |      100 |      100 |      100 |      100 |                   |
+  Favorite.page.jsx           |      100 |      100 |      100 |      100 |                   |
+  Favorite.styled.jsx         |      100 |      100 |      100 |      100 |                   |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/pages/Home               |        0 |      100 |        0 |        0 |                   |
-  Home.page.jsx               |        0 |      100 |        0 |        0 |    11,12,14,15,17 |
-  Home.styled.jsx             |        0 |      100 |      100 |        0 |               3,9 |
+ src/pages/Home               |      100 |      100 |      100 |      100 |                   |
+  Home.page.jsx               |      100 |      100 |      100 |      100 |                   |
+  Home.styled.jsx             |      100 |      100 |      100 |      100 |                   |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/pages/NotFound           |        0 |      100 |        0 |        0 |                   |
-  NotFound.page.jsx           |        0 |      100 |        0 |        0 |                 7 |
+ src/pages/NotFound           |      100 |       50 |      100 |      100 |                   |
+  NotFound.page.jsx           |      100 |       50 |      100 |      100 |                11 |
+  NotFound.styled.jsx         |      100 |       50 |      100 |      100 |           6,23,29 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/pages/VideoDetail        |        0 |        0 |        0 |        0 |                   |
-  VideoDetail.page.jsx        |        0 |        0 |        0 |        0 |... 19,20,21,26,34 |
-  VideoDetail.styled.jsx      |        0 |      100 |      100 |        0 |           3,19,29 |
-  index.js                    |        0 |        0 |        0 |        0 |                   |
- src/pages/VideoFavDetail     |        0 |        0 |        0 |        0 |                   |
-  VideoFavDetail.page.jsx     |        0 |        0 |        0 |        0 |... 21,22,25,27,35 |
+ src/pages/VideoDetail        |    21.05 |        0 |        0 |    21.05 |                   |
+  VideoDetail.page.jsx        |     6.25 |        0 |        0 |     6.25 |... 31,32,35,37,45 |
+  VideoDetail.styled.jsx      |      100 |      100 |      100 |      100 |                   |
   index.js                    |        0 |        0 |        0 |        0 |                   |
  src/providers/Auth           |    59.09 |       50 |       60 |    59.09 |                   |
   Auth.provider.jsx           |    59.09 |       50 |       60 |    59.09 |... 32,38,39,40,41 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/providers/Global         |    71.43 |    55.56 |    66.67 |    73.17 |                   |
-  Global.provider.jsx         |    71.43 |    55.56 |    66.67 |    73.17 |... 47,79,84,89,94 |
+ src/providers/Global         |    90.48 |    66.67 |    88.89 |    92.68 |                   |
+  Global.provider.jsx         |    90.48 |    66.67 |    88.89 |    92.68 |          16,38,99 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/utils                    |    63.16 |      100 |    28.57 |    70.59 |                   |
+ src/utils                    |    71.43 |      100 |       50 |    73.68 |                   |
   constants.js                |      100 |      100 |      100 |      100 |                   |
-  favsHelper.js               |    33.33 |      100 |        0 |       50 |               4,8 |
+  favsHelper.js               |    66.67 |      100 |       50 |       75 |                 6 |
   fns.js                      |        0 |      100 |        0 |        0 |                 2 |
+  scrollTop.js                |       50 |      100 |        0 |       50 |                 3 |
   storage.js                  |    71.43 |      100 |      100 |    71.43 |               7,8 |
- src/utils/hooks              |    14.04 |        0 |    23.08 |    14.55 |                   |
-  useDebounce.js              |    88.89 |      100 |       75 |    88.89 |                 9 |
-  useVideos.js                |        0 |        0 |        0 |        0 |... 82,84,85,93,96 |
+ src/utils/hooks              |    56.14 |    13.64 |    69.23 |    56.36 |                   |
+  useDebounce.js              |      100 |      100 |      100 |      100 |                   |
+  useVideos.js                |    47.92 |    13.64 |    55.56 |    47.83 |... 82,84,85,93,96 |
 ------------------------------|----------|----------|----------|----------|-------------------|
 
-Test Suites: 1 failed, 5 passed, 6 total
-Tests:       2 failed, 19 passed, 21 total
-Snapshots:   4 passed, 4 total
-Time:        13.501s
+Test Suites: 16 passed, 16 total
+Tests:       39 passed, 39 total
+Snapshots:   6 passed, 6 total
+Time:        14.074s

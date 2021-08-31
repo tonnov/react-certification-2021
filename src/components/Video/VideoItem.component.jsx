@@ -53,9 +53,11 @@ export const VideoItem = ({ item, dark, origin }) => {
   const { thumbnails, title, description } = item.snippet;
 
   const videoId = item.id.videoId || item.id;
-  const path = origin === 'fav' ? 'videofav' : 'video';
   return (
-    <LinkVideo to={`/${path}/${videoId}`}>
+    <LinkVideo  to={{
+             pathname: `/video/${videoId}`, 
+             state: {origin},
+       }}>
       <VideoContainer dark={dark}>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>

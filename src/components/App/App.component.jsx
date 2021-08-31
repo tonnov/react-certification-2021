@@ -9,15 +9,15 @@ import Private from '../Private';
 import Layout from '../Layout';
 import Navbar from '../Navbar';
 import VideoDetail from '../../pages/VideoDetail';
-import VideoFavDetail from '../../pages/VideoFavDetail';
+import VideoFavDetail from '../../pages/VideoDetail/VideoFavDetail.page';
 
 function App() {
   return (
     <BrowserRouter>
       <GlobalProvider>
         <AuthProvider>
-          <Navbar />
           <Layout>
+            <Navbar />
             <Switch>
               <Route exact path="/">
                 <HomePage />
