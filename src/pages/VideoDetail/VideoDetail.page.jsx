@@ -6,7 +6,7 @@ import { VideoRelated } from '../../components/Video/VideoRelated.component';
 import { useVideo, useRelatedVideos as getRelated } from '../../utils/hooks/useVideos';
 import { useGlobal } from '../../providers/Global';
 import { useAuth } from '../../providers/Auth';
-import { ScrollToTop } from '../../utils/scrollTop'
+import { ScrollToTop } from '../../utils/scrollTop';
 import { excludeVideo } from '../../utils/favsHelper';
 
 // import infoVideo from '../../mock/single-video.json';
@@ -18,8 +18,8 @@ const VideoDetail = () => {
   const { id } = useParams();
   const { authenticated } = useAuth();
 
-  const location = useLocation()
-  const { origin } = location.state
+  const location = useLocation();
+  const { origin } = location.state;
 
   const selVideo = useVideo(id);
 
@@ -30,8 +30,8 @@ const VideoDetail = () => {
     const { userFavorites } = state;
     const filtered = excludeVideo(userFavorites, videoId);
     return filtered;
-  }
-  
+  };
+
   const relVideos = origin === 'fav' ? getFavsRelated(id) : getRelated(id);
 
   return (
@@ -42,7 +42,12 @@ const VideoDetail = () => {
       <ListVideoRelated>
         {relVideos &&
           relVideos.map((vid) => (
-            <VideoRelated key={vid.id.videoId || vid.id} video={vid} dark={darkTheme ? 1 : 0} origin={origin}/>
+            <VideoRelated
+              key={vid.id.videoId || vid.id}
+              video={vid}
+              dark={darkTheme ? 1 : 0}
+              origin={origin}
+            />
           ))}
       </ListVideoRelated>
     </VideoLayout>

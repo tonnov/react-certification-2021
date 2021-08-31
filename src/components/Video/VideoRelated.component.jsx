@@ -90,10 +90,13 @@ export const VideoRelated = ({ video, dark, origin }) => {
 
   const videoId = video.id.videoId || video.id;
   return (
-    <LinkVideoRel dark={dark}  to={{
-             pathname: `/video/${videoId}`, 
-             state: {origin},
-       }}>
+    <LinkVideoRel
+      dark={dark}
+      to={{
+        pathname: `/video/${videoId}`,
+        state: { origin },
+      }}
+    >
       <VideoRelContainer role="listitem">
         <RelThumbnail src={thumbnails.medium.url} role="img" />
         <RelText>

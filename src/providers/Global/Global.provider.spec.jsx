@@ -36,14 +36,13 @@ describe('Global Provider', () => {
     expect(initialValue).not.toBe(afterDispatchValue);
   });
 
-
   it('should storage session data', () => {
     const { result } = renderHook(() => useGlobal(), { wrapper });
 
     const { dispatch } = result.current;
 
     act(() => {
-      dispatch({ type: 'update_session_data', payload: { id: 123, userName: 'admin'} });
+      dispatch({ type: 'update_session_data', payload: { id: 123, userName: 'admin' } });
     });
 
     const { sessionData } = result.current.state;
@@ -51,15 +50,13 @@ describe('Global Provider', () => {
     expect(sessionData.userName).toBe('admin');
   });
 
-
   it('add video to favorites', () => {
     const { result } = renderHook(() => useGlobal(), { wrapper });
 
     const { dispatch } = result.current;
 
     act(() => {
-      dispatch({ type: 'add_to_favorites', payload: {id: '123', snippet: {}} });
-
+      dispatch({ type: 'add_to_favorites', payload: { id: '123', snippet: {} } });
     });
 
     const { userFavorites } = result.current.state;
@@ -69,7 +66,6 @@ describe('Global Provider', () => {
     expect(isInFavorites).toBe(true);
   });
 
-
   it('remove video from favorites', () => {
     const { result } = renderHook(() => useGlobal(), { wrapper });
 
@@ -77,7 +73,6 @@ describe('Global Provider', () => {
 
     act(() => {
       dispatch({ type: 'remove_from_favorites', payload: '123' });
-
     });
 
     const { userFavorites } = result.current.state;
@@ -86,6 +81,4 @@ describe('Global Provider', () => {
 
     expect(isInFavorites).toBe(false);
   });
-
-
 });

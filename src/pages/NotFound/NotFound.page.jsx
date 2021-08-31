@@ -8,7 +8,7 @@ function NotFoundPage() {
 
   return (
     <section className="not-found" data-testid="Not Found">
-      <HomeLink dark={darkTheme ? 1 : 0 } to="/" className="home-link">
+      <HomeLink dark={darkTheme ? 1 : 0} to="/" className="home-link">
         home
       </HomeLink>
       <Error dark={darkTheme}>404</Error>

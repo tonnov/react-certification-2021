@@ -62,10 +62,14 @@ const MenuLogin = ({ anchor, toggleMenu, userName }) => {
               <PersonIcon />
               <ListItemText fontSize="small" primary={userName} />
             </ListItemIcon>
-            <MenuItem aria-label="Log Out" onClick={handleLogout}>Log Out</MenuItem>
+            <MenuItem aria-label="Log Out" onClick={handleLogout}>
+              Log Out
+            </MenuItem>
           </span>
         ) : (
-          <MenuItem aria-label="Log In" onClick={showLogin}>Log In</MenuItem>
+          <MenuItem aria-label="Log In" onClick={showLogin}>
+            Log In
+          </MenuItem>
         )}
       </StyledMenu>
     </>

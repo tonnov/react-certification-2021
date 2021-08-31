@@ -54,10 +54,12 @@ export const VideoItem = ({ item, dark, origin }) => {
 
   const videoId = item.id.videoId || item.id;
   return (
-    <LinkVideo  to={{
-             pathname: `/video/${videoId}`, 
-             state: {origin},
-       }}>
+    <LinkVideo
+      to={{
+        pathname: `/video/${videoId}`,
+        state: { origin },
+      }}
+    >
       <VideoContainer dark={dark}>
         <VideoThumbnail role="img" url={thumbnails.high.url} />
         <VideoText>
