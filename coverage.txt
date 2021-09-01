@@ -1,11 +1,11 @@
 ------------------------------|----------|----------|----------|----------|-------------------|
 File                          |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 ------------------------------|----------|----------|----------|----------|-------------------|
-All files                     |    72.59 |    41.61 |    69.81 |    74.41 |                   |
+All files                     |    72.11 |    43.05 |    71.03 |    73.89 |                   |
  src                          |        0 |      100 |      100 |        0 |                   |
   index.jsx                   |        0 |      100 |      100 |        0 |                 7 |
- src/api                      |    34.78 |        0 |     37.5 |       40 |                   |
-  Login.api.js                |       10 |        0 |        0 |     12.5 |... 19,20,22,23,25 |
+ src/api                      |    60.87 |       50 |     87.5 |       65 |                   |
+  Login.api.js                |       70 |     62.5 |       80 |       75 |             20,25 |
   Youtube.api.js              |    53.85 |        0 |      100 |    58.33 |    14,16,17,19,21 |
  src/components/App           |      100 |      100 |      100 |      100 |                   |
   App.component.jsx           |      100 |      100 |      100 |      100 |                   |
@@ -14,8 +14,8 @@ All files                     |    72.59 |    41.61 |    69.81 |    74.41 |     
   Layout.component.jsx        |      100 |      100 |      100 |      100 |                   |
   Layout.styled.jsx           |      100 |      100 |      100 |      100 |                   |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/components/Login         |    41.67 |       25 |    33.33 |    43.48 |                   |
-  Login.component.jsx         |    41.67 |       25 |    33.33 |    43.48 |... 37,38,40,41,43 |
+ src/components/Login         |       40 |    16.67 |    33.33 |    41.67 |                   |
+  Login.component.jsx         |       40 |    16.67 |    33.33 |    41.67 |... 38,39,42,43,45 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
  src/components/Navbar        |    83.13 |    53.13 |    62.96 |       85 |                   |
   Menu.component.jsx          |    64.29 |       50 |       40 |    64.29 |    35,36,42,46,47 |
@@ -43,11 +43,12 @@ All files                     |    72.59 |    41.61 |    69.81 |    74.41 |     
   index.js                    |        0 |        0 |        0 |        0 |                   |
  src/pages/NotFound           |      100 |       50 |      100 |      100 |                   |
   NotFound.page.jsx           |      100 |       50 |      100 |      100 |                11 |
-  NotFound.styled.jsx         |      100 |       50 |      100 |      100 |           6,23,29 |
+  NotFound.styled.jsx         |      100 |       50 |      100 |      100 |           7,25,32 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/pages/VideoDetail        |    21.05 |        0 |        0 |    21.05 |                   |
-  VideoDetail.page.jsx        |     6.25 |        0 |        0 |     6.25 |... 31,32,35,37,45 |
+ src/pages/VideoDetail        |    22.73 |        0 |        0 |    22.73 |                   |
+  VideoDetail.page.jsx        |     5.88 |        0 |        0 |     5.88 |... 33,34,37,39,47 |
   VideoDetail.styled.jsx      |      100 |      100 |      100 |      100 |                   |
+  VideoFavDetail.page.jsx     |       50 |      100 |        0 |       50 |                 6 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
  src/providers/Auth           |    59.09 |       50 |       60 |    59.09 |                   |
   Auth.provider.jsx           |    59.09 |       50 |       60 |    59.09 |... 32,38,39,40,41 |
@@ -59,14 +60,15 @@ All files                     |    72.59 |    41.61 |    69.81 |    74.41 |     
   constants.js                |      100 |      100 |      100 |      100 |                   |
   favsHelper.js               |    66.67 |      100 |       50 |       75 |                 6 |
   fns.js                      |        0 |      100 |        0 |        0 |                 2 |
-  scrollTop.js                |       50 |      100 |        0 |       50 |                 3 |
+  scrollTop.js                |       50 |      100 |        0 |       50 |                 2 |
   storage.js                  |    71.43 |      100 |      100 |    71.43 |               7,8 |
- src/utils/hooks              |    56.14 |    13.64 |    69.23 |    56.36 |                   |
+ src/utils/hooks              |    45.61 |     4.55 |    53.85 |    47.27 |                   |
   useDebounce.js              |      100 |      100 |      100 |      100 |                   |
-  useVideos.js                |    47.92 |    13.64 |    55.56 |    47.83 |... 82,84,85,93,96 |
+  useVideos.js                |    35.42 |     4.55 |    33.33 |    36.96 |... 82,84,85,93,96 |
 ------------------------------|----------|----------|----------|----------|-------------------|
 
-Test Suites: 16 passed, 16 total
-Tests:       39 passed, 39 total
+Test Suites: 1 failed, 15 passed, 16 total
+Tests:       1 failed, 38 passed, 39 total
 Snapshots:   6 passed, 6 total
-Time:        14.074s
+Time:        13.052s
+Ran all test suites.

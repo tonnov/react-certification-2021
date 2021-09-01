@@ -14,6 +14,7 @@ const component = (
 
 beforeEach(() => render(component));
 
+
 describe('Login component', () => {
   it('Login Form should render username textbox', () => {
     const inputUserName = screen.getByRole('textbox');
@@ -25,13 +26,13 @@ describe('Login component', () => {
     expect(inputUserPassword).toBeInTheDocument();
   });
 
-  it('Login Form should render button for cancel (reset form and close modal)', () => {
-    const buttonCancel = screen.getByRole('button', { name: 'Login' });
-    expect(buttonCancel).toBeInTheDocument();
+  it('Login Form should render button for login', () => {
+    const buttonLogin = screen.getByRole('button', { name: 'Login' });
+    expect(buttonLogin).toBeInTheDocument();
   });
 
   it('Login Form should render button for cancel (reset form and close modal)', () => {
-    const buttonLogin = screen.getByRole('button', { name: 'Cancel' });
-    expect(buttonLogin).toBeInTheDocument();
+    const buttonCancel = screen.getByRole('button', { name: 'Cancel' });
+    expect(buttonCancel).toBeInTheDocument();
   });
 });

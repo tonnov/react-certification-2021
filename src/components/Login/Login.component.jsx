@@ -34,8 +34,10 @@ const Login = ({ show, toggleShow }) => {
 
     try {
       const solvedUser = await LoginApi(user, pass);
-      login(solvedUser);
-      toggleShow();
+      if (solvedUser) {
+        login(solvedUser);
+        toggleShow();
+      }
     } catch (err) {
       setMsgError(err.message);
       setError(true);

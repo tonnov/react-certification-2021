@@ -21,6 +21,8 @@ const VideoDetail = () => {
   const location = useLocation();
   const { origin } = location.state;
 
+  console.log( origin );
+
   const selVideo = useVideo(id);
 
   const { state } = useGlobal();
