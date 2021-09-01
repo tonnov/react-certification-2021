@@ -14,7 +14,6 @@ const component = (
 
 beforeEach(() => render(component));
 
-
 describe('Login component', () => {
   it('Login Form should render username textbox', () => {
     const inputUserName = screen.getByRole('textbox');

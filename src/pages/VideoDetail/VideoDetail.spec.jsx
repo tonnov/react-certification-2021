@@ -4,7 +4,7 @@ import { Router, Route } from 'react-router-dom';
 import { createMemoryHistory } from 'history';
 import AuthProvider from '../../providers/Auth';
 import GlobalProvider from '../../providers/Global';
-import VideoFavDetail from './VideoFavDetail.page';
+import VideoDetail from './VideoFavDetail.page';
 
 // jest.mock('../../providers/Auth');
 
@@ -19,7 +19,7 @@ const component = (
     <AuthProvider>
       <Router history={history}>
         <Route path="/videofav/:id">
-          <VideoFavDetail />
+          <VideoDetail />
         </Route>
       </Router>
     </AuthProvider>

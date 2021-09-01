@@ -1,7 +1,7 @@
 ------------------------------|----------|----------|----------|----------|-------------------|
 File                          |  % Stmts | % Branch |  % Funcs |  % Lines | Uncovered Line #s |
 ------------------------------|----------|----------|----------|----------|-------------------|
-All files                     |    72.11 |    43.05 |    71.03 |    73.89 |                   |
+All files                     |    74.06 |    43.05 |    73.83 |    75.92 |                   |
  src                          |        0 |      100 |      100 |        0 |                   |
   index.jsx                   |        0 |      100 |      100 |        0 |                 7 |
  src/api                      |    60.87 |       50 |     87.5 |       65 |                   |
@@ -45,10 +45,10 @@ All files                     |    72.11 |    43.05 |    71.03 |    73.89 |     
   NotFound.page.jsx           |      100 |       50 |      100 |      100 |                11 |
   NotFound.styled.jsx         |      100 |       50 |      100 |      100 |           7,25,32 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/pages/VideoDetail        |    22.73 |        0 |        0 |    22.73 |                   |
-  VideoDetail.page.jsx        |     5.88 |        0 |        0 |     5.88 |... 33,34,37,39,47 |
+ src/pages/VideoDetail        |    52.38 |        0 |       50 |    52.38 |                   |
+  VideoDetail.page.jsx        |     37.5 |        0 |    33.33 |     37.5 |... 31,32,35,37,45 |
   VideoDetail.styled.jsx      |      100 |      100 |      100 |      100 |                   |
-  VideoFavDetail.page.jsx     |       50 |      100 |        0 |       50 |                 6 |
+  VideoFavDetail.page.jsx     |      100 |      100 |      100 |      100 |                   |
   index.js                    |        0 |        0 |        0 |        0 |                   |
  src/providers/Auth           |    59.09 |       50 |       60 |    59.09 |                   |
   Auth.provider.jsx           |    59.09 |       50 |       60 |    59.09 |... 32,38,39,40,41 |
@@ -56,19 +56,13 @@ All files                     |    72.11 |    43.05 |    71.03 |    73.89 |     
  src/providers/Global         |    90.48 |    66.67 |    88.89 |    92.68 |                   |
   Global.provider.jsx         |    90.48 |    66.67 |    88.89 |    92.68 |          16,38,99 |
   index.js                    |        0 |        0 |        0 |        0 |                   |
- src/utils                    |    71.43 |      100 |       50 |    73.68 |                   |
+ src/utils                    |    76.19 |      100 |     62.5 |    78.95 |                   |
   constants.js                |      100 |      100 |      100 |      100 |                   |
   favsHelper.js               |    66.67 |      100 |       50 |       75 |                 6 |
   fns.js                      |        0 |      100 |        0 |        0 |                 2 |
-  scrollTop.js                |       50 |      100 |        0 |       50 |                 2 |
+  scrollTop.js                |      100 |      100 |      100 |      100 |                   |
   storage.js                  |    71.43 |      100 |      100 |    71.43 |               7,8 |
  src/utils/hooks              |    45.61 |     4.55 |    53.85 |    47.27 |                   |
   useDebounce.js              |      100 |      100 |      100 |      100 |                   |
   useVideos.js                |    35.42 |     4.55 |    33.33 |    36.96 |... 82,84,85,93,96 |
 ------------------------------|----------|----------|----------|----------|-------------------|
-
-Test Suites: 1 failed, 15 passed, 16 total
-Tests:       1 failed, 38 passed, 39 total
-Snapshots:   6 passed, 6 total
-Time:        13.052s
-Ran all test suites.
