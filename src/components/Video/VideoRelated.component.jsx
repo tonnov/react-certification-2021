@@ -10,7 +10,6 @@ const LinkVideoRel = styled(Link)`
   padding: 0;
 
   :hover {
-    /* opacity: ${(prop) => (prop.dark ? '0.2' : '0.8')}; */
     opacity: 0.8;
     transition: all 0.3s ease-out;
   }
@@ -18,7 +17,6 @@ const LinkVideoRel = styled(Link)`
 
 const VideoRelContainer = styled.div`
   height: 92px;
-  /* min-width: 100%; */
   display: flex;
   flex-direction: row;
   align-items: flex-start;
@@ -47,10 +45,6 @@ const RelText = styled.div`
   justify-content: start;
   margin: 0;
   padding-left: 2px;
-
-  @media screen and (max-width: 768px) {
-    /* max-width: 80%; */
-  }
 `;
 
 const RelTitle = styled.span`
@@ -60,18 +54,14 @@ const RelTitle = styled.span`
   padding: 2px;
   font-size: 1em;
   color: ${(props) => (props.dark ? '#f0f0f0' : '#4f4f4f')};
-  /* box-sizing: content-box; */
 
   line-height: 20px;
   display: -webkit-box;
   -webkit-line-clamp: 3;
   -webkit-box-orient: vertical;
 
-  /* word-wrap: break-word; */
-
   white-space: normal;
   word-break: break-word;
-  /* overflow-wrap: break-word; */
   overflow: hidden;
   text-overflow: ellipsis;
 `;
@@ -93,15 +83,20 @@ const RelAuthor = styled.span`
   text-overflow: ellipsis;
 `;
 
-export const VideoRelated = ({ video, dark }) => {
+export const VideoRelated = ({ video, dark, origin }) => {
   if (!video.snippet) return null;
 
   const { thumbnails, title, channelTitle } = video.snippet;
-  const { videoId } = video.id;
-  // console.log(videoId);
 
+  const videoId = video.id.videoId || video.id;
   return (
-    <LinkVideoRel dark={dark} to={`/video/${videoId}`}>
+    <LinkVideoRel
+      dark={dark}
+      to={{
+        pathname: `/video/${videoId}`,
+        state: { origin },
+      }}
+    >
       <VideoRelContainer role="listitem">
         <RelThumbnail src={thumbnails.medium.url} role="img" />
         <RelText>
@@ -114,5 +109,3 @@ export const VideoRelated = ({ video, dark }) => {
     </LinkVideoRel>
   );
 };
-
-// export default VideoRelated;

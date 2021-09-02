@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
-// import HighlightOffIcon from '@material-ui/icons/HighlightOff';
 import CloseIcon from '@material-ui/icons/Close';
-import { IconButton } from '@material-ui/core';
+import { IconButton, FormControlLabel } from '@material-ui/core';
+import Switch from '@material-ui/core/Switch';
+import grey from '@material-ui/core/colors/grey';
 
 const LinkList = styled.ul`
   width: 100%;
@@ -23,7 +24,6 @@ const LinkItem = styled.li`
 
 const LinkNav = styled(Link)`
   text-decoration: none;
-  /* color: rgb(73, 73, 73); */
   color: inherit;
   font-size: 16px;
   width: 100%;
@@ -45,6 +45,13 @@ const LinkItemNav = ({ item }) => {
   );
 };
 
+export const NavSwitch = styled.span`
+  display: none;
+  @media screen and (max-width: 600px) {
+    display: flex;
+  }
+`;
+
 const ModalWrapper = styled.div`
   position: fixed;
   top: 0;
@@ -54,10 +61,8 @@ const ModalWrapper = styled.div`
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 1000;
-  /* display: none; */
   visibility: hidden;
   opacity: 0;
-  /* align-items: baseline; */
 
   &.sidebar-active {
     visibility: visible;
@@ -77,7 +82,6 @@ const SideBar = styled.nav`
   justify-content: flex-start;
   align-items: center;
   padding-top: 10px;
-  /* background: #fff; */
   background-color: ${(props) => (props.dark ? '#4d4d4d' : '#fff')};
   color: ${(props) => (props.dark ? '#f2f2f2' : '#4d4d4d')};
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.4);
@@ -89,17 +93,41 @@ const SideBar = styled.nav`
   }
 `;
 
-const FullSideBar = ({ activeClass, updateState, menuItems, dark }) => {
+const FullSideBar = ({ activeClass, updateState, menuItems, dark, updateTheme }) => {
   const handleOnClick = () => {
     updateState();
   };
 
+  const handleChangeTheme = () => {
+    updateTheme();
+  };
+
+  const lightGrey = grey[200];
+  const darkGrey = grey[700];
+  const iconStyle = {
+    fontSize: 30,
+    color: dark ? lightGrey : darkGrey,
+  };
+
   return (
-    <ModalWrapper className={activeClass}>
+    <ModalWrapper className={activeClass} onClick={handleOnClick}>
       <SideBar className={activeClass} role="menu" aria-label="sidebar" dark={dark}>
         <IconButton onClick={handleOnClick}>
-          <CloseIcon style={{ color: 'inherit', fontSize: 30 }} />
+          <CloseIcon style={iconStyle} />
         </IconButton>
+        <NavSwitch>
+          <FormControlLabel
+            control={
+              <Switch
+                checked={dark}
+                name="toggleTheme"
+                color="primary"
+                onChange={handleChangeTheme}
+              />
+            }
+            label="Dark mode"
+          />
+        </NavSwitch>
         <LinkList onClick={handleOnClick}>
           {menuItems &&
             menuItems.map((item) => <LinkItemNav key={item.name} item={item} />)}

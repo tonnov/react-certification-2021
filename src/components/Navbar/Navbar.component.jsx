@@ -9,26 +9,32 @@ import {
   Nav,
   NavLeft,
   NavRight,
+  NavSwitch,
   UserAvatar,
   SearchContainer,
   SearchInput,
   IconContainer,
+  AuthAvatar,
 } from './Navbar.styled';
-import FullSideBar from './Sidebar.styled';
+import FullSideBar from './Sidebar.component';
 import { useDebounce } from '../../utils/hooks/useDebounce';
 import { useGlobal } from '../../providers/Global';
+import MenuLogin from './Menu.component';
+import { useAuth } from '../../providers/Auth';
 
 function Navbar() {
   const [sidebar, setSidebar] = useState(false);
+  const [anchorEl, setAnchorEl] = useState(null);
 
+  const { authenticated } = useAuth();
   const { state, dispatch } = useGlobal();
-  const { query, darkTheme } = state;
+  const { query, darkTheme, sessionData } = state;
 
   const [localQuery, setLocalQuery] = useState(query);
 
   const history = useHistory();
 
-  const debounceValue = useDebounce(localQuery, 600);
+  const debounceValue = useDebounce(localQuery, 500);
 
   useEffect(() => {
     if (!debounceValue) return;
@@ -39,25 +45,30 @@ function Navbar() {
 
   const showSidebar = () => setSidebar(!sidebar);
 
+  const showMenu = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const hideMenu = () => setAnchorEl(null);
+
   const changeLocalQuery = (e) => {
     setLocalQuery(e.target.value);
   };
 
   const handleChangeTheme = () => {
-    // const swValue = event.target.checked;
-    // console.log(swValue);
     dispatch({ type: 'toggle_theme' });
   };
 
-  const menuItems = [
-    { route: '/', name: 'Home' },
-    // { route: '/video/HYyRZiwBWc8', name: 'Video' }
-  ];
+  const menuItems = [{ route: '/', name: 'Home' }];
+
+  if (authenticated) {
+    menuItems.push({ route: '/favorites', name: 'Favorites' });
+  }
 
   return (
     <>
       <GlobalStyle dark={darkTheme} />
-      <Nav dark={darkTheme}>
+      <Nav dark={darkTheme} aria-label="NavBar">
+        <MenuLogin anchor={anchorEl} toggleMenu={hideMenu} userName={sessionData?.name} />
         <NavLeft>
           <IconButton color="inherit" aria-label="open drawer" onClick={showSidebar}>
             <MenuIcon />
@@ -67,6 +78,7 @@ function Navbar() {
             updateState={showSidebar}
             activeClass={sidebar ? 'sidebar-active' : null}
             menuItems={menuItems}
+            updateTheme={handleChangeTheme}
           />
           <SearchContainer>
             <IconContainer>
@@ -81,22 +93,26 @@ function Navbar() {
           </SearchContainer>
         </NavLeft>
         <NavRight>
-          <FormControlLabel
-            control={
-              <Switch
-                checked={darkTheme}
-                name="toggleTheme"
-                color="primary"
-                onChange={handleChangeTheme}
-              />
-            }
-            label="Dark mode"
-          />
-          {/* <Link to={'/login'} > */}
-            <IconButton color="inherit" aria-label="user" >
+          <NavSwitch>
+            <FormControlLabel
+              control={
+                <Switch
+                  checked={darkTheme}
+                  name="toggleTheme"
+                  color="primary"
+                  onChange={handleChangeTheme}
+                />
+              }
+              label="Dark mode"
+            />
+          </NavSwitch>
+          <IconButton color="inherit" aria-label="user" onClick={showMenu}>
+            {authenticated ? (
+              <AuthAvatar url={sessionData?.avatarUrl} />
+            ) : (
               <UserAvatar dark={darkTheme} />
-            </IconButton>
-          {/* </Link> */}
+            )}
+          </IconButton>
         </NavRight>
       </Nav>
     </>

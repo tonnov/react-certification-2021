@@ -3,35 +3,32 @@ import renderer from 'react-test-renderer';
 import { render, screen, fireEvent } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
 import Navbar from './Navbar.component';
-import { GlobalContext } from '../../providers/Global';
+import AuthProvider from '../../providers/Auth';
+import GlobalProvider from '../../providers/Global';
 
-const RenderNavWithSearchProvider = (snap) => {
-  const isSnap = snap || false;
+jest.mock('@material-ui/core/Menu', () => () => {
+  return (
+    <div>
+      <input data-testid="mock-component" />
+    </div>
+  );
+});
 
-  const state = { query: 'wizeline', darkTheme: false };
-  const dispatch = jest.fn();
-
-  const component = (
-    <GlobalContext.Provider value={{ state, dispatch }}>
+const component = (
+  <GlobalProvider>
+    <AuthProvider>
       <BrowserRouter>
         <Navbar />
       </BrowserRouter>
-    </GlobalContext.Provider>
-  );
+    </AuthProvider>
+  </GlobalProvider>
+);
 
-  if (isSnap) {
-    return renderer.create(component);
-  }
-
-  return render(component);
-};
-
-beforeEach(() => RenderNavWithSearchProvider());
+beforeEach(() => render(component));
 
 describe('Navbar Component', () => {
   it('should match snapshot', () => {
-    // const snap = renderer.create(<Navbar />);
-    const snap = RenderNavWithSearchProvider(true);
+    const snap = renderer.create(component);
 
     expect(snap.toJSON()).toMatchSnapshot();
   });
@@ -53,11 +50,11 @@ describe('Navbar Component', () => {
   });
 
   it('should render a checkbox for theme switch', () => {
-    const component = screen.getByRole('checkbox', {
+    const checkbox = screen.getByRole('checkbox', {
       name: 'Dark mode',
     });
 
-    expect(component).toBeInTheDocument();
+    expect(checkbox).toBeInTheDocument();
   });
 });
 
