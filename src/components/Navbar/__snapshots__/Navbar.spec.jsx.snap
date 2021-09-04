@@ -2,10 +2,16 @@
 
 exports[`Navbar Component should match snapshot 1`] = `
 <nav
+  aria-label="NavBar"
   className="sc-bdnxRM liiiJF"
 >
+  <div>
+    <input
+      data-testid="mock-component"
+    />
+  </div>
   <div
-    className="sc-gtsrHT bfKaBC"
+    className="sc-gtsrHT klIraI"
   >
     <button
       aria-label="open drawer"
@@ -42,11 +48,12 @@ exports[`Navbar Component should match snapshot 1`] = `
       </span>
     </button>
     <div
-      className="sc-iqAclL ibbnHS"
+      className="sc-bqGGPW bCQyud"
+      onClick={[Function]}
     >
       <nav
         aria-label="sidebar"
-        className="sc-crzoAE ipxSQZ"
+        className="sc-ksluID hUtALt"
         role="menu"
       >
         <button
@@ -76,7 +83,7 @@ exports[`Navbar Component should match snapshot 1`] = `
               focusable="false"
               style={
                 Object {
-                  "color": "inherit",
+                  "color": "#616161",
                   "fontSize": 30,
                 }
               }
@@ -88,37 +95,77 @@ exports[`Navbar Component should match snapshot 1`] = `
             </svg>
           </span>
         </button>
+        <span
+          className="sc-dIsUp eOLNGD"
+        >
+          <label
+            className="MuiFormControlLabel-root"
+          >
+            <span
+              className="MuiSwitch-root"
+            >
+              <span
+                aria-disabled={false}
+                className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+                onBlur={[Function]}
+                onDragLeave={[Function]}
+                onFocus={[Function]}
+                onKeyDown={[Function]}
+                onKeyUp={[Function]}
+                onMouseDown={[Function]}
+                onMouseLeave={[Function]}
+                onMouseUp={[Function]}
+                onTouchEnd={[Function]}
+                onTouchMove={[Function]}
+                onTouchStart={[Function]}
+                tabIndex={null}
+              >
+                <span
+                  className="MuiIconButton-label"
+                >
+                  <input
+                    checked={false}
+                    className="PrivateSwitchBase-input-5 MuiSwitch-input"
+                    name="toggleTheme"
+                    onChange={[Function]}
+                    type="checkbox"
+                  />
+                  <span
+                    className="MuiSwitch-thumb"
+                  />
+                </span>
+              </span>
+              <span
+                className="MuiSwitch-track"
+              />
+            </span>
+            <span
+              className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+            >
+              Dark mode
+            </span>
+          </label>
+        </span>
         <ul
-          className="sc-pNWdM cpldXe"
+          className="sc-kEqXSa jUGqmn"
           onClick={[Function]}
         >
           <li
-            className="sc-jrsJWt fxTIvc"
+            className="sc-iqAclL ckeQNY"
           >
             <a
-              className="sc-kEqXSa iYzXdx"
+              className="sc-crzoAE gBaYqY"
               href="/"
               onClick={[Function]}
             >
               Home
             </a>
           </li>
-          <li
-            className="sc-jrsJWt fxTIvc"
-          >
-            <a
-              className="sc-kEqXSa iYzXdx"
-              href="/video/HYyRZiwBWc8"
-              onClick={[Function]}
-            >
-              Video
-            </a>
-          </li>
         </ul>
       </nav>
     </div>
     <div
-      className="sc-eCApnc iVkNoQ"
+      className="sc-eCApnc isSkVs"
     >
       <span
         className="sc-gKAaRy iXzfoV"
@@ -144,60 +191,65 @@ exports[`Navbar Component should match snapshot 1`] = `
     </div>
   </div>
   <div
-    className="sc-dlnjwi gNnYvo"
+    className="sc-dlnjwi bpbsKY"
   >
-    <label
-      className="MuiFormControlLabel-root"
+    <span
+      className="sc-hKFxyN bijRJo"
     >
-      <span
-        className="MuiSwitch-root"
+      <label
+        className="MuiFormControlLabel-root"
       >
         <span
-          aria-disabled={false}
-          className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-1 MuiSwitch-switchBase MuiSwitch-colorPrimary"
-          onBlur={[Function]}
-          onDragLeave={[Function]}
-          onFocus={[Function]}
-          onKeyDown={[Function]}
-          onKeyUp={[Function]}
-          onMouseDown={[Function]}
-          onMouseLeave={[Function]}
-          onMouseUp={[Function]}
-          onTouchEnd={[Function]}
-          onTouchMove={[Function]}
-          onTouchStart={[Function]}
-          tabIndex={null}
+          className="MuiSwitch-root"
         >
           <span
-            className="MuiIconButton-label"
+            aria-disabled={false}
+            className="MuiButtonBase-root MuiIconButton-root PrivateSwitchBase-root-2 MuiSwitch-switchBase MuiSwitch-colorPrimary"
+            onBlur={[Function]}
+            onDragLeave={[Function]}
+            onFocus={[Function]}
+            onKeyDown={[Function]}
+            onKeyUp={[Function]}
+            onMouseDown={[Function]}
+            onMouseLeave={[Function]}
+            onMouseUp={[Function]}
+            onTouchEnd={[Function]}
+            onTouchMove={[Function]}
+            onTouchStart={[Function]}
+            tabIndex={null}
           >
-            <input
-              checked={false}
-              className="PrivateSwitchBase-input-4 MuiSwitch-input"
-              name="toggleTheme"
-              onChange={[Function]}
-              type="checkbox"
-            />
             <span
-              className="MuiSwitch-thumb"
-            />
+              className="MuiIconButton-label"
+            >
+              <input
+                checked={false}
+                className="PrivateSwitchBase-input-5 MuiSwitch-input"
+                name="toggleTheme"
+                onChange={[Function]}
+                type="checkbox"
+              />
+              <span
+                className="MuiSwitch-thumb"
+              />
+            </span>
           </span>
+          <span
+            className="MuiSwitch-track"
+          />
         </span>
         <span
-          className="MuiSwitch-track"
-        />
-      </span>
-      <span
-        className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
-      >
-        Dark mode
-      </span>
-    </label>
+          className="MuiTypography-root MuiFormControlLabel-label MuiTypography-body1"
+        >
+          Dark mode
+        </span>
+      </label>
+    </span>
     <button
       aria-label="user"
       className="MuiButtonBase-root MuiIconButton-root MuiIconButton-colorInherit"
       disabled={false}
       onBlur={[Function]}
+      onClick={[Function]}
       onDragLeave={[Function]}
       onFocus={[Function]}
       onKeyDown={[Function]}
@@ -220,7 +272,7 @@ exports[`Navbar Component should match snapshot 1`] = `
           <svg
             aria-hidden={true}
             className="MuiSvgIcon-root sc-fujyAs cbBOTO"
-            dark={false}
+            dark={0}
             focusable="false"
             viewBox="0 0 24 24"
           >

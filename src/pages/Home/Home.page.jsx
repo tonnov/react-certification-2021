@@ -1,36 +1,20 @@
-import React, { useEffect, useState } from 'react';
-// import { useAuth } from '../../providers/Auth';
-import VideoList from './VideoList.component';
+import React from 'react';
+import { VideoList } from '../../components/Video';
 import { useGlobal } from '../../providers/Global';
-import { useYoutubeApi } from '../../providers/Youtube';
 import { Home, HomeTitle } from './Home.styled';
-
-// import listaVideos from '../../mock/react-response.json';
+import { useVideos } from '../../utils/hooks/useVideos';
 
 function HomePage() {
-  const { searchVideos } = useYoutubeApi();
-  const [videos, SetVideos] = useState({});
-
   const { state } = useGlobal();
   const { query, darkTheme } = state;
-  // console.log(state);
 
-  useEffect(() => {
-    const runAsync = async () => {
-      const data = await searchVideos(query);
-      SetVideos(data || []);
-    };
-
-    runAsync();
-    // SetVideos(listaVideos);
-    // }, [query]);
-  }, [query, searchVideos]);
-
+  const videos = useVideos(query);
+  const { items } = videos;
 
   return (
-    <Home dark={darkTheme} >
+    <Home data-testid="Home" dark={darkTheme}>
       <HomeTitle>Welcome to the Challenge!</HomeTitle>
-      <VideoList videos={videos} dark={darkTheme} />
+      <VideoList videos={items} dark={darkTheme} origin="home" />
     </Home>
   );
 }

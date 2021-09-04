@@ -3,17 +3,26 @@ import renderer from 'react-test-renderer';
 import { render, screen } from '@testing-library/react';
 import { VideoMain } from './VideoMain.component';
 import infoVideo from '../../mock/single-video.json';
+import GlobalProvider from '../../providers/Global';
 
 describe('VideoMain component', () => {
   const embedId = 'T_j60n1zgu0';
   const [selVideo] = infoVideo.items;
 
   beforeEach(() => {
-    render(<VideoMain embedId={embedId} video={selVideo} />);
+    render(
+      <GlobalProvider>
+        <VideoMain embedId={embedId} video={selVideo} />
+      </GlobalProvider>
+    );
   });
 
   it('should match snapshot', () => {
-    const snap = renderer.create(<VideoMain embedId={embedId} video={selVideo} />);
+    const snap = renderer.create(
+      <GlobalProvider>
+        <VideoMain embedId={embedId} video={selVideo} />
+      </GlobalProvider>
+    );
     expect(snap.toJSON()).toMatchSnapshot();
   });
 

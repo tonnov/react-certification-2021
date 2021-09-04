@@ -1,37 +1,30 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import VideoFavorite from './VideoFavorite.component';
 
-export const VideoLayout = styled.div`
-  margin: 0 auto;
-  width: 100%;
-  height: auto;
+const VideoTitleBar = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-start;
-  padding: 5px;
-  /* background-color: ${props => props.dark ? '#3b3b3b' : '#fff'}; */
-  background-color: inherit;
-
-  @media screen and (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
-export const VideoContainer = styled.div`
-  flex: 70%;
-  padding: 5px;
-
-  @media screen and (max-width: 768px) {
-    flex: 100%;
-    /* flex: 1; */
-  }
+  align-items: center;
+  margin: 5px 0;
+  padding: 5px 2px;
 `;
 
 const VideoTitle = styled.h3`
+  flex: 90%;
+  margin: 0;
   font-weight: 900;
-  color: ${props => props.dark ? '#f5f5f5' : '#383838'};
+  word-break: normal;
+  color: ${(props) => (props.dark ? '#f5f5f5' : '#383838')};
+`;
+
+const VideoFav = styled.span`
+  flex: 10%;
+  display: ${(props) => (props.auth ? 'flex' : 'none')};
+  justify-content: center;
+  margin: 0;
 `;
 
 const VideoDetails = styled.div`
@@ -40,7 +33,7 @@ const VideoDetails = styled.div`
   font-size: 10pt;
   padding: 0 10px;
   margin: 0;
-  color: ${props => props.dark ? '#b5b5b5' : '#383838'};
+  color: ${(props) => (props.dark ? '#b5b5b5' : '#383838')};
 `;
 
 const VideoPub = styled.div`
@@ -57,32 +50,11 @@ const VideoViews = styled.div`
 
 const VideoDescription = styled.p`
   padding: 10px;
-  color: ${props => props.dark ? '#d1d1d1' : '#757575'};
+  color: ${(props) => (props.dark ? '#d1d1d1' : '#757575')};
   display: inline-block;
   word-wrap: break-word;
   white-space: pre-line;
   height: auto;
-  /* overflow: hidden;
-  text-overflow: ellipsis; */
-  /* background-color: cadetblue; */
-`;
-
-export const ListVideoRelated = styled.div`
-  flex: 30%;
-  padding: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 2px 0;
-  height: 800px;
-  overflow-y: scroll;
-  overflow-x: hidden;
-
-  @media screen and (max-width: 768px) {
-    /* display: none; */
-    flex: 100%;
-    overflow-y: hidden;
-  }
 `;
 
 const VideoFrame = styled.div`
@@ -101,9 +73,8 @@ const VideoFrame = styled.div`
   }
 `;
 
-export const VideoMain = ({ embedId, video, dark }) => {
+export const VideoMain = ({ embedId, video, dark, auth }) => {
   if (!video) return null;
-
   const { snippet, statistics } = video;
   const publicado = new Date(snippet.publishedAt).toLocaleDateString();
   const vistas = new Intl.NumberFormat('es-MX', { style: 'decimal' }).format(
@@ -121,14 +92,19 @@ export const VideoMain = ({ embedId, video, dark }) => {
           frameborser="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
-          title="Embedded youtube"
+          title="Embedded Youtube Video"
           data-testid="iframe"
         />
       </VideoFrame>
-      <VideoTitle dark={dark}>{snippet.title}</VideoTitle>
+      <VideoTitleBar>
+        <VideoTitle dark={dark}>{snippet.title}</VideoTitle>
+        <VideoFav auth={auth}>
+          <VideoFavorite video={video} dark={dark} />
+        </VideoFav>
+      </VideoTitleBar>
       <VideoDetails dark={dark}>
-        <VideoPub >{`Publicado: ${publicado}`}</VideoPub>
-        <VideoViews >{`${vistas} Visualizaciones`}</VideoViews>
+        <VideoPub>{`Publicado: ${publicado}`}</VideoPub>
+        <VideoViews>{`${vistas} Visualizaciones`}</VideoViews>
       </VideoDetails>
       <VideoDescription dark={dark}>{firstLine}</VideoDescription>
     </>
